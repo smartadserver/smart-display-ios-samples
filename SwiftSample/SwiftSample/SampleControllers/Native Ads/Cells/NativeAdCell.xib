@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="151" id="zbw-ed-raS" customClass="NativeAdCell" customModule="SwiftSample" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="403" height="151"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zbw-ed-raS" id="L82-kt-dmQ">
+                <rect key="frame" x="0.0" y="0.0" width="403" height="150.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eFG-cY-JG0">
+                        <rect key="frame" x="22" y="13" width="40" height="40"/>
+                        <accessibility key="accessibilityConfiguration" label="iconImageView">
+                            <bool key="isElement" value="YES"/>
+                        </accessibility>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="JOL-My-46H"/>
+                            <constraint firstAttribute="height" constant="40" id="c8Y-JR-e9z"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yH9-7f-lug" customClass="SASAdChoicesView">
+                        <rect key="frame" x="361" y="13" width="20" height="20"/>
+                        <accessibility key="accessibilityConfiguration" label="adChoicesView">
+                            <bool key="isElement" value="YES"/>
+                        </accessibility>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="8vq-h3-gga"/>
+                            <constraint firstAttribute="height" constant="20" id="DNq-Un-ohg"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sponsored" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="pyc-PV-xci" userLabel="Subtitle Label">
+                        <rect key="frame" x="296" y="13" width="60" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="6ci-lZ-5i1"/>
+                            <constraint firstAttribute="width" constant="60" id="hod-pb-79d"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="11"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7A0-ct-f5d">
+                        <rect key="frame" x="12" y="63" width="379" height="25"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZGD-k4-rnI" customClass="SASNativeAdMediaView">
+                        <rect key="frame" x="12" y="63" width="379" height="25"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <accessibility key="accessibilityConfiguration" label="mediaView">
+                            <bool key="isElement" value="YES"/>
+                        </accessibility>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="UNP-60-vWs" userLabel="Subtitle Label">
+                        <rect key="frame" x="22" y="109.5" width="233" height="17"/>
+                        <accessibility key="accessibilityConfiguration" label="subtitle"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.23921568630000001" green="0.23921568630000001" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="evq-8v-tK5">
+                        <rect key="frame" x="263" y="103" width="120" height="30"/>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <accessibility key="accessibilityConfiguration" label="callToActionButton">
+                            <accessibilityTraits key="traits" button="YES"/>
+                            <bool key="isElement" value="YES"/>
+                        </accessibility>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="VVj-lX-PxY"/>
+                            <constraint firstAttribute="width" constant="120" id="jq3-Je-tkI"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="15"/>
+                        <state key="normal" title="Call to action">
+                            <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                        </state>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999998807907104" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="m6b-5f-0Hn">
+                        <rect key="frame" x="72" y="22.5" width="224" height="21.5"/>
+                        <accessibility key="accessibilityConfiguration" label="titleLabel"/>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="evq-8v-tK5" secondAttribute="bottom" constant="7" id="0if-Tx-UY7"/>
+                    <constraint firstItem="7A0-ct-f5d" firstAttribute="leading" secondItem="L82-kt-dmQ" secondAttribute="leadingMargin" constant="-8" id="3Xz-tw-LLv"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="m6b-5f-0Hn" secondAttribute="trailing" constant="87" id="CES-rJ-k3T"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="7A0-ct-f5d" secondAttribute="bottom" constant="52" id="Exm-YY-KXA"/>
+                    <constraint firstItem="eFG-cY-JG0" firstAttribute="top" secondItem="L82-kt-dmQ" secondAttribute="topMargin" constant="2" id="FfR-nM-Q0j"/>
+                    <constraint firstItem="m6b-5f-0Hn" firstAttribute="leading" secondItem="L82-kt-dmQ" secondAttribute="leadingMargin" constant="52" id="ITn-Xz-IdC"/>
+                    <constraint firstItem="ZGD-k4-rnI" firstAttribute="top" secondItem="L82-kt-dmQ" secondAttribute="topMargin" constant="52" id="Kqo-wi-X1L"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="ZGD-k4-rnI" secondAttribute="bottom" constant="52" id="PbU-Nw-6R3"/>
+                    <constraint firstItem="ZGD-k4-rnI" firstAttribute="leading" secondItem="L82-kt-dmQ" secondAttribute="leadingMargin" constant="-8" id="Uc7-v6-tNl"/>
+                    <constraint firstItem="m6b-5f-0Hn" firstAttribute="top" secondItem="L82-kt-dmQ" secondAttribute="topMargin" constant="11.5" id="Y0h-oZ-pVX"/>
+                    <constraint firstItem="UNP-60-vWs" firstAttribute="leading" secondItem="L82-kt-dmQ" secondAttribute="leadingMargin" constant="2" id="c3N-9c-o0D"/>
+                    <constraint firstItem="pyc-PV-xci" firstAttribute="leading" secondItem="m6b-5f-0Hn" secondAttribute="trailing" id="cTY-Zz-Ndh"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="evq-8v-tK5" secondAttribute="trailing" id="dXQ-gR-SBt"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="ZGD-k4-rnI" secondAttribute="trailing" constant="-8" id="elo-Kt-IgW"/>
+                    <constraint firstItem="eFG-cY-JG0" firstAttribute="leading" secondItem="L82-kt-dmQ" secondAttribute="leadingMargin" constant="2" id="h8c-Y3-kbJ"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="7A0-ct-f5d" secondAttribute="trailing" constant="-8" id="hI4-Sd-vvc"/>
+                    <constraint firstItem="yH9-7f-lug" firstAttribute="top" secondItem="L82-kt-dmQ" secondAttribute="topMargin" constant="2" id="lJr-20-H7V"/>
+                    <constraint firstItem="evq-8v-tK5" firstAttribute="leading" secondItem="UNP-60-vWs" secondAttribute="trailing" constant="8" id="mzF-3J-HSY"/>
+                    <constraint firstItem="yH9-7f-lug" firstAttribute="leading" secondItem="pyc-PV-xci" secondAttribute="trailing" constant="5" id="nTJ-sZ-Wii"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="yH9-7f-lug" secondAttribute="trailing" constant="2" id="oJr-P7-b5s"/>
+                    <constraint firstItem="UNP-60-vWs" firstAttribute="centerY" secondItem="evq-8v-tK5" secondAttribute="centerY" id="qDH-35-A2s"/>
+                    <constraint firstItem="7A0-ct-f5d" firstAttribute="top" secondItem="L82-kt-dmQ" secondAttribute="topMargin" constant="52" id="siD-1t-aAL"/>
+                    <constraint firstItem="pyc-PV-xci" firstAttribute="centerY" secondItem="yH9-7f-lug" secondAttribute="centerY" id="vvN-E5-SbG"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <accessibility key="accessibilityConfiguration" label="nativeAdCell"/>
+            <connections>
+                <outlet property="adChoicesButton" destination="yH9-7f-lug" id="SM8-W4-5Wr"/>
+                <outlet property="callToActionButton" destination="evq-8v-tK5" id="xul-ej-dvn"/>
+                <outlet property="coverImageView" destination="7A0-ct-f5d" id="oXQ-by-RaZ"/>
+                <outlet property="iconImageView" destination="eFG-cY-JG0" id="jaQ-qh-ntl"/>
+                <outlet property="iconTopSpaceConstraint" destination="FfR-nM-Q0j" id="nSn-L4-j3I"/>
+                <outlet property="mediaView" destination="ZGD-k4-rnI" id="aBV-qU-IVF"/>
+                <outlet property="subtitleLabel" destination="UNP-60-vWs" id="6e7-Za-R38"/>
+                <outlet property="subtitleLeadingSpaceConstraint" destination="c3N-9c-o0D" id="tQ1-tH-0lV"/>
+                <outlet property="titleLabel" destination="m6b-5f-0Hn" id="aAr-Cq-Q0W"/>
+                <outlet property="titleLeadingSpaceConstraint" destination="ITn-Xz-IdC" id="eR6-qS-N8h"/>
+            </connections>
+            <point key="canvasLocation" x="184.5" y="500.5"/>
+        </tableViewCell>
+    </objects>
+</document>
