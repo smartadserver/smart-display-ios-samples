@@ -32,13 +32,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // GDPR Consent String - Manual setting
         /////////////////////////////////////////
         // By uncommenting the following code, you can set the GDPR consent string manually.
-        // Smart Display SDK will retrieve the consent string from the NSUserDefaults using the official IAB key "IABConsent_ConsentString" as per IAB recommandations.
-        // If you are using SmartCMP SDK, this step is not required since SmartCMP already complies with IAB specifications and stores the consent string using the official key.
-        // If you are using any other CMP that is not validated by the IAB and not using the official key, you will have to manually store the computed consent string into the NSUserDefaults for Smart Display SDK to retrieve it and pass it to its partners.
+        // Smart Display SDK will retrieve the consent string from the NSUserDefaults using the
+        // official IAB key "IABConsent_ConsentString" as per IAB recommandations.
         /////////////////////////////////////////
         
         // let myConsentString = "yourCMPComputedConsentStringBase64format"
         // UserDefaults.standard.set(myConsentString, forKey: "IABConsent_ConsentString")
+        // UserDefaults.standard.synchronize()
+        
+        // Some third party mediation SDK are not IAB compliant and don't rely on the consent string. Those SDK use
+        // most of the time a binary consent for the advertising purpose.
+        // If you are using one or more of those SDK through Smart mediation, you can set this binary consent for
+        // all adapters at once by setting the string '1' (if the consent is granted) or '0' (if the consent is denied)
+        // in NSUserDefault for the key 'Smart_advertisingConsentStatus'.
+        // let advertisingBinaryConsentString = "1" or "0"
+        // UserDefaults.standard.set(advertisingBinaryConsentString, forKey: "Smart_advertisingConsentStatus")
         // UserDefaults.standard.synchronize()
         
         return true
