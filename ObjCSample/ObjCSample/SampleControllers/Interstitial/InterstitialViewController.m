@@ -3,7 +3,7 @@
 //  ObjCSample
 //
 //  Created by Julien Gomez on 17/10/2018.
-//  Copyright (c) 2018 Smart AdServer. All rights reserved.
+//  Copyright © 2019 Smart AdServer. All rights reserved.
 //
 
 #import "InterstitialViewController.h"
@@ -34,9 +34,9 @@
     // You can also use a test placement during development (a placement that will always deliver an ad from a given format).
     // DON'T FORGET TO REVERT TO THE ACTUAL PLACEMENT BEFORE SHIPPING THE APP!
     
-    // SASAdPlacement *placement = [SASAdPlacement adPlacementForTestAd:SASAdPlacementTestInterstitialMRAID];
-    // SASAdPlacement *placement = [SASAdPlacement adPlacementForTestAd:SASAdPlacementTestInterstitialVideo];
-    // SASAdPlacement *placement = [SASAdPlacement adPlacementForTestAd:SASAdPlacementTestInterstitialVideo360];
+    // SASAdPlacement *placement = [SASAdPlacement adPlacementWithTestAd:SASAdPlacementTestInterstitialMRAID];
+    // SASAdPlacement *placement = [SASAdPlacement adPlacementWithTestAd:SASAdPlacementTestInterstitialVideo];
+    // SASAdPlacement *placement = [SASAdPlacement adPlacementWithTestAd:SASAdPlacementTestInterstitialVideo360];
     
     // Initialize the interstitial manager with a placement
     self.interstitialManager = [[SASInterstitialManager alloc] initWithPlacement:placement delegate:self];

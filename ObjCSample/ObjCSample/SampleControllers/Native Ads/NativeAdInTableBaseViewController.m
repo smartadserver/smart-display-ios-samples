@@ -3,7 +3,7 @@
 //  ObjCSample
 //
 //  Created by Loïc GIRON DIT METAZ on 25/10/2018.
-//  Copyright © 2018 Julien Gomez. All rights reserved.
+//  Copyright © 2019 Julien Gomez. All rights reserved.
 //
 
 #import "NativeAdInTableBaseViewController.h"
@@ -25,7 +25,6 @@
 
 @interface NativeAdInTableBaseViewController ()
 
-@property (nonatomic, strong) SASAdPlacement *adPlacement;
 @property (nonatomic, strong) SASNativeAdManager *nativeAdManager;
 @property (nonatomic, strong) SASNativeAd *nativeAd;
 
@@ -84,18 +83,8 @@
         self.nativeAdManager = nil;
     }
     
-    // Create a SASAdPlacement instance
-    self.adPlacement =  [self adPlacement];
-    
-    // You can also use a test placement during development (a placement that will always deliver an ad from a given format).
-    // DON'T FORGET TO REVERT TO THE ACTUAL PLACEMENT BEFORE SHIPPING THE APP!
-    
-    // SASAdPlacement *adPlacement = [SASAdPlacement nativeAdPlacementForTestAd:SASAdPlacementTestAdTypeTextAssets];
-    // SASAdPlacement *adPlacement = [SASAdPlacement nativeAdPlacementForTestAd:SASAdPlacementTestAdTypeIconAndTextAssets];
-    // SASAdPlacement *adPlacement = [SASAdPlacement nativeAdPlacementForTestAd:SASAdPlacementTestAdTypeCoverAndTextAssets];
-    // SASAdPlacement *adPlacement = [SASAdPlacement nativeAdPlacementForTestAd:SASAdPlacementTestAdTypeIconAndCoverAndTextAssets];
-    
-    // Create a SASNativeAdManager with this placement
+    // Create a SASNativeAdManager with a given ad placement
+    // (ad placement creation is done in the chosen subclass)
     self.nativeAdManager = [[SASNativeAdManager alloc] initWithPlacement:self.adPlacement];
     
     // Now, request an ad
@@ -124,7 +113,6 @@
     self.nativeAd.delegate = nil;
     self.nativeAd = nil;
     
-    self.adPlacement = nil;
     self.nativeAdManager = nil;
 }
 

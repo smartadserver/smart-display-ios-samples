@@ -3,7 +3,7 @@
 //  ObjCSample
 //
 //  Created by Julien Gomez on 17/10/2018.
-//  Copyright (c) 2018 Smart AdServer. All rights reserved.
+//  Copyright © 2019 Smart AdServer. All rights reserved.
 //
 
 #import "BannerInTableViewController.h"
@@ -98,7 +98,7 @@
     self.banner3 = [self createBanner:kBanner3PageID];
 }
 
-- (CustomBannerView *)createBanner:(unsigned long) pageId {
+- (CustomBannerView *)createBanner:(unsigned long)pageId {
     CustomBannerView *banner = [[CustomBannerView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.view.frame), kDefaultCellHeight)];
     banner.delegate = self;
     banner.modalParentViewController = self;

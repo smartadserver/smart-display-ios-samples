@@ -3,7 +3,7 @@
 //  SwiftSample
 //
 //  Created by Thomas Geley on 21/07/2016.
-//  Copyright © 2016 Smart AdServer. All rights reserved.
+//  Copyright © 2019 Smart AdServer. All rights reserved.
 //
 
 import Foundation

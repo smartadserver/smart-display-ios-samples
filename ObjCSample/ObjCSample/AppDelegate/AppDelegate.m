@@ -3,7 +3,7 @@
 //  ObjCSample
 //
 //  Created by Julien Gomez on 16/10/2018.
-//  Copyright (c) 2018 Smart AdServer. All rights reserved.
+//  Copyright © 2019 Smart AdServer. All rights reserved.
 //
 
 #import "AppDelegate.h"

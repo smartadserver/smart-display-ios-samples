@@ -3,7 +3,7 @@
 //  ObjCSample
 //
 //  Created by Julien Gomez on 17/10/2018.
-//  Copyright (c) 2018 Smart AdServer. All rights reserved.
+//  Copyright © 2019 Smart AdServer. All rights reserved.
 //
 
 #import "RewardedVideoViewController.h"
@@ -34,7 +34,7 @@
     // You can also use a test placement during development (a placement that will always deliver an ad from a given format).
     // DON'T FORGET TO REVERT TO THE ACTUAL PLACEMENT BEFORE SHIPPING THE APP!
     
-    // SASAdPlacement *placement = [SASAdPlacement adPlacementForTestAd:SASAdPlacementTestRewardedVideoWithEndCard]
+    // SASAdPlacement *placement = [SASAdPlacement adPlacementWithTestAd:SASAdPlacementTestRewardedVideoWithEndCard];
     
     // Initialize the rewarded video manager with a placement
     self.rewardedVideoManager = [[SASRewardedVideoManager alloc] initWithPlacement:placement delegate:self];

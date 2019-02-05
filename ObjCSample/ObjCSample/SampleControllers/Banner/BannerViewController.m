@@ -3,7 +3,7 @@
 //  ObjCSample
 //
 //  Created by Julien GOMEZ on 16/10/18.
-//  Copyright (c) 2018 Smart AdServer. All rights reserved.
+//  Copyright © 2019 Smart AdServer. All rights reserved.
 //
 
 #import "BannerViewController.h"
@@ -47,16 +47,16 @@
     self.banner.modalParentViewController = self;
     
     // Create a placement
-    SASAdPlacement *adPlacement = [SASAdPlacement adPlacementWithSiteId:kBannerSiteID pageId:kBannerPageID formatId:kBannerFormatID];
+    SASAdPlacement *placement = [SASAdPlacement adPlacementWithSiteId:kBannerSiteID pageId:kBannerPageID formatId:kBannerFormatID];
     
     // You can also use a test placement during development (a placement that will always deliver an ad from a given format).
     // DON'T FORGET TO REVERT TO THE ACTUAL PLACEMENT BEFORE SHIPPING THE APP!
     
-    // SASAdPlacement *placement = [SASAdPlacement adPlacementForTestAd:SASAdPlacementTestBannerMRAID];
-    // SASAdPlacement *placement = [SASAdPlacement adPlacementForTestAd:SASAdPlacementTestBannerVideoRead];
-    // SASAdPlacement *placement = [SASAdPlacement adPlacementForTestAd:SASAdPlacementTestBannerVideoRead360];
+    // SASAdPlacement *placement = [SASAdPlacement adPlacementWithTestAd:SASAdPlacementTestBannerMRAID];
+    // SASAdPlacement *placement = [SASAdPlacement adPlacementWithTestAd:SASAdPlacementTestBannerVideoRead];
+    // SASAdPlacement *placement = [SASAdPlacement adPlacementWithTestAd:SASAdPlacementTestBannerVideoRead360];
 
-    [self.banner loadWithPlacement:adPlacement];	
+    [self.banner loadWithPlacement:placement];	
 	[self.view addSubview:self.banner];
 }
 

@@ -3,7 +3,7 @@
 //  ObjCSample
 //
 //  Created by Julien Gomez on 17/10/2018.
-//  Copyright (c) 2018 Smart AdServer. All rights reserved.
+//  Copyright © 2019 Smart AdServer. All rights reserved.
 //
 
 #import "NativeAdInTableViewController.h"
@@ -15,7 +15,19 @@
 @implementation NativeAdInTableViewController
 
 - (SASAdPlacement *)adPlacement {
-    return [SASAdPlacement adPlacementWithSiteId:kNativeAdSiteID pageId:kNativeAdPageID formatId:kNativeAdFormatID];
+    
+    // Creating the ad placement
+    SASAdPlacement *placement = [SASAdPlacement adPlacementWithSiteId:kNativeAdSiteID pageId:kNativeAdPageID formatId:kNativeAdFormatID];
+    
+    // You can also use a test placement during development (a placement that will always deliver an ad from a given format).
+    // DON'T FORGET TO REVERT TO THE ACTUAL PLACEMENT BEFORE SHIPPING THE APP!
+    
+    // SASAdPlacement *placement = [SASAdPlacement adPlacementWithTestAd:SASAdPlacementTestNativeAdTextAssets];
+    // SASAdPlacement *placement = [SASAdPlacement adPlacementWithTestAd:SASAdPlacementTestNativeAdIconAndTextAssets];
+    // SASAdPlacement *placement = [SASAdPlacement adPlacementWithTestAd:SASAdPlacementTestNativeAdCoverAndTextAssets];
+    // SASAdPlacement *placement = [SASAdPlacement adPlacementWithTestAd:SASAdPlacementTestNativeAdIconAndCoverAndTextAssets];
+    
+    return placement;
 }
 
 @end
