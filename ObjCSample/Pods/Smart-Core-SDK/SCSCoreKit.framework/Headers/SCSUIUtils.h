@@ -10,6 +10,8 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import <AVKit/AVKit.h>
+
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -28,9 +30,25 @@ typedef NS_ENUM(NSInteger, SCSImageRepresentation) {
 @interface SCSUIUtils : NSObject
 
 /**
+ Captures what is currently visible on a player.
+ 
+ @param player The player to get the capture of.
+ @return An UIImage representing what is currently visible on the device's screen if possible, nil otherwise.
+ */
++ (nullable UIImage *)imageCaptureForPlayer:(AVPlayer *)player;
+
+/**
+ Captures what is currently visible on a view.
+ 
+ @param view The view to get the capture of.
+ @return An UIImage representing what is currently visible on the device's screen if possible, nil otherwise.
+ */
++ (nullable UIImage *)imageCaptureForView:(UIView *)view;
+
+/**
  Captures what is currently visible on the device's screen.
  
- @return An UIImage representing was is currently visible on the device's screen
+ @return An UIImage representing was is currently visible on the device's screen if possible, nil otherwise.
  */
 + (nullable UIImage *)screenCapture;
 
@@ -40,14 +58,14 @@ typedef NS_ENUM(NSInteger, SCSImageRepresentation) {
  @param image The UIImage to be transformed into Data
  @param representation The type of image that should be generated.
  @param compression The compression rate. Only for JPEG data representation.
- @return The image representation as Data.
+ @return The image representation as Data if possible, nil otherwise.
  */
 + (nullable NSData *)imageToDataWithImage:(UIImage *)image representation:(SCSImageRepresentation)representation compression:(CGFloat)compression;
 
 /**
  Captures what is currently visible on the device's screen and represents it in a Base64 encoded string.
  
- @return A Base64 encoded string of what is visible on screen.
+ @return A Base64 encoded string of what is visible on screen if possible, nil otherwise.
  */
 + (nullable NSString *)base64ScreenCapture;
 

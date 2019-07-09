@@ -42,6 +42,11 @@ NS_ASSUME_NONNULL_BEGIN
 /// The user agent of the web view.
 @property (nonatomic, readonly) NSString *userAgent;
 
+/// The local IP address of the device (Wi-Fi / en0 interface).
+///
+/// @warning This property does not give your the public IP address of the device!
+@property (nonatomic, readonly) NSString *IPAddress;
+
 /**
  Retrieves device informations from the device info provider passed in parameters.
 

@@ -39,6 +39,10 @@ class BannerInTableViewController: UITableViewController, SASBannerViewDelegate 
     
     // MARK: - View controller lifecycle
     
+    deinit {
+        removeBanners()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -98,6 +102,12 @@ class BannerInTableViewController: UITableViewController, SASBannerViewDelegate 
         self.banner3 = createBanner(Constants.banner3InTableViewPageID)
     }
     
+    func removeBanners() {
+        removeBanner(self.banner1)
+        removeBanner(self.banner2)
+        removeBanner(self.banner3)
+    }
+    
     func createBanner(_ pageId: Int) -> SASBannerView {
         // The instance of the banner is created with a default frame and an appropriate loader.
         let banner = SASBannerView(frame: bannerFrameForView(self.view, height: defaultCellHeight), loader: .activityIndicatorStyleWhite)
@@ -112,6 +122,14 @@ class BannerInTableViewController: UITableViewController, SASBannerViewDelegate 
         banner.load(with: SASAdPlacement(siteId: Constants.siteID, pageId: pageId, formatId: Constants.bannerFormatID))
         
         return banner
+    }
+    
+    func removeBanner(_ banner: SASBannerView?) {
+        if (banner != nil) {
+            banner?.modalParentViewController = nil
+            banner?.delegate = nil
+            banner?.removeFromSuperview()
+        }
     }
     
     func bannerFrameForView(_ view: UIView, height: CGFloat) -> CGRect {

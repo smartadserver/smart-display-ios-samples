@@ -50,6 +50,10 @@
 
 #pragma mark - Object lifecycle
 
+- (void)dealloc {
+    [self removeBanners];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -96,6 +100,12 @@
     self.banner1 = [self createBanner:kBanner1PageID];
     self.banner2 = [self createBanner:kBanner2PageID];
     self.banner3 = [self createBanner:kBanner3PageID];
+}
+
+- (void)removeBanners {
+    [self removeBanner:self.banner1];
+    [self removeBanner:self.banner2];
+    [self removeBanner:self.banner3];
 }
 
 - (CustomBannerView *)createBanner:(unsigned long)pageId {

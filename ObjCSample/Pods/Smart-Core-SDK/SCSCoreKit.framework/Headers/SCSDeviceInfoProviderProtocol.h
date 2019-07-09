@@ -26,23 +26,30 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  Returns the device system version.
  
- @return the device system version.
+ @return The device system version.
  */
 - (NSString *)currentSystem;
 
 /**
  Returns whether or not the device can play 360° videos.
  
- @return whether or not the device can play 360° videos.
+ @return Whether or not the device can play 360° videos.
  */
 - (BOOL)deviceCanPlay360Videos;
 
 /**
  Return the user agent of the phone webview.
  
- @return the user agent of the webview.
+ @return The user agent of the webview.
  */
 - (NSString *)webviewUserAgent;
+
+/**
+ Return the current local IP address of the device (Wi-Fi / en0 interface).
+ 
+ @return The current local IP address of the device (Wi-Fi / en0 interface).
+ */
+- (NSString *)IPAddress;
 
 @end
 

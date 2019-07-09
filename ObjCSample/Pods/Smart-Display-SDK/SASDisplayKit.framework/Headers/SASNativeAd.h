@@ -69,6 +69,9 @@ NS_ASSUME_NONNULL_BEGIN
 /// Number of downloads / installs of the advertised app or SASDownloadsUndefined if not set.
 @property (nonatomic, readonly) int64_t downloads;
 
+/// The price of of the advertised app / product, value will generally include currency symbol in localized format.
+@property (nonatomic, readonly, nullable, strong) NSString *price;
+
 /// A dictionary of custom parameters that have been sent by the ad.
 ///
 /// This dictionary can be used to carry additional resources or information. You need a compatible Smart AdServer template to use this feature.

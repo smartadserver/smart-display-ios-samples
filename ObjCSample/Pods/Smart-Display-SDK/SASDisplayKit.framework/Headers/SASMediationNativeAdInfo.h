@@ -92,6 +92,9 @@ NS_ASSUME_NONNULL_BEGIN
 /// Number of downloads / installs of the advertised app or SASDownloadsUndefined if not set.
 @property (nonatomic, assign) long downloads;
 
+/// The price of of the advertised app / product, value will generally include currency symbol in localized format.
+@property (nonatomic, copy, nullable) NSString *price;
+
 /// A list of impression URLs that should be called by the Smart SDK when the impression is counted.
 @property (nonatomic, strong, nullable) NSArray *impressionURLs;
 

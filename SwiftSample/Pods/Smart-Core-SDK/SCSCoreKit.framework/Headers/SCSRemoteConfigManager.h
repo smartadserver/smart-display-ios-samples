@@ -24,7 +24,7 @@ NS_ASSUME_NONNULL_BEGIN
  
  returns An initialized instance of SCSRemoteConfigManager
  */
-- (instancetype)initWithDelegate:(id <SCSRemoteConfigManagerDelegate>)delegate baseURL:(NSString *)baseURL path:(NSString *)path queryStringParameters:(NSDictionary *)queryStringParameters;
+- (instancetype)initWithDelegate:(id <SCSRemoteConfigManagerDelegate>)delegate baseURL:(NSString *)baseURL path:(NSString *)path queryStringParameters:(nullable NSDictionary *)queryStringParameters;
 
 /**
  Ask the SCSRemoteConfigManager to fetch the configuration for the given siteID.

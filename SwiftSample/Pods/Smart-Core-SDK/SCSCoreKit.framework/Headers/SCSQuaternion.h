@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <CoreMotion/CoreMotion.h>
 #import <SceneKit/SceneKit.h>
 
 #import "SCSAxis3.h"
@@ -46,13 +45,6 @@ NS_ASSUME_NONNULL_BEGIN
  @param z The z value of the quaternion.
  */
 - (instancetype)initWithW:(double)w x:(double)x y:(double)y z:(double)z NS_DESIGNATED_INITIALIZER;
-
-/**
- Initialize the quaternion using a CMQuaternion (from the CoreMotion framework).
- 
- @param quaternion A valid CMQuaternion instance.
- */
-- (instancetype)initFromCMQuaternion:(CMQuaternion)quaternion;
 
 /**
  Initialize the quaternion representing a rotation around an axis (X, Y or Z).

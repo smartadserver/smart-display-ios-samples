@@ -84,8 +84,13 @@
 #import "SCSConfiguration.h"
 
 // Logger
+#import "SCSLogNode.h"
+#import "SCSLogSDKNode.h"
+#import "SCSLogMeasureNode.h"
+#import "SCSLogErrorNode.h"
 #import "SCSRemoteLogger.h"
 #import "SCSRemoteLog.h"
+#import "SCSRemoteLogUtils.h"
 
 // Network
 #import "SCSAdRequestManager.h"
@@ -118,6 +123,16 @@
 #import "SCSTimerInterval.h"
 #import "SCSTimerDelegate.h"
 #import "SCSFuture.h"
+
+// Platform specific headers
+#if TARGET_OS_IOS || (TARGET_OS_IPHONE && !TARGET_OS_TV)
+
+// Maths
+#import "SCSQuaternion+CoreMotion.h"
+
+#elif TARGET_OS_TV
+
+#endif
 
 //! Project version number for SCSCoreKit.
 FOUNDATION_EXPORT double SCSCoreKitVersionNumber;
