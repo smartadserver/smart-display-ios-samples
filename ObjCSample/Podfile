@@ -3,6 +3,6 @@ source 'https://github.com/CocoaPods/Specs.git'
 target 'ObjCSample' do
 
   use_frameworks!
-  pod 'Smart-Display-SDK', '~> 7.1.0'
+  pod 'Smart-Display-SDK', '~> 7.1.1'
 
 end
