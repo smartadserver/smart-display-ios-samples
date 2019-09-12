@@ -13,6 +13,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface SCSLogMeasureNode : SCSLogNode
 
+- (instancetype)init NS_UNAVAILABLE;
+
 /**
  Initialize the measure node with all needed information.
  

@@ -13,6 +13,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface SCSLogErrorNode : SCSLogNode
 
+- (instancetype)init NS_UNAVAILABLE;
+
 /**
  Initialize the error node with all needed information.
  

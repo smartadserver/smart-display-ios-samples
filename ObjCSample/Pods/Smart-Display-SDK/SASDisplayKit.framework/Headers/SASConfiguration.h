@@ -65,6 +65,9 @@ NS_ASSUME_NONNULL_BEGIN
 /// YES if the configureWithSiteID method has been called, NO otherwise.
 @property (nonatomic, readonly, getter=isConfigured) BOOL configured;
 
+/// YES if the SDK is used as a Primary SDK, NO otherwise.
+@property (nonatomic, assign, getter=isPrimarySDK) BOOL primarySDK NS_SWIFT_NAME(primarySDK);
+
 /// The bundle for localized strings - See documentation for keys. By default the strings of the framework bundle will be used.
 @property (nonatomic, strong) NSBundle *stringsBundle;
 

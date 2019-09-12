@@ -24,6 +24,7 @@
 #import "SCSVASTMediaFile.h" 
 #import "SCSVASTAdExtension.h"
 #import "SCSVASTMediaFileSelector.h"
+#import "SCSVASTPixelManager.h"
 
 #import "SCSVASTParser.h"
 #import "SCSVASTParserResponse.h"
@@ -85,6 +86,8 @@
 
 // Logger
 #import "SCSLogNode.h"
+#import "SCSVASTErrorRemoteLoggerProtocol.h"
+#import "SCSLogVASTErrorNode.h"
 #import "SCSLogSDKNode.h"
 #import "SCSLogMeasureNode.h"
 #import "SCSLogErrorNode.h"

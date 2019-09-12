@@ -14,6 +14,13 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+/// The channel type of the current ad.
+typedef NS_ENUM(NSInteger, SCSRemoteLogSDKImplementationType) {
+    SCSRemoteLogSDKImplementationTypeUnknown = -1,
+    SCSRemoteLogSDKImplementationTypePrimary = 0,  // The current SDK is implemented as a Primary SDK
+    SCSRemoteLogSDKImplementationTypeSecondary = 1 // The current SDK is implemented as a Secondary SDK
+};
+
 /**
  This class is used to log specific informations such as KPIs or errors.
  */
