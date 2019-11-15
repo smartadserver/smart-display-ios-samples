@@ -11,6 +11,7 @@
 #import "SASLoader.h"
 #import "SASBannerViewDelegate.h"
 #import "SASBannerViewInternalDelegate.h"
+#import "SASBiddingAdResponse.h"
 
 #define SASRefreshIntervalOff        (-1)
 #define SASRefreshIntervalMinimum    20
@@ -76,6 +77,8 @@ NS_ASSUME_NONNULL_BEGIN
 /// refresh interval cannot be less than SASRefreshIntervalMinimum (20 seconds).
 ///
 /// By default, the refresh interval is set to SASRefreshIntervalOff.
+///
+/// @warning The refresh interval will be ignored if a bidding response is currently being displayed by the banner view.
 @property (nonatomic, assign) NSInteger refreshInterval;
 
 /// Sets informations that will be used for the parallax effect.
@@ -106,6 +109,17 @@ NS_ASSUME_NONNULL_BEGIN
  @param loaderType A SASLoader constant that determines which loader the view should display while downloading the ad.
  */
 - (instancetype)initWithFrame:(CGRect)frame loader:(SASLoader)loaderType;
+
+#pragma mark - Loading ad data
+
+/**
+ Load a bidding ad received through the SASBiddingManager.
+ 
+ Call this method after initializing your SASBannerView object to load the appropriate SASBiddingAdResponse object from the server.
+ 
+ @param biddingAdResponse The SASBiddingAdResponse that should be used
+ */
+- (void)loadBiddingAdResponse:(SASBiddingAdResponse *)biddingAdResponse;
 
 #pragma mark - Displaying a banner at proper size
 

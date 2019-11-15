@@ -59,8 +59,6 @@
     
     // Initialize the refresh control.
     self.refreshControl = [[UIRefreshControl alloc] init];
-    self.refreshControl.backgroundColor = [UIColor colorWithRed:114./255 green:172./255 blue:145./255 alpha:0.8];
-    self.refreshControl.tintColor = [UIColor whiteColor];
     [self.refreshControl addTarget:self action:@selector(createBanners) forControlEvents:UIControlEventValueChanged];
     
     // Create the banners
@@ -181,7 +179,7 @@
 - (void)pushNewViewController {
     UIViewController *controller = [[UIViewController alloc] init];
     controller.navigationItem.title = @"Details";
-    controller.view.backgroundColor = [UIColor whiteColor];
+    controller.view.backgroundColor = self.view.backgroundColor;
     UILabel *label = [[UILabel alloc] initWithFrame:controller.view.bounds];
     label.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     label.textAlignment = NSTextAlignmentCenter;

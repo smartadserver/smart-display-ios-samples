@@ -3,7 +3,7 @@
 //  ObjCSample
 //
 //  Created by Loïc GIRON DIT METAZ on 25/10/2018.
-//  Copyright © 2019 Julien Gomez. All rights reserved.
+//  Copyright © 2019 Smart AdServer. All rights reserved.
 //
 
 #import "NativeAdInTableBaseViewController.h"
@@ -55,8 +55,6 @@
     
     // Initialize the refresh control.
     self.refreshControl = [[UIRefreshControl alloc] init];
-    self.refreshControl.backgroundColor = [UIColor colorWithRed:114./255 green:172./255 blue:145./255 alpha:0.8];
-    self.refreshControl.tintColor = [UIColor whiteColor];
     [self.refreshControl addTarget:self action:@selector(refresh) forControlEvents:UIControlEventValueChanged];
     
     // Load the ads

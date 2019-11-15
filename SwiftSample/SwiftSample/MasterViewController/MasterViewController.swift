@@ -28,7 +28,9 @@ class MasterViewController: UITableViewController {
     
     func initializeItems() {
         addItemInItemsArray("Banner", segueIdentifier: "BannerViewControllerSegue")
+        addItemInItemsArray("Banner (in-app bidding)", segueIdentifier: "InAppBiddingBannerViewControllerSegue")
         addItemInItemsArray("Interstitial", segueIdentifier: "InterstitialViewControllerSegue")
+        addItemInItemsArray("Interstitial (in-app bidding)", segueIdentifier: "InAppBiddingInterstitialViewControllerSegue")
         addItemInItemsArray("Rewarded Video", segueIdentifier: "RewardedVideoViewControllerSegue")
         addItemInItemsArray("Multiple Banners and Medias in news feed", segueIdentifier: "MultipleBannersViewControllerSegue")
         addItemInItemsArray("Native Ad in news feed", segueIdentifier: "NativeAdInTableViewControllerSegue")

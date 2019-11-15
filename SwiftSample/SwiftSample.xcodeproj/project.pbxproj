@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E68D1D72359B5320048B1AF /* InAppBiddingBannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E68D1D62359B5320048B1AF /* InAppBiddingBannerViewController.swift */; };
+		7ED5D4EC235F44A50025D994 /* InAppBiddingInterstitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED5D4EB235F44A50025D994 /* InAppBiddingInterstitialViewController.swift */; };
 		850D77AA2181EF780001FBE9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850D77A92181EF780001FBE9 /* AppDelegate.swift */; };
 		850D77AC2181EF780001FBE9 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850D77AB2181EF780001FBE9 /* MasterViewController.swift */; };
 		850D77C02181F10D0001FBE9 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850D77BF2181F10D0001FBE9 /* MenuItem.swift */; };
@@ -30,6 +32,8 @@
 		491B8AE57434D723F41978F0 /* Pods-SwiftSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftSample/Pods-SwiftSample.release.xcconfig"; sourceTree = "<group>"; };
 		7B5D308F04D07ADB6CBB26BC /* Pods_SwiftSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E08E4332189DA5C0002091F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E68D1D62359B5320048B1AF /* InAppBiddingBannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InAppBiddingBannerViewController.swift; sourceTree = "<group>"; };
+		7ED5D4EB235F44A50025D994 /* InAppBiddingInterstitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InAppBiddingInterstitialViewController.swift; sourceTree = "<group>"; };
 		850D77A62181EF780001FBE9 /* SwiftSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		850D77A92181EF780001FBE9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		850D77AB2181EF780001FBE9 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
@@ -94,6 +98,22 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		7E68D1D52359B5190048B1AF /* Banner-InApp-Bidding */ = {
+			isa = PBXGroup;
+			children = (
+				7E68D1D62359B5320048B1AF /* InAppBiddingBannerViewController.swift */,
+			);
+			path = "Banner-InApp-Bidding";
+			sourceTree = "<group>";
+		};
+		7ED5D4EA235F44800025D994 /* Interstitial-InApp-Bidding */ = {
+			isa = PBXGroup;
+			children = (
+				7ED5D4EB235F44A50025D994 /* InAppBiddingInterstitialViewController.swift */,
+			);
+			path = "Interstitial-InApp-Bidding";
+			sourceTree = "<group>";
+		};
 		850D779D2181EF780001FBE9 = {
 			isa = PBXGroup;
 			children = (
@@ -128,7 +148,9 @@
 			isa = PBXGroup;
 			children = (
 				850D77D42181FB160001FBE9 /* Banner */,
+				7E68D1D52359B5190048B1AF /* Banner-InApp-Bidding */,
 				850D77CA2181FB160001FBE9 /* Interstitial */,
+				7ED5D4EA235F44800025D994 /* Interstitial-InApp-Bidding */,
 				850D77D22181FB160001FBE9 /* RewardedVideo */,
 				850D77C82181FB160001FBE9 /* Multiple Banners in UITableView */,
 				850D77CC2181FB160001FBE9 /* Native Ads */,
@@ -236,7 +258,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1000;
 				LastUpgradeCheck = 1000;
-				ORGANIZATIONNAME = "Julien Gomez";
+				ORGANIZATIONNAME = "Smart AdServer";
 				TargetAttributes = {
 					850D77A52181EF780001FBE9 = {
 						CreatedOnToolsVersion = 10.0;
@@ -329,7 +351,9 @@
 				85E9F0782187793800288FDE /* RewardedVideoViewController.swift in Sources */,
 				85E9F07A2188B33200288FDE /* NativeAdWithMediaInTableViewController.swift in Sources */,
 				850D77AC2181EF780001FBE9 /* MasterViewController.swift in Sources */,
+				7E68D1D72359B5320048B1AF /* InAppBiddingBannerViewController.swift in Sources */,
 				850D77DE218203020001FBE9 /* InterstitialViewController.swift in Sources */,
+				7ED5D4EC235F44A50025D994 /* InAppBiddingInterstitialViewController.swift in Sources */,
 				850D77DD2181FB160001FBE9 /* BannerViewController.swift in Sources */,
 				850D77AA2181EF780001FBE9 /* AppDelegate.swift in Sources */,
 				850D77C22181F4600001FBE9 /* Constants.swift in Sources */,

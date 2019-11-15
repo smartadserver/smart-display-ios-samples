@@ -3,7 +3,7 @@
 //  ObjCSample
 //
 //  Created by Loïc GIRON DIT METAZ on 25/10/2018.
-//  Copyright © 2019 Julien Gomez. All rights reserved.
+//  Copyright © 2019 Smart AdServer. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

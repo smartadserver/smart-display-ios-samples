@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -16,11 +13,11 @@
             <rect key="frame" x="0.0" y="0.0" width="526" height="184"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GUr-dD-bOD" id="JxI-H8-Tq8">
-                <rect key="frame" x="0.0" y="0.0" width="526" height="183.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="526" height="184"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Qpx-8S-bt3">
-                        <rect key="frame" x="22" y="13" width="40" height="40"/>
+                        <rect key="frame" x="17" y="13" width="40" height="40"/>
                         <accessibility key="accessibilityConfiguration" label="iconImageView"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="40" id="QBr-bf-O8Y"/>
@@ -28,8 +25,7 @@
                         </constraints>
                     </imageView>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Amy-mI-xRc" customClass="SASAdChoicesView">
-                        <rect key="frame" x="484" y="13" width="20" height="20"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <rect key="frame" x="489" y="13" width="20" height="20"/>
                         <accessibility key="accessibilityConfiguration" label="adChoicesView"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="20" id="0KF-GK-mKd"/>
@@ -37,33 +33,33 @@
                         </constraints>
                     </view>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sponsored" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i8h-v0-wSG">
-                        <rect key="frame" x="419" y="13" width="60" height="20"/>
+                        <rect key="frame" x="424" y="13" width="60" height="20"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="20" id="NSS-qU-JU8"/>
                             <constraint firstAttribute="width" constant="60" id="Qvo-AZ-Mjj"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="11"/>
-                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="z6a-3e-u1W">
-                        <rect key="frame" x="12" y="63" width="502" height="58"/>
+                        <rect key="frame" x="7" y="63" width="512" height="58"/>
                         <accessibility key="accessibilityConfiguration" label="nativeAdCoverImage"/>
                     </imageView>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gv8-Ys-vcv" customClass="SASNativeAdMediaView">
-                        <rect key="frame" x="12" y="63" width="502" height="58"/>
+                        <rect key="frame" x="7" y="63" width="512" height="58"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <accessibility key="accessibilityConfiguration" label="mediaView"/>
                     </view>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JZs-k7-LfC">
-                        <rect key="frame" x="22" y="143.5" width="352" height="17"/>
+                        <rect key="frame" x="17" y="143.5" width="362" height="17"/>
                         <accessibility key="accessibilityConfiguration" label="subtitleLabel"/>
                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="14"/>
-                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZRA-Nf-nAW">
-                        <rect key="frame" x="384" y="137" width="120" height="30"/>
+                        <rect key="frame" x="389" y="137" width="120" height="30"/>
                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <accessibility key="accessibilityConfiguration" label="callToActionButton"/>
                         <constraints>
@@ -75,7 +71,7 @@
                         </state>
                     </button>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GNR-Cg-z4h">
-                        <rect key="frame" x="72" y="23" width="347" height="22"/>
+                        <rect key="frame" x="67" y="23" width="357" height="21.5"/>
                         <accessibility key="accessibilityConfiguration" label="titleLabel"/>
                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="18"/>
                         <nil key="textColor"/>

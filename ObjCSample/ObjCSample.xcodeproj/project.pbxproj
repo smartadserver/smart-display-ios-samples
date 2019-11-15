@@ -3,11 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		7E3B2FA32181FA800040E6BD /* NativeAdInTableBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E3B2FA22181FA800040E6BD /* NativeAdInTableBaseViewController.m */; };
+		7E9CF1D523672AEB00A5C133 /* InAppBiddingBannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E9CF1D423672AEB00A5C133 /* InAppBiddingBannerViewController.m */; };
+		7E9CF1D923674B8500A5C133 /* InAppBiddingInterstitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E9CF1D823674B8500A5C133 /* InAppBiddingInterstitialViewController.m */; };
 		85E9FB1821763518009905CB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 85E9FB1721763518009905CB /* AppDelegate.m */; };
 		85E9FB1B21763518009905CB /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85E9FB1A21763518009905CB /* MasterViewController.m */; };
 		85E9FB232176351B009905CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85E9FB222176351B009905CB /* Assets.xcassets */; };
@@ -46,6 +48,10 @@
 		55650344455FBDCEFD3D9C50 /* Pods-ObjCSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjCSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-ObjCSample/Pods-ObjCSample.release.xcconfig"; sourceTree = "<group>"; };
 		7E3B2FA12181FA800040E6BD /* NativeAdInTableBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NativeAdInTableBaseViewController.h; sourceTree = "<group>"; };
 		7E3B2FA22181FA800040E6BD /* NativeAdInTableBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NativeAdInTableBaseViewController.m; sourceTree = "<group>"; };
+		7E9CF1D323672AEB00A5C133 /* InAppBiddingBannerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InAppBiddingBannerViewController.h; sourceTree = "<group>"; };
+		7E9CF1D423672AEB00A5C133 /* InAppBiddingBannerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InAppBiddingBannerViewController.m; sourceTree = "<group>"; };
+		7E9CF1D723674B8500A5C133 /* InAppBiddingInterstitialViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InAppBiddingInterstitialViewController.h; sourceTree = "<group>"; };
+		7E9CF1D823674B8500A5C133 /* InAppBiddingInterstitialViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InAppBiddingInterstitialViewController.m; sourceTree = "<group>"; };
 		85E9FB1321763518009905CB /* ObjCSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjCSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85E9FB1621763518009905CB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		85E9FB1721763518009905CB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -137,6 +143,24 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		7E9CF1D223672A3600A5C133 /* Banner-InApp-Bidding */ = {
+			isa = PBXGroup;
+			children = (
+				7E9CF1D323672AEB00A5C133 /* InAppBiddingBannerViewController.h */,
+				7E9CF1D423672AEB00A5C133 /* InAppBiddingBannerViewController.m */,
+			);
+			path = "Banner-InApp-Bidding";
+			sourceTree = "<group>";
+		};
+		7E9CF1D623674B6D00A5C133 /* Interstitial-InApp-Bidding */ = {
+			isa = PBXGroup;
+			children = (
+				7E9CF1D723674B8500A5C133 /* InAppBiddingInterstitialViewController.h */,
+				7E9CF1D823674B8500A5C133 /* InAppBiddingInterstitialViewController.m */,
+			);
+			path = "Interstitial-InApp-Bidding";
+			sourceTree = "<group>";
+		};
 		85E9FB0A21763518009905CB = {
 			isa = PBXGroup;
 			children = (
@@ -171,7 +195,9 @@
 			isa = PBXGroup;
 			children = (
 				85E9FB3F2177396B009905CB /* Banner */,
+				7E9CF1D223672A3600A5C133 /* Banner-InApp-Bidding */,
 				85E9FB522177410F009905CB /* Interstitial */,
+				7E9CF1D623674B6D00A5C133 /* Interstitial-InApp-Bidding */,
 				85E9FB5A2178C5E1009905CB /* RewardedVideo */,
 				85FC99D221809C5F00883FB8 /* Multiple Banners in UITableView */,
 				85FC99E02180B53600883FB8 /* Native Ads */,
@@ -272,7 +298,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1000;
-				ORGANIZATIONNAME = "Julien Gomez";
+				ORGANIZATIONNAME = "Smart AdServer";
 				TargetAttributes = {
 					85E9FB1221763518009905CB = {
 						CreatedOnToolsVersion = 10.0;
@@ -367,7 +393,9 @@
 				85E9FB422177396B009905CB /* BannerViewController.m in Sources */,
 				85E9FB292176351B009905CB /* main.m in Sources */,
 				85FC99E92180B53600883FB8 /* NativeAdInTableViewController.m in Sources */,
+				7E9CF1D523672AEB00A5C133 /* InAppBiddingBannerViewController.m in Sources */,
 				85E9FB5521774136009905CB /* InterstitialViewController.m in Sources */,
+				7E9CF1D923674B8500A5C133 /* InAppBiddingInterstitialViewController.m in Sources */,
 				85E9FB4721773A70009905CB /* MenuItem.m in Sources */,
 				7E3B2FA32181FA800040E6BD /* NativeAdInTableBaseViewController.m in Sources */,
 				85FC99DB21809C5F00883FB8 /* CustomBannerView.m in Sources */,

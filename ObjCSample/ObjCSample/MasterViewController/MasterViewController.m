@@ -28,9 +28,10 @@
 
 - (void)initializeItems {
     self.items = [[NSMutableArray alloc] init];
-    
     [self addItemInItemsArray:@"Banner" segueIdentifier:@"BannerViewControllerSegue"];
+    [self addItemInItemsArray:@"Banner (in-app bidding)" segueIdentifier:@"InAppBiddingBannerViewControllerSegue"];
     [self addItemInItemsArray:@"Interstitial" segueIdentifier:@"InterstitialViewControllerSegue"];
+    [self addItemInItemsArray:@"Interstitial (in-app bidding)" segueIdentifier:@"InAppBiddingInterstitialViewControllerSegue"];
     [self addItemInItemsArray:@"RewardedVideo" segueIdentifier:@"RewardedVideoViewControllerSegue"];
     [self addItemInItemsArray:@"Multiple Banners and Medias in news feed" segueIdentifier:@"MultipleBannersViewControllerSegue"];
     [self addItemInItemsArray:@"Native Ad in news feed" segueIdentifier:@"NativeAdInTableViewControllerSegue"];

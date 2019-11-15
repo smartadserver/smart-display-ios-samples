@@ -47,7 +47,6 @@ class BannerInTableViewController: UITableViewController, SASBannerViewDelegate 
         super.viewDidLoad()
         
         let refreshControl = UIRefreshControl()
-        refreshControl.backgroundColor = UIColor(red: 114.0/255, green: 172.0/255, blue: 145.0/255, alpha: 0.8)
         refreshControl.addTarget(self, action: #selector(BannerInTableViewController.handleRefresh(_:)), for: UIControl.Event.valueChanged)
         self.refreshControl = refreshControl
         
@@ -212,7 +211,7 @@ class BannerInTableViewController: UITableViewController, SASBannerViewDelegate 
     func pushViewController() {
         let controller = UIViewController()
         controller.navigationItem.title = "Details"
-        controller.view.backgroundColor = UIColor.white
+        controller.view.backgroundColor = view.backgroundColor
         let label = UILabel(frame: controller.view.bounds)
         label.autoresizingMask = [UIView.AutoresizingMask.flexibleWidth, UIView.AutoresizingMask.flexibleHeight]
         label.textAlignment = NSTextAlignment.center
