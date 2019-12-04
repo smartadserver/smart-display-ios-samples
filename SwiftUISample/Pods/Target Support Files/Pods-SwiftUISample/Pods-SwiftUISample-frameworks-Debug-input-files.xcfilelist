@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/Pods-SwiftUISample/Pods-SwiftUISample-frameworks.sh
+${PODS_ROOT}/Smart-Core-SDK/SCSCoreKit.framework
+${PODS_ROOT}/Smart-Display-SDK/SASDisplayKit.framework
