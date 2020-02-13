@@ -14,7 +14,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@class SASRequestManager, SASLoaderView, SASMRAIDBridge, SASAdViewController;
+@class SASLoaderView, SASMRAIDBridge, SASAdViewController;
 @protocol SASBidderAdapterProtocol;
 
 /**

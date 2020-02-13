@@ -62,7 +62,27 @@ typedef NS_ENUM(NSInteger, SASAdPlacementTest) {
     SASAdPlacementTestNativeAdTextAssets,
     
     /// A placement that will return a native ad with a video creative.
-    SASAdPlacementTestNativeAdVideo
+    SASAdPlacementTestNativeAdVideo,
+    
+#pragma mark - In-app bidding ads
+    
+    /// A placement that will return an in-app bidding response for a banner ad.
+    ///
+    /// @note The bidding response will always have 'USD' as currency, no matter what has been requested in
+    /// the bidding request. This only happen because test placements are hardcoded ads.
+    SASAdPlacementTestInAppBiddingBanner,
+    
+    /// A placement that will return an in-app bidding response for an interstitial ad.
+    ///
+    /// @note The bidding response will always have 'USD' as currency, no matter what has been requested in
+    /// the bidding request. This only happen because test placements are hardcoded ads.
+    SASAdPlacementTestInAppBiddingInterstitial,
+    
+    /// A placement that will return an in-app bidding response for a rewarded ad.
+    ///
+    /// @note The bidding response will always have 'USD' as currency, no matter what has been requested in
+    /// the bidding request. This only happen because test placements are hardcoded ads.
+    SASAdPlacementTestInAppBiddingRewarded,
     
 };
 

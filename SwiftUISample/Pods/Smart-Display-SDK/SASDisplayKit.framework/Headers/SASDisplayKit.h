@@ -52,6 +52,12 @@ FOUNDATION_EXPORT const unsigned char SASDisplayKitVersionString[];
 #import "SASBidderAdapter.h"
 #import "SASBidderAdapterProtocol.h"
 
+#import "SASBiddingAdPrice.h"
+#import "SASBiddingAdResponse.h"
+#import "SASBiddingManager.h"
+#import "SASBiddingManagerDelegate.h"
+#import "SASBiddingAdFormatType.h"
+
 // Native ads
 #import "SASNativeAdManager.h"
 #import "SASNativeAdDelegate.h"

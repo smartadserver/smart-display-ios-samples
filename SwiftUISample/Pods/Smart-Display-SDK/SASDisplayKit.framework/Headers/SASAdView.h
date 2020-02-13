@@ -14,7 +14,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@class SASRequestManager, SASLoaderView, SASMRAIDBridge, SASAdViewController;
+@class SASLoaderView, SASMRAIDBridge, SASAdViewController;
 @protocol SASBidderAdapterProtocol;
 
 /**
@@ -62,6 +62,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
  Loads a new ad using the last placement provided to the loadWithPlacement: method.
+ 
+ @warning This method will fail if called before any ad loading, if the ad view is not attached to the view
+ hierarchy, or if a bidding reponse is currently being displayed.
  */
 - (void)refresh;
 

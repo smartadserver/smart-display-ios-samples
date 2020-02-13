@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "SASBaseInterstitialManager.h"
 #import "SASInterstitialManagerDelegate.h"
+#import "SASBiddingAdResponse.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -31,6 +32,18 @@ NS_ASSUME_NONNULL_BEGIN
  @return An initialized instance of SASInterstitialManager.
  */
 - (instancetype)initWithPlacement:(SASAdPlacement *)placement delegate:(nullable id <SASInterstitialManagerDelegate>)delegate;
+
+/**
+ Initialize a new SASInterstitialManager instance with a bidding ad response.
+ 
+ A bidding ad response can be retrieved using an instance of SASBiddingManager.
+ 
+ @param biddingAdResponse The bidding ad reponse that will be used to load the interstitial ad.
+ @param delegate An object implementing the SASInterstitialManagerDelegate protocol.
+ 
+ @return An initialized instance of SASInterstitialManager.
+ */
+- (instancetype)initWithBiddingAdResponse:(SASBiddingAdResponse *)biddingAdResponse delegate:(nullable id <SASInterstitialManagerDelegate>)delegate;
 
 /**
  Sends a message to the webview hosting the creative.

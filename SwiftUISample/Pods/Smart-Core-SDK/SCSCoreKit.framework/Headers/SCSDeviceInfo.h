@@ -47,6 +47,12 @@ NS_ASSUME_NONNULL_BEGIN
 /// @warning This property does not give your the public IP address of the device!
 @property (nonatomic, readonly) NSString *IPAddress;
 
+/// YES if advertising tracking is enabled in the system settings, NO otherwise.
+@property (nonatomic, readonly) BOOL advertisingTrackingEnabled;
+
+/// The device system locale.
+@property (nonatomic, readonly) NSString *locale;
+
 /**
  Retrieves device informations from the device info provider passed in parameters.
 

@@ -10,10 +10,18 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+/// Valid ad format type for bidding ads.
 typedef NS_ENUM(NSInteger, SASBiddingAdFormatType) {
+    
+    /// Banner type.
     SASBiddingAdFormatTypeBanner           = 0,
+    
+    /// Interstitial type.
     SASBiddingAdFormatTypeInterstitial     = 1,
+    
+    /// Rewarded video type.
     SASBiddingAdFormatTypeRewardedVideo    = 2
+    
 };
 
 NS_ASSUME_NONNULL_END

@@ -126,6 +126,7 @@
 #import "SCSTimerInterval.h"
 #import "SCSTimerDelegate.h"
 #import "SCSFuture.h"
+#import "SCSTCFString.h"
 
 // Platform specific headers
 #if TARGET_OS_IOS || (TARGET_OS_IPHONE && !TARGET_OS_TV)

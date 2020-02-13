@@ -10,8 +10,6 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@class SASIdentity;
-
 /**
  Hold the configuration of the Smart Display SDK.
  

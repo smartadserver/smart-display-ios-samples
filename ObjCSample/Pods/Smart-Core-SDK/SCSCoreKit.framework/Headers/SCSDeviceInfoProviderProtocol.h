@@ -51,6 +51,20 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (NSString *)IPAddress;
 
+/**
+ Return YES if advertising tracking is enabled in the system settings, NO otherwise.
+ 
+ @return YES if advertising tracking is enabled in the system settings, NO otherwise.
+ */
+- (BOOL)advertisingTrackingEnabled;
+
+/**
+ Return the device system locale.
+ 
+ @return The device system locale.
+ */
+- (NSString *)locale;
+
 @end
 
 NS_ASSUME_NONNULL_END

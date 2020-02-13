@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "SASRewardedVideoManagerDelegate.h"
 #import "SASBaseInterstitialManager.h"
+#import "SASBiddingAdResponse.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -31,6 +32,18 @@ NS_ASSUME_NONNULL_BEGIN
  @return An initialized instance of SASRewardedVideoManager.
  */
 - (instancetype)initWithPlacement:(SASAdPlacement *)placement delegate:(nullable id<SASRewardedVideoManagerDelegate>)delegate;
+
+/**
+ Initialize a new SASRewardedVideoManager instance with a bidding ad response.
+ 
+ A bidding ad response can be retrieved using an instance of SASBiddingManager.
+ 
+ @param biddingAdResponse The bidding ad reponse that will be used to load the interstitial ad.
+ @param delegate An object implementing the SASRewardedVideoManagerDelegate protocol.
+ 
+ @return An initialized instance of SASInterstitialManager.
+ */
+- (instancetype)initWithBiddingAdResponse:(SASBiddingAdResponse *)biddingAdResponse delegate:(nullable id <SASRewardedVideoManagerDelegate>)delegate;
 
 - (instancetype)init NS_UNAVAILABLE;
 
