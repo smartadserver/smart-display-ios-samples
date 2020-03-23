@@ -6,6 +6,8 @@
 //  Copyright © 2019 Smart AdServer. All rights reserved.
 //
 
+#import "SCSVASTError.h"
+
 NS_ASSUME_NONNULL_BEGIN
 
 /**
@@ -16,19 +18,13 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  Will trigger a log of the given error.
  
- @param name The name of the error.
- @param description The description of the error.
- @param VASTCode The VAST Code of the error.
- @param smartCode The Smart Code of the error.
+ @param VASTError    A VAST error instance (that contains all relevant info and error codes).
  @param VASTResponse The VAST response associated with the error.
  @param optionalInfo Optional info about the error.
  */
-- (void)logErrorWithName:(NSString *)name
-             description:(NSString *)description
-                VASTCode:(NSInteger)VASTCode
-               smartCode:(NSInteger)smartCode
-            VASTResponse:(nullable NSString *)VASTResponse
-            optionalInfo:(nullable NSDictionary *)optionalInfo;
+- (void)logVASTError:(SCSVASTError *)VASTError
+        VASTResponse:(nullable NSString *)VASTResponse
+        optionalInfo:(nullable NSDictionary *)optionalInfo;
 
 @end
 

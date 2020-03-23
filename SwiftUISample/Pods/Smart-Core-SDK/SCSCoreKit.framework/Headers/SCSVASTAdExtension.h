@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@class SCSVASTTrackingEvent;
+@class SCSVASTTrackingEvent, SCSVASTAdExtensionAdVerification;
 
 @interface SCSVASTAdExtension : NSObject
 
@@ -52,6 +52,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nullable, nonatomic, readonly) NSString *rtbBidLogTimeTicks;
 @property (nullable, nonatomic, readonly) NSString *rtbEnvironmentType;
 @property (nullable, nonatomic, readonly) NSString *rtbImpressionHash;
+
+@property (nullable, nonatomic, readonly) NSMutableArray <SCSVASTAdExtensionAdVerification *> *adVerifications;
 
 
 - (instancetype)init NS_UNAVAILABLE;

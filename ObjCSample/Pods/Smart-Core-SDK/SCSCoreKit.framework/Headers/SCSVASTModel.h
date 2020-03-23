@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@class SCSVASTAd, SCSVASTURL;
+@class SCSVASTAd, SCSVASTURL, SCSVASTError;
 
 @interface SCSVASTModel : NSObject
 
@@ -29,10 +29,19 @@ NS_ASSUME_NONNULL_BEGIN
  Initializer from a NSDictionary generated from XML.
  
  @param dictionary A dictionary representation of the XML.
- 
  @return An initialized instance of SCSVASTModel.
  */
-- (nullable instancetype)initWithDictionary:(NSDictionary *)dictionary;
+- (nullable instancetype)initWithDictionary:(NSDictionary *)dictionary __deprecated;
+
+/**
+ Initializer from a NSDictionary generated from XML.
+
+ @param dictionary A dictionary representation of the XML.
+ @param error A reference to an error that will be set if the VAST model cannot be initialized.
+ @param errorHandler A block called when an error is encountered if any (blocking or not). If the error prevent the model from being initialized, it will also be set in the 'error' reference.
+ @return An initialized instance of SCSVASTModel.
+*/
+- (nullable instancetype)initWithDictionary:(NSDictionary *)dictionary error:(NSError *__nullable *__nullable)error errorHandler:(void(^)(SCSVASTError *, NSMutableArray <SCSVASTURL *> *))errorHandler;
 
 /**
  Returns the number of sequenced ads in the model (which is the size of the adpod).

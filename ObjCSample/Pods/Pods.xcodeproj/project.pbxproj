@@ -60,21 +60,23 @@
 
 /* Begin PBXFileReference section */
 		149195B4F9CDF41360FA1D1BF4EE878A /* Pods-ObjCSample-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ObjCSample-Info.plist"; sourceTree = "<group>"; };
+		17A4CB9CD8D029FC205D63C1E5AB8E0B /* SASDisplayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SASDisplayKit.framework; sourceTree = "<group>"; };
 		23C93619B5A1FFDBB9FA8E9E29974F83 /* Pods_ObjCSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ObjCSample.framework; path = "Pods-ObjCSample.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		29CD1D4E4AE691E4EEE944D367C3683B /* Pods-ObjCSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ObjCSample.release.xcconfig"; sourceTree = "<group>"; };
 		2CEEF48832779DE6E7725364C939DD30 /* Pods-ObjCSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ObjCSample.debug.xcconfig"; sourceTree = "<group>"; };
-		30F11DA6AF311DF742A9A093D2C955C6 /* Smart-Core-SDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Smart-Core-SDK.xcconfig"; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		359E8C0FD427E7BABEDE8448278CFB2D /* Pods-ObjCSample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ObjCSample-umbrella.h"; sourceTree = "<group>"; };
-		7AAAFE069F43D709DED5EDC5922C5F07 /* Smart-Display-SDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Smart-Display-SDK.xcconfig"; sourceTree = "<group>"; };
-		7D7DF949BD2120632894C4CEAB7BD9A4 /* SCSCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SCSCoreKit.framework; sourceTree = "<group>"; };
+		72BC5BF618B2667A91E41CE191A3F6ED /* Smart-Core-SDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Smart-Core-SDK.debug.xcconfig"; sourceTree = "<group>"; };
+		80895F5D8DB52E158D19D0FA483054B7 /* Smart-Core-SDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Smart-Core-SDK.release.xcconfig"; sourceTree = "<group>"; };
 		82BBB93932594320AA4230DC9311A906 /* Pods-ObjCSample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ObjCSample-frameworks.sh"; sourceTree = "<group>"; };
 		92759DC5EE7ACEFAF3983B0446EB22E3 /* Pods-ObjCSample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ObjCSample-dummy.m"; sourceTree = "<group>"; };
-		93A12F44DB50157760602562EE7A0355 /* SASDisplayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SASDisplayKit.framework; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9F13331417B2152A656F33B1D462197F /* Smart-Display-SDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Smart-Display-SDK.debug.xcconfig"; sourceTree = "<group>"; };
 		B3FE91E7796878EAE76EF362AE03D67D /* Pods-ObjCSample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ObjCSample.modulemap"; sourceTree = "<group>"; };
+		B5C1EF7296A5A5BBE25EA2A9A3FB23FF /* Smart-Display-SDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Smart-Display-SDK.release.xcconfig"; sourceTree = "<group>"; };
 		C436A57852F7EED31DDB28068A5764BD /* Pods-ObjCSample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ObjCSample-acknowledgements.plist"; sourceTree = "<group>"; };
 		C461661A6793C096065735CF1928BD20 /* Pods-ObjCSample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ObjCSample-acknowledgements.markdown"; sourceTree = "<group>"; };
+		FE1121A1A77F1E30E0B17A83F7149BFE /* SCSCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SCSCoreKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,41 +99,69 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		229AC765F1335570E286A16F6434FEB7 /* Frameworks */ = {
+		1C54D91482CD92A78170C3BA3DE20389 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7D7DF949BD2120632894C4CEAB7BD9A4 /* SCSCoreKit.framework */,
+				FE1121A1A77F1E30E0B17A83F7149BFE /* SCSCoreKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		7568C48B59E44482907484DA00DF345C /* Smart-Core-SDK */ = {
+		28C6DCF3FA4AA037FFF9D9C148621342 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				229AC765F1335570E286A16F6434FEB7 /* Frameworks */,
-				D4513614A88D1B19AC53F37AE315349D /* Support Files */,
+				17A4CB9CD8D029FC205D63C1E5AB8E0B /* SASDisplayKit.framework */,
 			);
-			name = "Smart-Core-SDK";
-			path = "Smart-Core-SDK";
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		87514300B0473F3A0CD11D5F0099F793 /* Smart-Display-SDK */ = {
+		70DB4E9221F8445800E5D9E5535144E0 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				E90E9F58FA2B9CA9ABE856C7935E9CF5 /* Frameworks */,
-				C85005DA5E4F26AA1027F4E7C5D73EB9 /* Support Files */,
+				9F13331417B2152A656F33B1D462197F /* Smart-Display-SDK.debug.xcconfig */,
+				B5C1EF7296A5A5BBE25EA2A9A3FB23FF /* Smart-Display-SDK.release.xcconfig */,
 			);
-			name = "Smart-Display-SDK";
-			path = "Smart-Display-SDK";
+			name = "Support Files";
+			path = "../Target Support Files/Smart-Display-SDK";
 			sourceTree = "<group>";
 		};
 		89E1D52FF698E5281AA7C204BBECA80C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				7568C48B59E44482907484DA00DF345C /* Smart-Core-SDK */,
-				87514300B0473F3A0CD11D5F0099F793 /* Smart-Display-SDK */,
+				959010AAD8C84CBC85FC12248A5220A1 /* Smart-Core-SDK */,
+				90235B31D2E394494644560C266C7450 /* Smart-Display-SDK */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		8E421456373394C174B4EDE1876A7ED4 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				72BC5BF618B2667A91E41CE191A3F6ED /* Smart-Core-SDK.debug.xcconfig */,
+				80895F5D8DB52E158D19D0FA483054B7 /* Smart-Core-SDK.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Smart-Core-SDK";
+			sourceTree = "<group>";
+		};
+		90235B31D2E394494644560C266C7450 /* Smart-Display-SDK */ = {
+			isa = PBXGroup;
+			children = (
+				28C6DCF3FA4AA037FFF9D9C148621342 /* Frameworks */,
+				70DB4E9221F8445800E5D9E5535144E0 /* Support Files */,
+			);
+			name = "Smart-Display-SDK";
+			path = "Smart-Display-SDK";
+			sourceTree = "<group>";
+		};
+		959010AAD8C84CBC85FC12248A5220A1 /* Smart-Core-SDK */ = {
+			isa = PBXGroup;
+			children = (
+				1C54D91482CD92A78170C3BA3DE20389 /* Frameworks */,
+				8E421456373394C174B4EDE1876A7ED4 /* Support Files */,
+			);
+			name = "Smart-Core-SDK";
+			path = "Smart-Core-SDK";
 			sourceTree = "<group>";
 		};
 		A45FE387D351BBE97661739CC3876781 /* Pods-ObjCSample */ = {
@@ -159,15 +189,6 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		C85005DA5E4F26AA1027F4E7C5D73EB9 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				7AAAFE069F43D709DED5EDC5922C5F07 /* Smart-Display-SDK.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Smart-Display-SDK";
-			sourceTree = "<group>";
-		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
@@ -187,29 +208,12 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D4513614A88D1B19AC53F37AE315349D /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				30F11DA6AF311DF742A9A093D2C955C6 /* Smart-Core-SDK.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Smart-Core-SDK";
-			sourceTree = "<group>";
-		};
 		E7BF23058AB161E537263C547021CFDE /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				23C93619B5A1FFDBB9FA8E9E29974F83 /* Pods_ObjCSample.framework */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		E90E9F58FA2B9CA9ABE856C7935E9CF5 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				93A12F44DB50157760602562EE7A0355 /* SASDisplayKit.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -318,6 +322,22 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		1BC1861BD1EA2FB3BB074D5DFB2C71D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72BC5BF618B2667A91E41CE191A3F6ED /* Smart-Core-SDK.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
 		2B41AA2A6FF4025BC3E743871C24B7AE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2CEEF48832779DE6E7725364C939DD30 /* Pods-ObjCSample.debug.xcconfig */;
@@ -420,9 +440,9 @@
 			};
 			name = Debug;
 		};
-		67B84BA3BC8AD238728662ECC64DDF30 /* Debug */ = {
+		3E61D780585FC9638D83564D3108FB5F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7AAAFE069F43D709DED5EDC5922C5F07 /* Smart-Display-SDK.xcconfig */;
+			baseConfigurationReference = 80895F5D8DB52E158D19D0FA483054B7 /* Smart-Core-SDK.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -433,8 +453,26 @@
 				);
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 			};
-			name = Debug;
+			name = Release;
+		};
+		47410A15C39477E24374BBE2C85FFF26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5C1EF7296A5A5BBE25EA2A9A3FB23FF /* Smart-Display-SDK.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
 		};
 		8E613E10591544B47E95C4458486E04F /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -472,23 +510,6 @@
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		9F74FFA9F508E5D1B8A2434E0D817CF6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 30F11DA6AF311DF742A9A093D2C955C6 /* Smart-Core-SDK.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
@@ -552,26 +573,9 @@
 			};
 			name = Release;
 		};
-		E74513783C6EE38F895FE2B6261B2400 /* Release */ = {
+		F2C3D397F6B7B76A6BD9AD0CFD108CB5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7AAAFE069F43D709DED5EDC5922C5F07 /* Smart-Display-SDK.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		EBBBB705681D4057CB4898B876FF402D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 30F11DA6AF311DF742A9A093D2C955C6 /* Smart-Core-SDK.xcconfig */;
+			baseConfigurationReference = 9F13331417B2152A656F33B1D462197F /* Smart-Display-SDK.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -591,8 +595,8 @@
 		229CC60BFEBC2557F44A822AB1DFB473 /* Build configuration list for PBXAggregateTarget "Smart-Display-SDK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				67B84BA3BC8AD238728662ECC64DDF30 /* Debug */,
-				E74513783C6EE38F895FE2B6261B2400 /* Release */,
+				F2C3D397F6B7B76A6BD9AD0CFD108CB5 /* Debug */,
+				47410A15C39477E24374BBE2C85FFF26 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -618,8 +622,8 @@
 		A9DF3035A8916889FE8CB523F6F68294 /* Build configuration list for PBXAggregateTarget "Smart-Core-SDK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EBBBB705681D4057CB4898B876FF402D /* Debug */,
-				9F74FFA9F508E5D1B8A2434E0D817CF6 /* Release */,
+				1BC1861BD1EA2FB3BB074D5DFB2C71D2 /* Debug */,
+				3E61D780585FC9638D83564D3108FB5F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

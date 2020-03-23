@@ -10,11 +10,17 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-/// The TCF Version of the current consent string.
+/// The version of the IAB TCF consent string.
 typedef NS_ENUM(NSInteger, SCSTCFStringTCFVersion) {
     
+    /// Unknown string version
+    SCSTCFStringTCFVersionUnknown = -1,
+    
     /// TCF string version 1
-    SCSTCFStringTCFVersionOne = 1
+    SCSTCFStringTCFVersionOne = 1,
+    
+    /// TCF string version 2
+    SCSTCFStringTCFVersionTwo = 2
     
 };
 
@@ -23,6 +29,15 @@ typedef NS_ENUM(NSInteger, SCSTCFStringTCFVersion) {
  */
 @interface SCSTCFString : NSObject
 
+/// The consent string. It will be URL encoded or empty if invalid.
+@property (nonatomic, readonly) NSString *TCFString;
+
+/// YES if the RAW consent string is valid, NO otherwise.
+@property (nonatomic, readonly) BOOL isValid;
+
+/// The version of the TCF consent string.
+@property (nonatomic, readonly) SCSTCFStringTCFVersion version;
+
 /**
  Initialize a new instance of the TCF consent string.
  
@@ -30,15 +45,6 @@ typedef NS_ENUM(NSInteger, SCSTCFStringTCFVersion) {
  @return An initialized instance of the TCF consent string.
  */
 - (instancetype)initWithTCFString:(NSString *)rawTCFString;
-
-/// The URL consent string. It will be URL encoded or empty if invalid.
-@property (nonatomic, strong, readonly) NSString *TCFString;
-
-/// YES if the RAW consent string is valid, NO otherwise.
-@property (nonatomic, assign, readonly) BOOL isValid;
-
-/// The TCF version of the consent string.
-@property (nonatomic, assign, readonly) SCSTCFStringTCFVersion version;
 
 @end
 

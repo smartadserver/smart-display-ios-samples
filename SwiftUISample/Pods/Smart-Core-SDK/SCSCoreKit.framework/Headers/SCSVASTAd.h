@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@class SCSVASTURL, SCSVASTCreativeLinear, SCSVASTCreativeCompanion, SCSVASTCreativeNonLinear, SCSVASTAdExtension;
+@class SCSVASTURL, SCSVASTCreativeLinear, SCSVASTCreativeCompanion, SCSVASTCreativeNonLinear, SCSVASTAdExtension, SCSVASTError;
 
 @interface SCSVASTAd : NSObject
 
@@ -22,6 +22,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// The AdSystem delivering this Ad.
 @property (nullable, nonatomic, strong) NSString *adSystem;
+
+/// The AdTitle of this Ad.
+@property (nullable, nonatomic, strong) NSString *adTitle;
 
 /// The error pixels to be called if this ad fails somehow.
 @property (nonatomic, strong) NSMutableArray <SCSVASTURL *> *errorPixels;
@@ -41,14 +44,28 @@ NS_ASSUME_NONNULL_BEGIN
 /// The extensions shipped with this ad.
 @property (nullable, nonatomic, strong) SCSVASTAdExtension *extensions;
 
+/// An error has occured during the parsing of this ad, it should be considered as invalid.
+@property (nonatomic, assign) BOOL hasTriggeredAParsingError;
+
 - (instancetype)init NS_UNAVAILABLE;
 
 /** 
  Initialize a SCSVASTAd object from an XML Dictionary.
  
  @param dictionary A dictionary extracted from an XML Ad Tag.
+ @return An initialized instance of SCSVASTAd or nil if an error occurred during parsing.
  */
-- (nullable instancetype)initWithDictionary:(NSDictionary *)dictionary NS_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithDictionary:(NSDictionary *)dictionary __deprecated;
+
+/**
+ Initialize a SCSVASTAd object from an XML Dictionary.
+
+ @param dictionary A dictionary extracted from an XML Ad Tag.
+ @param error A reference to an error that will be set if the VAST ad cannot be initialized.
+ @param errorHandler A block called when an error is encountered if any (blocking or not). If the error prevent the model from being initialized, it will also be set in the 'error' reference.
+ @return An initialized instance of SCSVASTAd or nil if an error occurred during parsing.
+*/
+- (nullable instancetype)initWithDictionary:(NSDictionary *)dictionary error:(NSError *__nullable *__nullable)error errorHandler:(void(^)(SCSVASTError *, NSMutableArray <SCSVASTURL *> *))errorHandler NS_DESIGNATED_INITIALIZER;
 
 /**
  Indicates whether or not this Ad is valid and can be consumed.

@@ -54,6 +54,17 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (NSDictionary <NSString *, NSString *> *)variablesForEvent:(id<SCSViewabilityTrackingEvent>)event;
 
+/**
+ This method is used to retrieve the additional macros for a given event.
+ 
+ This method is used internally by the manager for event tracking and is intended to be overriden. The default
+ implementation returns an empty dictionary.
+ 
+ @param event The event that is about to be called.
+ @return A dictionary of additional macros for this event.
+ */
+- (NSDictionary <NSString *, NSString *> *)additionalMacrosForEvent:(id<SCSViewabilityTrackingEvent>)event;
+
 @end
 
 NS_ASSUME_NONNULL_END

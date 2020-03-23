@@ -7,9 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "SCSTCFString.h"
 
-@class SCSTransientID;
+@class SCSTransientID, SCSTCFString, SCSCCPAString;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -55,6 +54,13 @@ NS_ASSUME_NONNULL_BEGIN
  @return The SCSTCFString instance representing the GDPR TCF string.
  */
 - (nullable SCSTCFString *)TCFString;
+
+/**
+Returns a SCSCCPAString instance representing the CCPA consent string stored in NSUserDefaults by any IAB certified CMP.
+
+@return The SCSCCPAString instance representing the CCPA string.
+*/
+- (nullable SCSCCPAString *)CCPAString;
 
 @end
 

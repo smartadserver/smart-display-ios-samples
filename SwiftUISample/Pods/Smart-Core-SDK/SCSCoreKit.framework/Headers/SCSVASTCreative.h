@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "SCSVASTError.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -23,14 +24,24 @@ NS_ASSUME_NONNULL_BEGIN
 /// An array of all the URLs to call when the creative is clicked.
 @property (nonatomic, readonly) NSMutableArray <SCSVASTURL *> *clickTracking;
 
-- (instancetype)init NS_UNAVAILABLE;
-
 /**
  Initializer from a dictionary.
  
  @param dictionary A dictionary from the parsed XML.
+ @return An initialized instance of SCSVASTCreative or nil if the dictionary was invalid.
  */
-- (nullable instancetype)initWithDictionary:(NSDictionary *)dictionary NS_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithDictionary:(NSDictionary *)dictionary __deprecated;
+
+/**
+ Initializer from a dictionary.
+
+ @param dictionary A dictionary from the parsed XML.
+ @param error A reference to an error that will be set if the VAST creative cannot be initialized.
+ @param errorHandler A block called when an error is encountered if any (blocking or not). If the error prevent the model from being initialized, it will also be set in the 'error' reference.
+ @param isWrapper YES if the creative to be parsed is from a wrapper ad, NO otherwise.
+ @return An initialized instance of SCSVASTCreative or nil if the dictionary was invalid.
+*/
+- (nullable instancetype)initWithDictionary:(NSDictionary *)dictionary error:(NSError * _Nullable * _Nullable)error errorHandler:(void(^)(SCSVASTError *, NSMutableArray <SCSVASTURL *> *))errorHandler isWrapper:(BOOL)isWrapper NS_DESIGNATED_INITIALIZER;
 
 /**
  Adds tracking events to this creative.
@@ -46,6 +57,8 @@ NS_ASSUME_NONNULL_BEGIN
  @return Whether or not this creative is valid.
  */
 - (BOOL)isValidForWrapper:(BOOL)forWrapper;
+
+- (instancetype)init NS_UNAVAILABLE;
 
 @end
 

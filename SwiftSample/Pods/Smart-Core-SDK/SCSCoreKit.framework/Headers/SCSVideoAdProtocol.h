@@ -29,11 +29,19 @@ NS_ASSUME_NONNULL_BEGIN
 - (nullable instancetype)initWithVASTAd:(SCSVASTAd *)ad;
 
 /**
+Indicates if the Ad is valid for consumption by the client SDK. This allow to define per SDK validation rules.
+
+@return YES if the ad is valid, NO otherwise.
+*/
+- (BOOL)isValid;
+
+/**
  Indicates if the Ad is valid for consumption by the client SDK. This allow to define per SDK validation rules.
  
- @return An error is the Ad is not valid for consumption by other SDKs. Nil otherwise.
+ @param errorHandler A handler called if an error needs to be logged.
+ @return YES if the ad is valid, NO otherwise.
  */
-- (nullable NSError *)isValid;
+- (BOOL)isValidWithErrorHandler:(void(^)(SCSVASTError * _Nullable))errorHandler;
 
 @end
 

@@ -24,8 +24,6 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @interface SCSTrackingEventManager : NSObject
 
-- (instancetype)init NS_UNAVAILABLE;
-
 /**
  Initialize a new instance of SCSTrackingEventManager.
  
@@ -49,6 +47,23 @@ NS_ASSUME_NONNULL_BEGIN
  @return YES if the event has been sent, NO if the event can't be found in the manager events list.
  */
 - (BOOL)trackEvent:(NSString *)eventName variables:(NSDictionary<NSString *, NSString *> *)variables;
+
+/**
+ Consider an event as 'tracked'.
+ 
+ The URL corresponding to the event will be called (with replaced macros and variables) and the event will be discarded if needed.
+ 
+ @warning Variables must be expressed as 'variablename={temporary_value}' where the only part that will be replaced is surrounded
+ by curly brackets.
+ 
+ @param eventName The name of the event that should be called.
+ @param variables A dictionary of variables that have to be replaced (and the substitution values).
+ @param additionalMacros A dictionary of macros that have to be replaced (and the substitution values) alongside the macros provided in the initializer.
+ @return YES if the event has been sent, NO if the event can't be found in the manager events list.
+ */
+- (BOOL)trackEvent:(NSString *)eventName variables:(NSDictionary<NSString *, NSString *> *)variables additionalMacros:(NSDictionary<NSString *, NSString *> *)additionalMacros;
+
+- (instancetype)init NS_UNAVAILABLE;
 
 @end
 

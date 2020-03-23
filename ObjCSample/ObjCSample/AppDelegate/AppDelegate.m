@@ -36,11 +36,21 @@
     // official IAB key "IABConsent_ConsentString" as per IAB recommandations.
     /////////////////////////////////////////
     
-    // NSString *myConsentString = @"yourCMPComputedConsentStringBase64format";
-    // [[NSUserDefaults standardUserDefaults] setObject:myConsentString forKey:@"IABConsent_ConsentString"];
-    // [[NSUserDefaults standardUserDefaults] synchronize];
+    /////////////////////////////////////////
+    // SDK - TCF Compliance
+    // OPTIONAL
+    // By uncommenting the following code, you can set the TCF consent string manually.
+    // As per IAB specifications in Transparency And Consent Framework.
+    // Smart Display SDK will retrieve the TCF consent string from the NSUserDefaults using the official IAB key "IABTCF_TCString"
+    /////////////////////////////////////////
+    // If you are using a CMP that is not validated by the IAB or not using the official key:
+    // you will have to manually store the computed consent string into the NSUserDefaults for Smart Display SDK to retrieve it and forward it to its partners.
+    /////////////////////////////////////////
+    //NSString *myTCFConsentString = @"yourCMPComputedConsentStringBase64format";
+    //[[NSUserDefaults standardUserDefaults] setObject:myTCFConsentString forKey:@"IABTCF_TCString"];
+    //[[NSUserDefaults standardUserDefaults] synchronize];
     
-    // Some third party mediation SDK are not IAB compliant and don't rely on the consent string. Those SDK use
+    // Some third party mediation SDK are not IAB compliant and don't rely on the TCF consent string. Those SDK use
     // most of the time a binary consent for the advertising purpose.
     // If you are using one or more of those SDK through Smart mediation, you can set this binary consent for
     // all adapters at once by setting the string '1' (if the consent is granted) or '0' (if the consent is denied)
@@ -48,6 +58,20 @@
     // NSString *advertisingBinaryConsentString = @"1" or @"0";
     // [[NSUserDefaults standardUserDefaults] setObject:advertisingBinaryConsentString forKey:@"Smart_advertisingConsentStatus"];
     // [[NSUserDefaults standardUserDefaults] synchronize];
+    
+    /////////////////////////////////////////
+    // SDK - CCPA Compliance
+    // OPTIONAL
+    // By uncommenting the following code, you can set the CCPA consent string manually.
+    // As per IAB specifications in CCPA Compliance Framework.
+    // Smart Display SDK will retrieve the CCPA consent string from the NSUserDefaults using the official IAB key "IABUSPrivacy_String"
+    /////////////////////////////////////////
+    // If you are using a CMP that is not validated by the IAB or not using the official key:
+    // you will have to manually store the computed consent string into the NSUserDefaults for Smart Display SDK to retrieve it and forward it to its partners.
+    /////////////////////////////////////////
+    //NSString *myCCPAConsentString = @"yourCCPAConsentString";
+    //[[NSUserDefaults standardUserDefaults] setObject:myCCPAConsentString forKey:@"IABUSPrivacy_String"];
+    //[[NSUserDefaults standardUserDefaults] synchronize];
     
     return YES;
 }

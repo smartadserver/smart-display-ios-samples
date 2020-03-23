@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "SCSTCFString.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -27,6 +26,7 @@ typedef NS_ENUM(NSInteger, SCSIdentityType) {
 };
 
 @protocol SCSIdentityProviderProtocol;
+@class SCSTCFString, SCSCCPAString;
 
 /**
  Helper class to retrieve the identity of a device.
@@ -51,7 +51,8 @@ typedef NS_ENUM(NSInteger, SCSIdentityType) {
 /// The SCSTCFString instance representing the GDPR Consent String stored on the device NSUserDefaults under IAB specifications key.
 @property (nullable, nonatomic, readonly) SCSTCFString *TCFString;
 
-- (instancetype)init NS_UNAVAILABLE;
+/// The CCPAString instance representing the CCPA Consent String stored on the device NSUserDefaults under IAB specifications key.
+@property (nullable, nonatomic, readonly) SCSCCPAString *CCPAString;
 
 /**
  Retrieve an identity for the device using the identity provider given in parameter.
@@ -84,5 +85,8 @@ typedef NS_ENUM(NSInteger, SCSIdentityType) {
  */
 - (instancetype)initWithHashed:(BOOL)hashed transientIDEnabled:(BOOL)transientIDEnabled customIdentifier:(nullable NSString *)customIdentifier;
 
+- (instancetype)init NS_UNAVAILABLE;
+
 @end
+
 NS_ASSUME_NONNULL_END
