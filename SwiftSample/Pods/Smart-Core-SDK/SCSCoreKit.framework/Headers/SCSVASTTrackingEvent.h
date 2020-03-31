@@ -11,7 +11,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface SCSVASTTrackingEvent : NSObject <SCSVideoTrackingEvent>
+@interface SCSVASTTrackingEvent : NSObject <SCSVideoTrackingEvent, NSCopying, NSCoding>
 
 /// The name of the event. Event names are the same than in the VAST standard.
 @property (nonatomic, readonly) NSString *name;
@@ -34,7 +34,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param name The name of the tracking event.
  @param offset The offset value when it should be triggered.
  */
-- (instancetype)initWithName:(NSString *)name offset:(nullable NSString *)offset url:(NSURL *)url NS_DESIGNATED_INITIALIZER;
+- (instancetype)initWithName:(NSString *)name offset:(nullable NSString *)offset url:(NSURL *)url;
 
 /**
  Convenience initializer from a dictionary

@@ -97,6 +97,7 @@
 #import "SCSRemoteLogger.h"
 #import "SCSRemoteLog.h"
 #import "SCSRemoteLogUtils.h"
+#import "SCSRemoteConfigurationErrorRemoteLogger.h"
 
 // Network
 #import "SCSAdRequestManager.h"

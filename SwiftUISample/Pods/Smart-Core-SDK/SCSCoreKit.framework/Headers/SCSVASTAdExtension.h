@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @class SCSVASTTrackingEvent, SCSVASTAdExtensionAdVerification;
 
-@interface SCSVASTAdExtension : NSObject
+@interface SCSVASTAdExtension : NSObject <NSCopying, NSCoding>
 
 @property (nonatomic, readonly) BOOL offsetIsForced;
 @property (nullable, nonatomic, readonly) NSString *skipOffset;
@@ -55,15 +55,20 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nullable, nonatomic, readonly) NSMutableArray <SCSVASTAdExtensionAdVerification *> *adVerifications;
 
-
-- (instancetype)init NS_UNAVAILABLE;
-
 /**
  Initializer from an XML Dictionary.
  
  @param dictionary A NSDictionary extracted from the VAST XML.
+ @return An initialized instance of SCSVASTTrackingEvent.
  */
 - (nullable instancetype)initWithDictionary:(NSDictionary *)dictionary NS_DESIGNATED_INITIALIZER;
+
+/**
+ Initialize an empty instance of SCSVASTTrackingEvent.
+ 
+ @return An empty initialized instance of SCSVASTTrackingEvent.
+ */
+- (nullable)init NS_DESIGNATED_INITIALIZER;
 
 @end
 

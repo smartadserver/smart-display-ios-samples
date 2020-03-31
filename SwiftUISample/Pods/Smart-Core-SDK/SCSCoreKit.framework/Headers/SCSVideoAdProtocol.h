@@ -20,15 +20,6 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, readonly, strong) NSString *adID;
 
 /**
- Initializer from a valid SCSVASTAd object.
- 
- @param ad The SCSVASTAd used to instantiate the SCSVideoAdProtocol compliant object.
- 
- @return an initialized instance of a SCSVideoAdProtocol compliant object.
- */
-- (nullable instancetype)initWithVASTAd:(SCSVASTAd *)ad;
-
-/**
 Indicates if the Ad is valid for consumption by the client SDK. This allow to define per SDK validation rules.
 
 @return YES if the ad is valid, NO otherwise.

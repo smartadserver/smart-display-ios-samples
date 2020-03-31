@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  Represent an Open Measurement ad verification script.
  */
-@interface SCSVASTAdExtensionAdVerification : NSObject <NSCoding>
+@interface SCSVASTAdExtensionAdVerification : NSObject <NSCoding, NSCopying>
 
 /// The javascript resource URL.
 @property (nonatomic, readonly) NSURL *javascriptResourceURL;
