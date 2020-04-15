@@ -1,6 +1,6 @@
 PODS:
   - Smart-Core-SDK (7.5.2)
-  - Smart-Display-SDK (7.4.1):
+  - Smart-Display-SDK (7.4.2):
     - Smart-Core-SDK (~> 7.4)
 
 DEPENDENCIES:
@@ -13,7 +13,7 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Smart-Core-SDK: b9da99be202c56c547557281808058b45883b1de
-  Smart-Display-SDK: 58123d81e78befa34ad871e7adccc5bc2eb2d26d
+  Smart-Display-SDK: e989215a2a6db6114dc0bc6a666883ec16c651a3
 
 PODFILE CHECKSUM: 218c90bbea3cb1abd43cb48a4b1154dd3ddc6d5a
 
