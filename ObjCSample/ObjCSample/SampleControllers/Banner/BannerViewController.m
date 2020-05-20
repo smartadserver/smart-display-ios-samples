@@ -56,6 +56,10 @@
     // SASAdPlacement *placement = [SASAdPlacement adPlacementWithTestAd:SASAdPlacementTestBannerVideoRead];
     // SASAdPlacement *placement = [SASAdPlacement adPlacementWithTestAd:SASAdPlacementTestBannerVideoRead360];
 
+    // If you are an inventory reseller, you must provide your Supply Chain Object information
+    // More info here: https://help.smartadserver.com/s/article/Sellers-json-and-SupplyChain-Object
+    // SASAdPlacement *placement = [SASAdPlacement adPlacementWithSiteId:kBannerSiteID pageId:kBannerPageID formatId:kBannerFormatID keywordTargeting:nil supplyChainObjectString:@"1.0,1!exchange1.com,1234,1,publisher,publisher.com"];
+
     [self.banner loadWithPlacement:placement];	
 	[self.view addSubview:self.banner];
 }

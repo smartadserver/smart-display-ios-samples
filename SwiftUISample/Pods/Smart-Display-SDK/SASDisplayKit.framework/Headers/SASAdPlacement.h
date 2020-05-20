@@ -124,6 +124,24 @@ typedef NS_ENUM(NSInteger, SASAdPlacementTest) {
 /// section when managing campaign insertions.
 @property (nonatomic, readonly, nullable) NSString *keywordTargeting;
 
+/// A set of keywords that will be used when loading an ad to receive more relevant advertising if needed, nil otherwise.
+///
+/// Keywords are typically used to target ad campaign insertions at specific user segments. They should be
+/// formatted as comma-separated key-value pairs (e.g. "gender=female,age=27").
+///
+/// On the Smart manage interface, keyword targeting options can be found under the Targeting / Keywords
+/// section when managing campaign insertions.
+///
+/// A string representing the Supply Chain Object that will be passed to Smart AdServer during AdCalls.
+///
+/// You should fill this parameter if you are reselling inventory from direct publishers.
+/// You can find more information about Supply Chain Object at this URL:
+///
+/// https://help.smartadserver.com/s/article/Sellers-json-and-SupplyChain-Object
+///
+/// If nil, no Supply Chain Object will be added to the ad call and Smart will add its own node.
+@property (nonatomic, readonly, nullable) NSString *supplyChainObjectString;
+
 #pragma mark - Initializers
 
 /**
@@ -166,7 +184,7 @@ typedef NS_ENUM(NSInteger, SASAdPlacementTest) {
  @param siteId The siteId created on the Smart manage interface. Create a new site id for every unique application on your network.
  @param pageName The pageName created on the Smart manage interface. It is recommanded to create a new page name for every unique screen in your application.
  @param formatId The formatId created on the Smart manage interface. It is recommanded to create a new format id for every type of ad you will integrate in your application.
- @param  master The master flag. If this is YES, the a Page view will be counted. This should have the YES value for the first ad on the page, and NO for the others (if you have more than one ad on the same page).
+ @param master The master flag. If this is YES, the a Page view will be counted. This should have the YES value for the first ad on the page, and NO for the others (if you have more than one ad on the same page).
  
  @return An initialized instance of SASAdPlacement.
  */
@@ -191,11 +209,38 @@ typedef NS_ENUM(NSInteger, SASAdPlacementTest) {
  @param pageId The pageId created on the Smart manage interface. It is recommanded to create a new page id for every unique screen in your application.
  @param formatId The formatId created on the Smart manage interface. It is recommanded to create a new format id for every type of ad you will integrate in your application.
  @param keywordTargeting A string representing a set of keywords that will be passed to Smart to receive more relevant advertising.
+ @param supplyChainObjectString A string representing the Supply Chain Object that will be passed to Smart AdServer during ad calls.
+ 
+ @return An initialized instance of SASAdPlacement.
+ */
+- (instancetype)initWithSiteId:(NSInteger)siteId pageId:(NSInteger)pageId formatId:(NSInteger)formatId keywordTargeting:(nullable NSString *)keywordTargeting supplyChainObjectString:(nullable NSString *)supplyChainObjectString;
+
+/**
+ Initialize a new instance of SASAdPlacement.
+ 
+ @param siteId The siteId created on the Smart manage interface. Create a new site id for every unique application on your network.
+ @param pageId The pageId created on the Smart manage interface. It is recommanded to create a new page id for every unique screen in your application.
+ @param formatId The formatId created on the Smart manage interface. It is recommanded to create a new format id for every type of ad you will integrate in your application.
+ @param keywordTargeting A string representing a set of keywords that will be passed to Smart to receive more relevant advertising.
  @param master The master flag. If this is YES, the a Page view will be counted. This should have the YES value for the first ad on the page, and NO for the others (if you have more than one ad on the same page).
  
  @return An initialized instance of SASAdPlacement.
  */
 - (instancetype)initWithSiteId:(NSInteger)siteId pageId:(NSInteger)pageId formatId:(NSInteger)formatId keywordTargeting:(nullable NSString *)keywordTargeting master:(BOOL)master;
+
+/**
+ Initialize a new instance of SASAdPlacement.
+ 
+ @param siteId The siteId created on the Smart manage interface. Create a new site id for every unique application on your network.
+ @param pageId The pageId created on the Smart manage interface. It is recommanded to create a new page id for every unique screen in your application.
+ @param formatId The formatId created on the Smart manage interface. It is recommanded to create a new format id for every type of ad you will integrate in your application.
+ @param keywordTargeting A string representing a set of keywords that will be passed to Smart to receive more relevant advertising.
+ @param supplyChainObjectString A string representing the Supply Chain Object that will be passed to Smart AdServer during ad calls.
+ @param master The master flag. If this is YES, the a Page view will be counted. This should have the YES value for the first ad on the page, and NO for the others (if you have more than one ad on the same page).
+
+ @return An initialized instance of SASAdPlacement.
+ */
+- (instancetype)initWithSiteId:(NSInteger)siteId pageId:(NSInteger)pageId formatId:(NSInteger)formatId keywordTargeting:(nullable NSString *)keywordTargeting supplyChainObjectString:(nullable NSString *)supplyChainObjectString master:(BOOL)master;
 
 /**
  Initialize a new instance of SASAdPlacement.
@@ -216,11 +261,38 @@ typedef NS_ENUM(NSInteger, SASAdPlacementTest) {
  @param pageName The pageName created on the Smart manage interface. It is recommanded to create a new page name for every unique screen in your application.
  @param formatId The formatId created on the Smart manage interface. It is recommanded to create a new format id for every type of ad you will integrate in your application.
  @param keywordTargeting A string representing a set of keywords that will be passed to Smart to receive more relevant advertising.
+ @param supplyChainObjectString A string representing the Supply Chain Object that will be passed to Smart AdServer during ad calls.
+ 
+ @return An initialized instance of SASAdPlacement.
+ */
+- (instancetype)initWithSiteId:(NSInteger)siteId pageName:(nonnull NSString *)pageName formatId:(NSInteger)formatId keywordTargeting:(nullable NSString *)keywordTargeting supplyChainObjectString:(nullable NSString *)supplyChainObjectString;
+
+/**
+ Initialize a new instance of SASAdPlacement.
+ 
+ @param siteId The siteId created on the Smart manage interface. Create a new site id for every unique application on your network.
+ @param pageName The pageName created on the Smart manage interface. It is recommanded to create a new page name for every unique screen in your application.
+ @param formatId The formatId created on the Smart manage interface. It is recommanded to create a new format id for every type of ad you will integrate in your application.
+ @param keywordTargeting A string representing a set of keywords that will be passed to Smart to receive more relevant advertising.
  @param master The master flag. If this is YES, the a Page view will be counted. This should have the YES value for the first ad on the page, and NO for the others (if you have more than one ad on the same page).
  
  @return An initialized instance of SASAdPlacement.
  */
 - (instancetype)initWithSiteId:(NSInteger)siteId pageName:(nonnull NSString *)pageName formatId:(NSInteger)formatId keywordTargeting:(nullable NSString *)keywordTargeting master:(BOOL)master;
+
+/**
+ Initialize a new instance of SASAdPlacement.
+ 
+ @param siteId The siteId created on the Smart manage interface. Create a new site id for every unique application on your network.
+ @param pageName The pageName created on the Smart manage interface. It is recommanded to create a new page name for every unique screen in your application.
+ @param formatId The formatId created on the Smart manage interface. It is recommanded to create a new format id for every type of ad you will integrate in your application.
+ @param keywordTargeting A string representing a set of keywords that will be passed to Smart to receive more relevant advertising.
+ @param supplyChainObjectString A string representing the Supply Chain Object that will be passed to Smart AdServer during ad calls.
+ @param master The master flag. If this is YES, the a Page view will be counted. This should have the YES value for the first ad on the page, and NO for the others (if you have more than one ad on the same page).
+ 
+ @return An initialized instance of SASAdPlacement.
+ */
+- (instancetype)initWithSiteId:(NSInteger)siteId pageName:(nonnull NSString *)pageName formatId:(NSInteger)formatId keywordTargeting:(nullable NSString *)keywordTargeting supplyChainObjectString:(nullable NSString *)supplyChainObjectString master:(BOOL)master;
 
 /**
  Initialize a new instance of SASAdPlacement corresponding to a test ad.
@@ -306,11 +378,38 @@ typedef NS_ENUM(NSInteger, SASAdPlacementTest) {
  @param pageId The pageId created on the Smart manage interface. It is recommanded to create a new page id for every unique screen in your application.
  @param formatId The formatId created on the Smart manage interface. It is recommanded to create a new format id for every type of ad you will integrate in your application.
  @param keywordTargeting A string representing a set of keywords that will be passed to Smart to receive more relevant advertising.
+ @param supplyChainObjectString A string representing the Supply Chain Object that will be passed to Smart AdServer during ad calls.
+ 
+ @return An initialized instance of SASAdPlacement.
+ */
++ (instancetype)adPlacementWithSiteId:(NSInteger)siteId pageId:(NSInteger)pageId formatId:(NSInteger)formatId keywordTargeting:(nullable NSString *)keywordTargeting supplyChainObjectString:(nullable NSString *)supplyChainObjectString;
+
+/**
+ Returns an initialized SASAdPlacement object.
+ 
+ @param siteId The siteId created on the Smart manage interface. Create a new site id for every unique application on your network.
+ @param pageId The pageId created on the Smart manage interface. It is recommanded to create a new page id for every unique screen in your application.
+ @param formatId The formatId created on the Smart manage interface. It is recommanded to create a new format id for every type of ad you will integrate in your application.
+ @param keywordTargeting A string representing a set of keywords that will be passed to Smart to receive more relevant advertising.
  @param master The master flag. If this is YES, the a Page view will be counted. This should have the YES value for the first ad on the page, and NO for the others (if you have more than one ad on the same page).
  
  @return An initialized instance of SASAdPlacement.
  */
 + (instancetype)adPlacementWithSiteId:(NSInteger)siteId pageId:(NSInteger)pageId formatId:(NSInteger)formatId keywordTargeting:(nullable NSString *)keywordTargeting master:(BOOL)master;
+
+/**
+ Returns an initialized SASAdPlacement object.
+ 
+ @param siteId The siteId created on the Smart manage interface. Create a new site id for every unique application on your network.
+ @param pageId The pageId created on the Smart manage interface. It is recommanded to create a new page id for every unique screen in your application.
+ @param formatId The formatId created on the Smart manage interface. It is recommanded to create a new format id for every type of ad you will integrate in your application.
+ @param keywordTargeting A string representing a set of keywords that will be passed to Smart to receive more relevant advertising.
+ @param supplyChainObjectString A string representing the Supply Chain Object that will be passed to Smart AdServer during ad calls.
+ @param master The master flag. If this is YES, the a Page view will be counted. This should have the YES value for the first ad on the page, and NO for the others (if you have more than one ad on the same page).
+ 
+ @return An initialized instance of SASAdPlacement.
+ */
++ (instancetype)adPlacementWithSiteId:(NSInteger)siteId pageId:(NSInteger)pageId formatId:(NSInteger)formatId keywordTargeting:(nullable NSString *)keywordTargeting supplyChainObjectString:(nullable NSString *)supplyChainObjectString master:(BOOL)master;
 
 /**
  Returns an initialized SASAdPlacement object.
@@ -331,11 +430,38 @@ typedef NS_ENUM(NSInteger, SASAdPlacementTest) {
  @param pageName The pageName created on the Smart manage interface. It is recommanded to create a new page name for every screen in your application.
  @param formatId The formatId created on the Smart manage interface. It is recommanded to create a new format id for every type of ad you will integrate in your application.
  @param keywordTargeting A string representing a set of keywords that will be passed to Smart to receive more relevant advertising.
+ @param supplyChainObjectString A string representing the Supply Chain Object that will be passed to Smart AdServer during ad calls.
+ 
+ @return An initialized instance of SASAdPlacement.
+ */
++ (instancetype)adPlacementWithSiteId:(NSInteger)siteId pageName:(nonnull NSString *)pageName formatId:(NSInteger)formatId keywordTargeting:(nullable NSString *)keywordTargeting supplyChainObjectString:(nullable NSString *)supplyChainObjectString;
+
+/**
+ Returns an initialized SASAdPlacement object.
+ 
+ @param siteId The siteId created on the Smart manage interface. Create a new site id for every unique application on your network.
+ @param pageName The pageName created on the Smart manage interface. It is recommanded to create a new page name for every screen in your application.
+ @param formatId The formatId created on the Smart manage interface. It is recommanded to create a new format id for every type of ad you will integrate in your application.
+ @param keywordTargeting A string representing a set of keywords that will be passed to Smart to receive more relevant advertising.
  @param master The master flag. If this is YES, the a Page view will be counted. This should have the YES value for the first ad on the page, and NO for the others (if you have more than one ad on the same page).
  
  @return An initialized instance of SASAdPlacement.
  */
 + (instancetype)adPlacementWithSiteId:(NSInteger)siteId pageName:(nonnull NSString *)pageName formatId:(NSInteger)formatId keywordTargeting:(nullable NSString *)keywordTargeting master:(BOOL)master;
+
+/**
+ Returns an initialized SASAdPlacement object.
+ 
+ @param siteId The siteId created on the Smart manage interface. Create a new site id for every unique application on your network.
+ @param pageName The pageName created on the Smart manage interface. It is recommanded to create a new page name for every screen in your application.
+ @param formatId The formatId created on the Smart manage interface. It is recommanded to create a new format id for every type of ad you will integrate in your application.
+ @param keywordTargeting A string representing a set of keywords that will be passed to Smart to receive more relevant advertising.
+ @param supplyChainObjectString A string representing the Supply Chain Object that will be passed to Smart AdServer during ad calls.
+ @param master The master flag. If this is YES, the a Page view will be counted. This should have the YES value for the first ad on the page, and NO for the others (if you have more than one ad on the same page).
+ 
+ @return An initialized instance of SASAdPlacement.
+ */
++ (instancetype)adPlacementWithSiteId:(NSInteger)siteId pageName:(nonnull NSString *)pageName formatId:(NSInteger)formatId keywordTargeting:(nullable NSString *)keywordTargeting supplyChainObjectString:(nullable NSString *)supplyChainObjectString master:(BOOL)master;
 
 /**
  Returns an initialized SASAdPlacement object corresponding to a test ad.

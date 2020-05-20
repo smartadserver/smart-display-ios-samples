@@ -52,6 +52,15 @@ NS_ASSUME_NONNULL_BEGIN
 + (BOOL)isValidGDPRConsentString:(NSString *)consentString;
 
 /**
+ Returns whether or not a string is only made of digits [0-9].
+ @note An empty string will return always return NO.
+
+ @param string the string to be evaluated.
+ @return YES if the string is only made of digits [0-9], NO otherwise.
+*/
++ (BOOL)stringIsDigitsOnly:(NSString *)string;
+
+/**
  Transforms an hexadecimal color string to an UIColor.
  
  @param colorString The string to be transformed into an UIColor. Could be in one of those formats: #RGB, #ARGB, #RRGGBB, #AARRGGBB.

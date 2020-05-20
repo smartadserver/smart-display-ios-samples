@@ -10,7 +10,6 @@
 struct Constants {
     
     static let siteID                               = 45220
-    static let baseURL                              = "https://mobile.smartadserver.com"
 
     static let bannerPageID                         = 663262
     static let bannerFormatID                       = 15140

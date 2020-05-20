@@ -63,6 +63,10 @@ class BannerViewController: UIViewController, SASBannerViewDelegate {
             // let adPlacement = SASAdPlacement(testAd: .bannerVideoRead)
             // let adPlacement = SASAdPlacement(testAd: .bannerVideoRead360)
             
+            // If you are an inventory reseller, you must provide your Supply Chain Object information
+            // More info here: https://help.smartadserver.com/s/article/Sellers-json-and-SupplyChain-Object
+            // let adPlacement = SASAdPlacement(siteId: Constants.siteID, pageId: Constants.bannerPageID, formatId: Constants.bannerFormatID, keywordTargeting: nil, supplyChainObjectString: "1.0,1!exchange1.com,1234,1,publisher,publisher.com")
+                       
 			// Loading the ad (using IDs from the Constants class).
 			banner.load(with: adPlacement)
 			

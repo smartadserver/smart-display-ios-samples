@@ -27,6 +27,11 @@ class NativeAdWithMediaInTableViewController: NativeAdInTableViewController {
         // The information provided are almost the same than the information you need to provide to a classic display banner,
         // except for the 'master' parameter that does not exist for native ads.
         return SASAdPlacement(siteId: Constants.siteID, pageId: Constants.nativeAdWithMediaInTableViewPageID, formatId: Constants.nativeAdFormatID)
+        
+        // If you are an inventory reseller, you must provide your Supply Chain Object information
+        // More info here: https://help.smartadserver.com/s/article/Sellers-json-and-SupplyChain-Object
+        // return SASAdPlacement(siteId: Constants.siteID, pageId: Constants.nativeAdWithMediaInTableViewPageID, formatId: Constants.nativeAdFormatID, keywordTargeting: nil, supplyChainObjectString: "1.0,1!exchange1.com,1234,1,publisher,publisher.com")
+        
     }
     
     override func updateViewControllerTitle() {

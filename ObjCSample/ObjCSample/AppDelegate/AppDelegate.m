@@ -10,7 +10,6 @@
 #import <SASDisplayKit/SASDisplayKit.h>
 
 #define kSiteID 104808
-#define kBaseURL @"https://mobile.smartadserver.com"
 
 @implementation AppDelegate
 
@@ -21,8 +20,8 @@
     // Smart Display Kit Configuration
     /////////////////////////////////////////
     
-    // The site ID and the base URL must be set before using the SDK, otherwise no ad will be retrieved.
-    [[SASConfiguration sharedInstance] configureWithSiteId:kSiteID baseURL:kBaseURL];
+    // The site ID must be set before using the SDK, otherwise no ad will be retrieved.
+    [[SASConfiguration sharedInstance] configureWithSiteId:kSiteID];
     
     // Enabling logging can be useful to get information if ads are not displayed properly.
     // Don't forget to turn the logging OFF before submitting to the App Store.

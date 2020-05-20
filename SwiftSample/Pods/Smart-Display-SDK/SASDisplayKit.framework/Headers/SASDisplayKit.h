@@ -21,6 +21,7 @@ FOUNDATION_EXPORT const unsigned char SASDisplayKitVersionString[];
 // Ad objects
 #import "SASAd.h"
 #import "SASNativeAd.h"
+#import "SASNativeVideoAd.h"
 
 // Ad views
 #import "SASAdView.h"
@@ -51,6 +52,8 @@ FOUNDATION_EXPORT const unsigned char SASDisplayKitVersionString[];
 // In-app bidding
 #import "SASBidderAdapter.h"
 #import "SASBidderAdapterProtocol.h"
+#import "SASBannerBidderAdapterDelegate.h"
+#import "SASInterstitialBidderAdapterDelegate.h"
 
 #import "SASBiddingAdPrice.h"
 #import "SASBiddingAdResponse.h"

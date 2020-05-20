@@ -38,6 +38,10 @@
     // SASAdPlacement *placement = [SASAdPlacement adPlacementWithTestAd:SASAdPlacementTestInterstitialVideo];
     // SASAdPlacement *placement = [SASAdPlacement adPlacementWithTestAd:SASAdPlacementTestInterstitialVideo360];
     
+    // If you are an inventory reseller, you must provide your Supply Chain Object information
+    // More info here: https://help.smartadserver.com/s/article/Sellers-json-and-SupplyChain-Object
+    // SASAdPlacement *placement = [SASAdPlacement adPlacementWithSiteId:kInterstitialSiteID pageId:kInterstitialSiteID formatId:kInterstitialFormatID keywordTargeting:nil supplyChainObjectString:@"1.0,1!exchange1.com,1234,1,publisher,publisher.com"];
+    
     // Initialize the interstitial manager with a placement
     self.interstitialManager = [[SASInterstitialManager alloc] initWithPlacement:placement delegate:self];
 }

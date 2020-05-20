@@ -36,6 +36,10 @@
     
     // SASAdPlacement *placement = [SASAdPlacement adPlacementWithTestAd:SASAdPlacementTestRewardedVideoWithEndCard];
     
+    // If you are an inventory reseller, you must provide your Supply Chain Object information
+    // More info here: https://help.smartadserver.com/s/article/Sellers-json-and-SupplyChain-Object
+    // SASAdPlacement *placement = [SASAdPlacement adPlacementWithSiteId:kRewardedVideoSiteID pageId:kRewardedVideoPageID formatId:kRewardedVideoFormatID keywordTargeting:nil supplyChainObjectString:@"1.0,1!exchange1.com,1234,1,publisher,publisher.com"];
+    
     // Initialize the rewarded video manager with a placement
     self.rewardedVideoManager = [[SASRewardedVideoManager alloc] initWithPlacement:placement delegate:self];
 }

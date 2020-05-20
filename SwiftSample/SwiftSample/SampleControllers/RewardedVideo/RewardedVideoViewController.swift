@@ -28,6 +28,10 @@ class RewardedVideoViewController: UIViewController, SASRewardedVideoManagerDele
         // let adPlacement = SASAdPlacement(testAd: .interstitialVideo)
         // let adPlacement = SASAdPlacement(testAd: .interstitialVideo360)
     
+        // If you are an inventory reseller, you must provide your Supply Chain Object information
+        // More info here: https://help.smartadserver.com/s/article/Sellers-json-and-SupplyChain-Object
+        // let adPlacement = SASAdPlacement(siteId: Constants.siteID, pageId: Constants.rewardedVideoPageID, formatId: Constants.rewardedVideoFormatID, keywordTargeting: nil, supplyChainObjectString: "1.0,1!exchange1.com,1234,1,publisher,publisher.com")
+        
         return SASRewardedVideoManager(placement: adPlacement, delegate: self)  // Instance of the rewarded video manager (marked as optional since it is created after the initialization of the controller)
     }()
 

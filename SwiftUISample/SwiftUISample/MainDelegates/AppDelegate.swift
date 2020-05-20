@@ -18,8 +18,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Smart Display SDK Configuration
         /////////////////////////////////////////
         
-        // The site ID and the base URL must be set before using the SDK, otherwise no ad will be retrieved.
-        SASConfiguration.shared.configure(siteId: Constants.siteID, baseURL: Constants.baseURL)
+        // The site ID must be set before using the SDK, otherwise no ad will be retrieved.
+        SASConfiguration.shared.configure(siteId: Constants.siteID)
         
         // Enabling logging can be useful to get informations if ads are not displayed properly.
         // Don't forget to turn logging OFF before submitting to the App Store.
