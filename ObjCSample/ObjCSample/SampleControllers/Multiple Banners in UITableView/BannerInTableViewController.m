@@ -111,6 +111,14 @@
     banner.delegate = self;
     banner.modalParentViewController = self;
     
+    // To avoid having the parallax going below your navigation bar and your action bar, you can manually set the parallax infos.
+    // Uncomment the code below if you want to manually set the viewport of your parallax.
+    //
+    // CGFloat topBarSize = YOUR_TOP_BAR_SIZE;
+    // CGFloat bottomBarSize = YOUR_BOTTOM_BAR_SIZE;
+    // CGFloat parallaxViewportHeight = [UIScreen mainScreen].bounds.size.height - topBarSize - bottomBarSize;
+    // [banner setParallaxInfos:[[SASParallaxInfos alloc] initWithViewportTopOrigin:topBarSize viewportHeight:parallaxViewportHeight]];
+    
     [banner loadWithPlacement:[SASAdPlacement adPlacementWithSiteId:kSiteID pageId:pageId formatId:kFormatID]];
     
     return banner;

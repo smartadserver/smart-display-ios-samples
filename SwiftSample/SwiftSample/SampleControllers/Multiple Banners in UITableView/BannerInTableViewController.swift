@@ -117,6 +117,14 @@ class BannerInTableViewController: UITableViewController, SASBannerViewDelegate 
         // Setting the modal parent view controller.
         banner.modalParentViewController = self
         
+        // To avoid having the parallax going below your navigation bar and your action bar, you can manually set the parallax infos.
+        // Uncomment the code below if you want to manually set the viewport of your parallax.
+        //
+        // let topBarSize: CGFloat = YOUR_TOP_BAR_SIZE;
+        // let bottomBarSize: CGFloat = YOUR_BOTTOM_BAR_SIZE;
+        // let parallaxViewportHeight = UIScreen.main.bounds.size.height - topBarSize - bottomBarSize;
+        // banner.parallaxInfos = SASParallaxInfos(viewportTopOrigin: topBarSize, viewportHeight: parallaxViewportHeight)
+        
         // Loading the ad (using IDs from the Constants class).
         banner.load(with: SASAdPlacement(siteId: Constants.siteID, pageId: pageId, formatId: Constants.bannerFormatID))
         
