@@ -47,6 +47,14 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (instancetype)init NS_UNAVAILABLE;
 
+/**
+ Loads a Rewarded Video Ad with a secured transaction token.
+ 
+ @param securedTransactionToken A secured transaction token, base64 encoded, to be forwarded to Smart's delivery engine.
+ */
+- (void)loadWithSecuredTransactionToken:(nullable NSString *)securedTransactionToken NS_SWIFT_NAME(load(securedTransactionToken:));
+
+
 @end
 
 NS_ASSUME_NONNULL_END

@@ -26,6 +26,17 @@ NS_ASSUME_NONNULL_BEGIN
 /// behavior in your app…
 @property (nonatomic, readonly) NSString *currency;
 
+/// The secured transaction token associated with the reward. Base64 encoded.
+///
+/// Decrypt this token with your Private Key (RSA-1024) to ensure the ad was delivered from Smart Ad Server.
+/// Return format of the token is: "{uniquetokenprovidedwhenloadingthead}|iid:{deliveredinsertionid}"
+/// 
+/// Check the documentation: https://documentation.smartadserver.com/DisplaySDK for more information.
+@property (nonatomic, readonly, nullable) NSString *securedTransactionToken;
+
+/// The duration of the video ad that has been played to deliver this reward, in seconds. -1 if this duration is unknown.
+@property (nonatomic, readonly) NSTimeInterval rewardedVideoDuration;
+
 /**
  Instantiates a new reward using an amount and a currency.
  
