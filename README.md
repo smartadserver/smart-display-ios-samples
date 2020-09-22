@@ -5,8 +5,8 @@ This repository contains some samples demonstrating how to integrate the _Smart 
 ## Requirements
 
 * A _Smart AdServer_ account
-* _Xcode 11.0_ or higher
-* _iOS 8.0_ or higher
+* _Xcode 12.0_ or higher
+* _iOS 9.0_ or higher
 * Cocoapods
 
 ## Installation

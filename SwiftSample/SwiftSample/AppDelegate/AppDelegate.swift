@@ -17,6 +17,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         /////////////////////////////////////////
+        // TRACKING AUTHORIZATION
+        /////////////////////////////////////////
+        
+        // Starting with iOS 14, the SDK need the user's consent before being able to access the IDFA.
+        // Check the MasterViewController class to check how to request this consent…
+        
+        /////////////////////////////////////////
         // Smart Display SDK Configuration
         /////////////////////////////////////////
         
@@ -26,7 +33,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Enabling logging can be useful to get informations if ads are not displayed properly.
         // Don't forget to turn logging OFF before submitting to the App Store.
         // SASConfiguration.shared.loggingEnabled = true
-        
         
         /////////////////////////////////////////
         // SDK - TCF Compliance

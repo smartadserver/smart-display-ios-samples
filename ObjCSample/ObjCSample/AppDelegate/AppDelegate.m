@@ -17,6 +17,13 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     /////////////////////////////////////////
+    // TRACKING AUTHORIZATION
+    /////////////////////////////////////////
+    
+    // Starting with iOS 14, the SDK need the user's consent before being able to access the IDFA.
+    // Check the MasterViewController class to check how to request this consent…
+    
+    /////////////////////////////////////////
     // Smart Display Kit Configuration
     /////////////////////////////////////////
     
