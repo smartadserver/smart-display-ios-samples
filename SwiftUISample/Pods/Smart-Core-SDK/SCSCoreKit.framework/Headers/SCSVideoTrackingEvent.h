@@ -7,7 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "SCSTrackingEvent.h"
+#if TARGET_OS_IOS || (TARGET_OS_IPHONE && !TARGET_OS_TV)
+#import <SCSCoreKit/SCSTrackingEvent.h>
+#elif TARGET_OS_TV
+#import <SCSCoreKitTV/SCSTrackingEvent.h>
+#endif
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -37,6 +41,9 @@ typedef NS_ENUM(NSUInteger, SCSVideoTrackingEventType) {
     
     /// CreativeView event. Only for non linear creatives.
     SCSVideoTrackingEventTypeCreativeView,
+    
+    /// Loaded event.
+    SCSVideoTrackingEventTypeLoaded,
     
     /// Start event.
     SCSVideoTrackingEventTypeStart,
@@ -73,6 +80,12 @@ typedef NS_ENUM(NSUInteger, SCSVideoTrackingEventType) {
     
     /// ExitFullscreen event.
     SCSVideoTrackingEventTypeExitFullscreen,
+    
+    /// Player Expand event.
+    SCSVideoTrackingEventTypePlayerExpand,
+    
+    /// Player Collapse event.
+    SCSVideoTrackingEventTypePlayerCollapse,
     
     /// Progress event.
     SCSVideoTrackingEventTypeProgress,

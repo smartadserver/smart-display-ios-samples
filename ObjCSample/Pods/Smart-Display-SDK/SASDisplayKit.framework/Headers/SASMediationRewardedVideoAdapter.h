@@ -6,7 +6,7 @@
 //  Copyright © 2018 Smart AdServer. All rights reserved.
 //
 
-#import "SASMediationRewardedVideoAdapterDelegate.h"
+#import <SASDisplayKit/SASMediationRewardedVideoAdapterDelegate.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

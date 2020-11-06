@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <AppTrackingTransparency/AppTrackingTransparency.h>
 
 #define SCS_SYSTEM_VERSION_EQUAL_TO(v)                  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedSame)
 #define SCS_SYSTEM_VERSION_GREATER_THAN(v)              ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedDescending)
@@ -14,10 +15,30 @@
 #define SCS_SYSTEM_VERSION_LESS_THAN(v)                 ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedAscending)
 #define SCS_SYSTEM_VERSION_LESS_THAN_OR_EQUAL_TO(v)     ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedDescending)
 
-
 @protocol SCSDeviceInfoProviderProtocol;
 
 NS_ASSUME_NONNULL_BEGIN
+
+/// Represents the current tracking authorization status.
+///
+/// @note This enum shares the same underlying values than the Apple's enum but
+/// add a new case for devices that run on iOS 13 and lower.
+typedef NS_ENUM(NSInteger, SCSDeviceInfoTrackingAuthorizationStatus) {
+    /// Not applicable: the OS is too old to retrieve the authorization status.
+    SCSDeviceInfoTrackingAuthorizationStatusNotApplicable = -1,
+    
+    /// Not determined: the app has not requested for tracking yet.
+    SCSDeviceInfoTrackingAuthorizationStatusNotDetermined = 0,
+    
+    /// Restricted.
+    SCSDeviceInfoTrackingAuthorizationStatusRestricted,
+    
+    /// Denied: the app has been denied to track the user.
+    SCSDeviceInfoTrackingAuthorizationStatusDenied,
+    
+    /// Authorized: the app has been authorized to track the user.
+    SCSDeviceInfoTrackingAuthorizationStatusAuthorized
+};
 
 /**
  Retrieve some informations about the current device.
@@ -49,6 +70,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// YES if advertising tracking is enabled in the system settings, NO otherwise.
 @property (nonatomic, readonly) BOOL advertisingTrackingEnabled;
+
+/// The current tracking authorization status for the device.
+@property (nonatomic, readonly) SCSDeviceInfoTrackingAuthorizationStatus trackingAuthorizationStatus;
 
 /// The device system locale.
 @property (nonatomic, readonly) NSString *locale;

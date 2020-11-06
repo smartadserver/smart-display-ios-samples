@@ -7,13 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "SCSLogNode.h"
+#if TARGET_OS_IOS || (TARGET_OS_IPHONE && !TARGET_OS_TV)
+#import <SCSCoreKit/SCSLogNode.h>
+#elif TARGET_OS_TV
+#import <SCSCoreKitTV/SCSLogNode.h>
+#endif
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface SCSLogErrorNode : SCSLogNode
-
-- (instancetype)init NS_UNAVAILABLE;
 
 /**
  Initialize the error node with all needed information.
@@ -24,9 +26,28 @@ NS_ASSUME_NONNULL_BEGIN
  
  @return A fully initialized instance of SCSLogErrorNode.
  */
-- (instancetype) initWithErrorMessage:(NSString *)message
-                           adResponse:(nullable NSString *)adResponse
-                   timeoutSettingTime:(NSTimeInterval)timeout;
+- (instancetype)initWithErrorMessage:(NSString *)message
+                          adResponse:(nullable NSString *)adResponse
+                  timeoutSettingTime:(NSTimeInterval)timeout __deprecated;
+
+/**
+ Initialize the error node with all needed information.
+ 
+ @param message           The error message to log.
+ @param adResponse        The adResponse associated with the log, if any.
+ @param timeout           The timeout setting associated with the log, if any.
+ @param adCallUrlString   The URL used for the ad call that failed.
+ @param adCallJsonMessage The JSONObject (as a String) put as jsonMessage for the ad call that failed.
+ 
+ @return A fully initialized instance of SCSLogErrorNode.
+ */
+- (instancetype)initWithErrorMessage:(NSString *)message
+                          adResponse:(nullable NSString *)adResponse
+                  timeoutSettingTime:(NSTimeInterval)timeout
+                     adCallUrlString:(nullable NSString *)adCallUrlString
+                   adCallJsonMessage:(nullable NSString *)adCallJsonMessage;
+
+- (instancetype)init NS_UNAVAILABLE;
 
 @end
 

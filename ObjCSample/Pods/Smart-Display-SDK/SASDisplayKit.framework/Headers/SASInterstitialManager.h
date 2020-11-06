@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "SASBaseInterstitialManager.h"
-#import "SASInterstitialManagerDelegate.h"
-#import "SASBiddingAdResponse.h"
+#import <SASDisplayKit/SASBaseInterstitialManager.h>
+#import <SASDisplayKit/SASInterstitialManagerDelegate.h>
+#import <SASDisplayKit/SASBiddingAdResponse.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

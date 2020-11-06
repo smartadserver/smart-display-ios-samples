@@ -6,10 +6,12 @@
 //  Copyright © 2017 Smart AdServer. All rights reserved.
 //
 
-#import "SCSTimerInterval.h"
-#import "SCSTimerDelegate.h"
+#import <Foundation/Foundation.h>
 
 NS_ASSUME_NONNULL_BEGIN
+
+@protocol SCSTimerDelegate;
+@class SCSTimerInterval;
 
 /// Describe the status of the timer.
 typedef NS_ENUM(NSUInteger, SCSTimerStatus) {

@@ -5,7 +5,7 @@ target 'SwiftUISample' do
   use_frameworks!
   platform :ios, '9.0'
 
-  pod 'Smart-Display-SDK', '~> 7.6.2'
+  pod 'Smart-Display-SDK', '~> 7.8.0'
 
   post_install do |installer|
     installer.pods_project.targets.each do |target|

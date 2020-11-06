@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@class SCSVASTURL, SCSVASTCreativeLinear, SCSVASTCreativeCompanion, SCSVASTCreativeNonLinear, SCSVASTAdExtension, SCSVASTError;
+@class SCSVASTURL, SCSVASTCreativeLinear, SCSVASTCreativeCompanion, SCSVASTCreativeNonLinear, SCSVASTAdExtension, SCSVASTError, SCSVASTAdVerification, SCSVASTViewabilityEvent;
 
 @interface SCSVASTAd : NSObject
 
@@ -32,6 +32,9 @@ NS_ASSUME_NONNULL_BEGIN
 /// The impression pixels to be called when this ad is played.
 @property (nonatomic, strong) NSMutableArray <SCSVASTURL *> *impressions;
 
+/// The viewability events to be called as per VAST & MRC specification. Contains Viewable, NotViewable and ViewUndetermined events.
+@property (nonatomic, strong) NSMutableArray <SCSVASTViewabilityEvent *> *viewabilityEvents;
+
 /// The linear creatives shipped with this ad.
 @property (nonatomic, strong) NSMutableArray <SCSVASTCreativeLinear *> *linearCreatives;
 
@@ -40,6 +43,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// The non linear creatives shipped with this ad.
 @property (nonatomic, strong) NSMutableArray <SCSVASTCreativeNonLinear *> *nonLinearCreatives;
+
+/// The AdVerifications shipped with this ad.
+@property (nonatomic, strong) NSMutableArray <SCSVASTAdVerification *> *adVerifications;
 
 /// The extensions shipped with this ad.
 @property (nullable, nonatomic, strong) SCSVASTAdExtension *extensions;

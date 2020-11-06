@@ -6,8 +6,8 @@
 //  Copyright © 2018 Smart AdServer. All rights reserved.
 //
 
-#import "SASNativeAdImage.h"
-#import "SASNativeAd.h"
+#import <SASDisplayKit/SASNativeAdImage.h>
+#import <SASDisplayKit/SASNativeAd.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

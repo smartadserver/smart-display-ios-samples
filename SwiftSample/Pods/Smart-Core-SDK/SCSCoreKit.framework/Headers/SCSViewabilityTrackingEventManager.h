@@ -7,9 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "SCSTrackingEvent.h"
-#import "SCSViewabilityTrackingEvent.h"
-#import "SCSTrackingEventManager.h"
+#if TARGET_OS_IOS || (TARGET_OS_IPHONE && !TARGET_OS_TV)
+#import <SCSCoreKit/SCSTrackingEvent.h>
+#import <SCSCoreKit/SCSViewabilityTrackingEvent.h>
+#import <SCSCoreKit/SCSTrackingEventManager.h>
+#elif TARGET_OS_TV
+#import <SCSCoreKitTV/SCSTrackingEvent.h>
+#import <SCSCoreKitTV/SCSViewabilityTrackingEvent.h>
+#import <SCSCoreKitTV/SCSTrackingEventManager.h>
+#endif
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -32,6 +38,14 @@ NS_ASSUME_NONNULL_BEGIN
  Stops the viewability tracking.
  */
 - (void)stopViewabilityTracking;
+
+/**
+ Resets the viewability tracking.
+ 
+ Calling this method will reset the current timer cycle and will set the 'current duration'
+ property of all tracked events to zero.
+ */
+- (void)resetViewabilityTracking;
 
 /**
  Updates the viewability information to allow the viewability tracking manager to update all tracking events.

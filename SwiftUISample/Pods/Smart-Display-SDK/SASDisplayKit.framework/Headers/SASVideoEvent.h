@@ -14,6 +14,9 @@ typedef NS_ENUM(NSInteger, SASVideoEvent) {
     /// Undefined video event.
     SASVideoEventUndefined,
     
+    /// The video has loaded.
+    SASVideoEventLoaded,
+    
     /// The video has started.
     SASVideoEventStart,
     
@@ -45,7 +48,13 @@ typedef NS_ENUM(NSInteger, SASVideoEvent) {
     SASVideoEventEnterFullscreen,
     
     /// The video is not playing in fullscreen anymore.
-    SASVideoEventExitFullscreen
+    SASVideoEventExitFullscreen,
+    
+    /// The video is now playing in fullscreen (replacement of enterFullscreen event).
+    SASVideoEventPlayerExpand,
+    
+    /// The video is not playing in fullscreen anymore (replacement of exitFullscreen event).
+    SASVideoEventPlayerCollapse
     
 };
 

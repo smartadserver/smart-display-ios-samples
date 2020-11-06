@@ -7,7 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "SCSLog.h"
+#if TARGET_OS_IOS || (TARGET_OS_IPHONE && !TARGET_OS_TV)
+#import <SCSCoreKit/SCSLog.h>
+#elif TARGET_OS_TV
+#import <SCSCoreKitTV/SCSLog.h>
+#endif
 
 NS_ASSUME_NONNULL_BEGIN
 

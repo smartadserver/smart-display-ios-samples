@@ -6,8 +6,14 @@
 //  Copyright © 2017 Smart AdServer. All rights reserved.
 //
 
-#import "SCSURLSessionResponse.h"
-#import "SCSURLSessionProviderProtocol.h"
+#import <Foundation/Foundation.h>
+#if TARGET_OS_IOS || (TARGET_OS_IPHONE && !TARGET_OS_TV)
+#import <SCSCoreKit/SCSURLSessionResponse.h>
+#import <SCSCoreKit/SCSURLSessionProviderProtocol.h>
+#elif TARGET_OS_TV
+#import <SCSCoreKitTV/SCSURLSessionResponse.h>
+#import <SCSCoreKitTV/SCSURLSessionProviderProtocol.h>
+#endif
 
 NS_ASSUME_NONNULL_BEGIN
 

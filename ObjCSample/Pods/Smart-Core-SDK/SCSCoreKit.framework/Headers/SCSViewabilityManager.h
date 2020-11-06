@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "SCSViewabilityManagerDelegate.h"
 
 NS_ASSUME_NONNULL_BEGIN
+
+@protocol SCSViewabilityManagerDelegate;
 
 /**
  The viewability manager can track manually or automatically the viewability status of a view.

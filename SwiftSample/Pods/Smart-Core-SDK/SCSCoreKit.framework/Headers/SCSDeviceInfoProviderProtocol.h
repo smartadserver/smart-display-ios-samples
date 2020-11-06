@@ -5,6 +5,7 @@
 //  Created by Thomas Geley on 23/03/2017.
 //  Copyright © 2017 Smart AdServer. All rights reserved.
 //
+
 #import <Foundation/Foundation.h>
 
 NS_ASSUME_NONNULL_BEGIN
@@ -64,6 +65,13 @@ NS_ASSUME_NONNULL_BEGIN
  @return The device system locale.
  */
 - (NSString *)locale;
+
+/**
+ Return the current tracking authorization status for the device.
+ 
+ @return Rhe current tracking authorization status for the device.
+ */
+- (SCSDeviceInfoTrackingAuthorizationStatus)trackingAuthorizationStatus;
 
 @end
 

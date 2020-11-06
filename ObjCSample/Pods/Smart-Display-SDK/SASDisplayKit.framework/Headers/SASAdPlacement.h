@@ -126,8 +126,7 @@ typedef NS_ENUM(NSInteger, SASAdPlacementTest) {
 
 /// A set of keywords that will be used when loading an ad to receive more relevant advertising if needed, nil otherwise.
 ///
-/// Keywords are typically used to target ad campaign insertions at specific user segments. They should be
-/// formatted as comma-separated key-value pairs (e.g. "gender=female,age=27").
+/// Keywords are typically used to target ad campaign insertions at specific user segments.
 ///
 /// On the Smart manage interface, keyword targeting options can be found under the Targeting / Keywords
 /// section when managing campaign insertions.

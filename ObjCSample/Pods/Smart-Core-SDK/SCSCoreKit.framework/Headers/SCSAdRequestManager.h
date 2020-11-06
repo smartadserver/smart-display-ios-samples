@@ -6,9 +6,12 @@
 //  Copyright © 2017 Smart AdServer. All rights reserved.
 //
 
-#import "SCSAdRequestValidatorProtocol.h"
-#import "SCSURLSession.h"
-#import "SCSURLSessionResponse.h"
+#import <Foundation/Foundation.h>
+
+NS_ASSUME_NONNULL_BEGIN
+
+@protocol SCSAdRequestValidatorProtocol;
+@class SCSURLSession, SCSURLSessionResponse;
 
 /// List of all HTTP methods that can be used with the ad request manager.
 typedef NS_ENUM(NSUInteger, SCSAdRequestManagerHTTPMethod) {
@@ -18,8 +21,6 @@ typedef NS_ENUM(NSUInteger, SCSAdRequestManagerHTTPMethod) {
     /// GET method.
     SCSAdRequestManagerHTTPMethodGET,
 };
-
-NS_ASSUME_NONNULL_BEGIN
 
 /**
  Class used to validate and perform ad requests.

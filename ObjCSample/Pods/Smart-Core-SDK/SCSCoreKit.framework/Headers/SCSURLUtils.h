@@ -204,6 +204,16 @@ typedef NS_ENUM(NSInteger, SCSAppStoreURLType) {
 + (NSURL *)URLByDeletingQuery:(NSURL *)url;
 
 /**
+ Removes the last component and the query from an URL.
+ 
+ This method can be useful to retrieve the base URL from a script URL.
+ 
+ @param url The URL from which we want to remove the query.
+ @return A new URL without the last component and query items.
+ */
++ (NSURL *)URLByDeletingLastPathComponentAndQuery:(NSURL *)url;
+
+/**
  Retrieve the value for a specific key in the query items of an URL.
  
  @param key The key name of the parameter value to retrieve

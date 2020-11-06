@@ -7,10 +7,17 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "SCSTrackingEvent.h"
-#import "SCSTrackingEventFactory.h"
+#if TARGET_OS_IOS || (TARGET_OS_IPHONE && !TARGET_OS_TV)
+#import <SCSCoreKit/SCSTrackingEvent.h>
+#import <SCSCoreKit/SCSTrackingEventFactory.h>
+#elif TARGET_OS_TV
+#import <SCSCoreKitTV/SCSTrackingEvent.h>
+#import <SCSCoreKitTV/SCSTrackingEventFactory.h>
+#endif
 
 NS_ASSUME_NONNULL_BEGIN
+
+@class SCSTrackingEvent;
 
 /**
  Default SCSTrackingEventFactory implementation.

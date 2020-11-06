@@ -7,11 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "SCSLogMeasureNode.h"
-#import "SCSLogErrorNode.h"
-#import "SCSLogNode.h"
 
 NS_ASSUME_NONNULL_BEGIN
+
+@class SCSLogMeasureNode, SCSLogErrorNode, SCSLogNode;
 
 /// The level for the Log object
 typedef NS_ENUM(NSInteger, SCSRemoteLogLevel) {

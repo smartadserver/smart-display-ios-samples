@@ -7,10 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "SCSLocationManager.h"
-#import "SCSLocation.h"
 
 NS_ASSUME_NONNULL_BEGIN
+
+@class SCSLocationManager, SCSLocation;
 
 /**
  Protocol that must be implemented by objects that want to act as data source for a SCSLocationManager instance.

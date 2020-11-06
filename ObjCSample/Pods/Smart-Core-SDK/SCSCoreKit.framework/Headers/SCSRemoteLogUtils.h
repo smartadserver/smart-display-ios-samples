@@ -7,10 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "SCSRemoteLog.h"
-#import "SCSLogNode.h"
 
 NS_ASSUME_NONNULL_BEGIN
+
+@class SCSRemoteLog, SCSLogNode;
 
 @interface SCSRemoteLogUtils : NSObject
 

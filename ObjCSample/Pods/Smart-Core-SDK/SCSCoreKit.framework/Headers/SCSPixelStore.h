@@ -6,10 +6,12 @@
 //  Copyright © 2017 Smart AdServer. All rights reserved.
 //
 
-#import "SCSPixel.h"
-#import "SCSPixelStoreProviderProtocol.h"
+#import <Foundation/Foundation.h>
 
 NS_ASSUME_NONNULL_BEGIN
+
+@protocol SCSPixelStoreProviderProtocol;
+@class SCSPixel;
 
 /**
  Store pixels that are used by the pixel manager and handle disk read/write.

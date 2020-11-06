@@ -7,9 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "SASRewardedVideoManagerDelegate.h"
-#import "SASBaseInterstitialManager.h"
-#import "SASBiddingAdResponse.h"
+#import <SASDisplayKit/SASRewardedVideoManagerDelegate.h>
+#import <SASDisplayKit/SASBaseInterstitialManager.h>
+#import <SASDisplayKit/SASBiddingAdResponse.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

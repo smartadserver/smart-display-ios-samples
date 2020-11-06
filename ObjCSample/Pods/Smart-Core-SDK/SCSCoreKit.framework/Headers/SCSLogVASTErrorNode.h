@@ -6,7 +6,12 @@
 //  Copyright © 2019 Smart AdServer. All rights reserved.
 //
 
-#import "SCSLogNode.h"
+#import <Foundation/Foundation.h>
+#if TARGET_OS_IOS || (TARGET_OS_IPHONE && !TARGET_OS_TV)
+#import <SCSCoreKit/SCSLogNode.h>
+#elif TARGET_OS_TV
+#import <SCSCoreKitTV/SCSLogNode.h>
+#endif
 
 NS_ASSUME_NONNULL_BEGIN
 

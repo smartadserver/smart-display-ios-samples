@@ -7,14 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
-
-#import "SCSLocation.h"
-#import "SCSLocationProviderDelegate.h"
-#import "SCSLocationProviderProtocol.h"
+#if TARGET_OS_IOS || (TARGET_OS_IPHONE && !TARGET_OS_TV)
+#import <SCSCoreKit/SCSLocationProviderDelegate.h>
+#elif TARGET_OS_TV
+#import <SCSCoreKitTV/SCSLocationProviderDelegate.h>
+#endif
 
 NS_ASSUME_NONNULL_BEGIN
 
-@protocol SCSLocationManagerDataSource;
+@protocol SCSLocationManagerDataSource, SCSLocationProviderDelegate, SCSLocationProviderProtocol;
+@class SCSLocation;
 
 /**
  Retrieve and store the device location that must be used in ad calls.

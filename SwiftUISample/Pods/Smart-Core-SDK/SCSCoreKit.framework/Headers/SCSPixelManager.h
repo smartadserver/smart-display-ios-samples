@@ -6,10 +6,11 @@
 //  Copyright © 2017 Smart AdServer. All rights reserved.
 //
 
-#import "SCSPixelStore.h"
-#import "SCSURLSession.h"
+#import <Foundation/Foundation.h>
 
 NS_ASSUME_NONNULL_BEGIN
+
+@class SCSPixel, SCSPixelStore, SCSURLSession;
 
 /**
  The pixel manager is used to call all pixel of the SDK and to handle failures. It can store unsuccessful pixels in a

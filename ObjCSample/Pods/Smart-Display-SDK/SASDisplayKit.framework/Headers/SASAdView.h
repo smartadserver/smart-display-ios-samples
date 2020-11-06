@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <CoreLocation/CoreLocation.h>
-#import "SASAdPlacement.h"
+#import <SASDisplayKit/SASAdPlacement.h>
 
 #define kSASCloseLinearMessage                  @"closeLinear"
 

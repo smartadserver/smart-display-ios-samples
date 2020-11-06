@@ -6,7 +6,7 @@
 //  Copyright © 2017 Smart AdServer. All rights reserved.
 //
 
-#import "SCSVideoAdProtocol.h"
+#import <Foundation/Foundation.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

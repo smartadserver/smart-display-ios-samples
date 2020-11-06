@@ -13,7 +13,9 @@ NS_ASSUME_NONNULL_BEGIN
 @class SCSTrackingEventManager;
 
 @protocol SCSTrackingEventManagerDelegate <NSObject>
+
 - (void)trackingEventManager:(SCSTrackingEventManager *)trackingEventManager didTrackEventWithName:(NSString *)name count:(NSInteger)count;
+
 @end
 
 NS_ASSUME_NONNULL_END

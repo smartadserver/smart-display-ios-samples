@@ -8,8 +8,11 @@
 
 #import <Foundation/Foundation.h>
 #import <SceneKit/SceneKit.h>
-
-#import "SCSAxis3.h"
+#if TARGET_OS_IOS || (TARGET_OS_IPHONE && !TARGET_OS_TV)
+#import <SCSCoreKit/SCSAxis3.h>
+#elif TARGET_OS_TV
+#import <SCSCoreKitTV/SCSAxis3.h>
+#endif
 
 NS_ASSUME_NONNULL_BEGIN
 

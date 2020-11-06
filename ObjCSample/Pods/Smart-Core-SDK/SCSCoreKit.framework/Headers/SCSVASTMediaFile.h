@@ -38,6 +38,9 @@ NS_ASSUME_NONNULL_BEGIN
 /// The media file's video height.
 @property (nonatomic, readonly) float height;
 
+/// The total file size in bytes. Can also be calculated from bitrate * duration. Default -1 if the attribute is not available in the VAST file.
+@property (nonatomic, readonly) float fileSize;
+
 /// true if the media file is scalable.
 @property (nonatomic, readonly) BOOL scalable;
 

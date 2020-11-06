@@ -6,6 +6,9 @@
 //  Copyright © 2020 Smart AdServer. All rights reserved.
 //
 
+// This class is kept only for retrocompatibility with Smart Display SDK with version <= 7.6
+// For later versions, Smart Display SDK and Smart Instream SDK will use SCSVASTAdVerification instead.
+
 #import <Foundation/Foundation.h>
 
 NS_ASSUME_NONNULL_BEGIN

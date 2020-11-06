@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "SASBidderAdapterProtocol.h"
+#import <SASDisplayKit/SASBidderAdapterProtocol.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

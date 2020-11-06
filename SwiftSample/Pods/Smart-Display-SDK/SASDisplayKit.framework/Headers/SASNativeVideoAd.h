@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "SASAd.h"
+#import <SASDisplayKit/SASAd.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

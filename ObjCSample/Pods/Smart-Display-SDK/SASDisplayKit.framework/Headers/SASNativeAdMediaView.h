@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "SASNativeAdMediaViewDelegate.h"
+#import <SASDisplayKit/SASNativeAdMediaViewDelegate.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

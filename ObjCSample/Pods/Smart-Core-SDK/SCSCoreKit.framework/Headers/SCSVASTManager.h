@@ -7,12 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "SCSVASTManagerProtocol.h"
-#import "SCSVASTErrorRemoteLoggerProtocol.h"
+#if TARGET_OS_IOS || (TARGET_OS_IPHONE && !TARGET_OS_TV)
+#import <SCSCoreKit/SCSVASTManagerProtocol.h>
+#elif TARGET_OS_TV
+#import <SCSCoreKitTV/SCSVASTManagerProtocol.h>
+#endif
 
 NS_ASSUME_NONNULL_BEGIN
 
-@protocol SCSVASTManagerDelegate, SCSVASTAdAdapterProtocol;
+@protocol SCSVASTManagerDelegate, SCSVASTAdAdapterProtocol, SCSVASTErrorRemoteLoggerProtocol;
 @class SCSURLSession, SCSPixelManager, SCSVASTManagerResponse, SCSVASTPixelManager, SCSVASTManagerConfig;
 
 /**

@@ -6,7 +6,7 @@
 //  Copyright © 2019 Smart AdServer. All rights reserved.
 //
 
-#import "SCSQuaternion.h"
+#import <SCSCoreKit/SCSQuaternion.h>
 #import <CoreMotion/CoreMotion.h>
 
 NS_ASSUME_NONNULL_BEGIN

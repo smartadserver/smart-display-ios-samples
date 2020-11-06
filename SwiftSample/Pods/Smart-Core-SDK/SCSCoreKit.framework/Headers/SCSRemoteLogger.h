@@ -7,10 +7,17 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "SCSRemoteLog.h"
-#import "SCSLogNode.h"
-#import "SCSLocation.h"
-#import "SCSIdentity.h"
+#if TARGET_OS_IOS || (TARGET_OS_IPHONE && !TARGET_OS_TV)
+#import <SCSCoreKit/SCSRemoteLog.h>
+#import <SCSCoreKit/SCSLogNode.h>
+#import <SCSCoreKit/SCSLocation.h>
+#import <SCSCoreKit/SCSIdentity.h>
+#elif TARGET_OS_TV
+#import <SCSCoreKitTV/SCSRemoteLog.h>
+#import <SCSCoreKitTV/SCSLogNode.h>
+#import <SCSCoreKitTV/SCSLocation.h>
+#import <SCSCoreKitTV/SCSIdentity.h>
+#endif
 
 NS_ASSUME_NONNULL_BEGIN
 

@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <AVFoundation/AVFoundation.h>
 #import <UIKit/UIKit.h>
-#import "SASVideoEvent.h"
+#import <SASDisplayKit/SASVideoEvent.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

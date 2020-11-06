@@ -6,9 +6,9 @@
 //  Copyright © 2019 Smart AdServer. All rights reserved.
 //
 
-#import "SASAdPlacement.h"
-#import "SASBiddingAdPrice.h"
-#import "SASBiddingAdFormatType.h"
+#import <SASDisplayKit/SASAdPlacement.h>
+#import <SASDisplayKit/SASBiddingAdPrice.h>
+#import <SASDisplayKit/SASBiddingAdFormatType.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

@@ -8,12 +8,11 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreLocation/CoreLocation.h>
-#import "SCSRemoteConfigManagerDelegate.h"
-#import "SCSRemoteConfigurationErrorRemoteLogger.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@class SCSIdentity;
+@protocol SCSRemoteConfigManagerDelegate, SCSRemoteConfigurationErrorRemoteLogger;
+@class SCSIdentity, SCSRemoteConfigManager;
 
 /**
  Hold the configuration of an ad SDK.
@@ -63,6 +62,13 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, readonly) BOOL isDeprecated;
 
 /**
+Public Initializer
+
+@param additionalParameters The default values for GET and POST ad call additional parameters
+*/
+- (instancetype)initWithDefaultAdCallAdditionalParemeters:(nullable NSDictionary *)additionalParameters;
+
+/**
  Public Initializer
  
  @param loggingEnabled Enables the Logging functionality.
@@ -77,7 +83,26 @@ NS_ASSUME_NONNULL_BEGIN
        allowAutomaticLocationDetection:(BOOL)allowAutomaticLocationDetection
                         manualLocation:(CLLocationCoordinate2D)manualLocation
                      identifierHashing:(BOOL)identifierHashing
-                      customIdentifier:(nullable NSString *)customIdentifier NS_DESIGNATED_INITIALIZER;
+                      customIdentifier:(nullable NSString *)customIdentifier;
+
+/**
+Public Initializer
+
+@param loggingEnabled Enables the Logging functionality.
+@param transientIDEnabled Enables the Transient ID functionality.
+@param allowAutomaticLocationDetection Enables the Automatic Location Detection functionality.
+@param manualLocation The location of the user.
+@param identifierHashing Enables the Identifier hashing functionality.
+@param customIdentifier The custom identifier for the device.
+@param additionalParameters The default values for GET and POST ad call additional parameters
+*/
+- (instancetype)initWithLoggingEnabled:(BOOL)loggingEnabled
+                    transientIDEnabled:(BOOL)transientIDEnabled
+       allowAutomaticLocationDetection:(BOOL)allowAutomaticLocationDetection
+                        manualLocation:(CLLocationCoordinate2D)manualLocation
+                     identifierHashing:(BOOL)identifierHashing
+                      customIdentifier:(nullable NSString *)customIdentifier
+     defaultAdCallAdditionalParemeters:(nullable NSDictionary *)additionalParameters NS_DESIGNATED_INITIALIZER;
 
 /**
  Return the current device identity.

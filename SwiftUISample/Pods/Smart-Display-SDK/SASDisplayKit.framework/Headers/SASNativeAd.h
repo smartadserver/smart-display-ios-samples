@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "SASNativeAdDelegate.h"
+#import <SASDisplayKit/SASNativeAdDelegate.h>
 
 #define SASRatingUndefined -1
 #define SASLikesUndefined -1

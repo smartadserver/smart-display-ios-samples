@@ -53,7 +53,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nullable, nonatomic, readonly) NSString *rtbEnvironmentType;
 @property (nullable, nonatomic, readonly) NSString *rtbImpressionHash;
 
-@property (nullable, nonatomic, readonly) NSMutableArray <SCSVASTAdExtensionAdVerification *> *adVerifications;
+@property (nullable, nonatomic, readonly) NSMutableArray <SCSVASTAdExtensionAdVerification *> *adVerifications __deprecated_msg("Use the adVerifications property of SCSVASTAd instead!");
 
 /**
  Initializer from an XML Dictionary.

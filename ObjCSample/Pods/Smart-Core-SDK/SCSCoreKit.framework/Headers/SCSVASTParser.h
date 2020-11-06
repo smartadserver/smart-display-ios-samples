@@ -7,11 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "SCSVASTError.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@class SCSVASTParserResponse, SCSVASTURL;
+@class SCSVASTParserResponse, SCSVASTURL, SCSVASTError;
 
 /**
  This class transforms XML Datas into a VASTModel or return an error.

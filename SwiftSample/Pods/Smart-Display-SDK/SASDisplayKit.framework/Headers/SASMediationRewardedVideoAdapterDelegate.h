@@ -6,7 +6,7 @@
 //  Copyright © 2018 Smart AdServer. All rights reserved.
 //
 
-#import "SASReward.h"
+#import <SASDisplayKit/SASReward.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-#import "SASAdStatus.h"
+#import <SASDisplayKit/SASAdStatus.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

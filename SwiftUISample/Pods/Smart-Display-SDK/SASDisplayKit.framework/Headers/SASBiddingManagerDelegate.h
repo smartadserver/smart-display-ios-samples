@@ -6,8 +6,8 @@
 //  Copyright © 2019 Smart AdServer. All rights reserved.
 //
 
-#import "Foundation/Foundation.h"
-#import "SASBiddingAdResponse.h"
+#import <Foundation/Foundation.h>
+#import <SASDisplayKit/SASBiddingAdResponse.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

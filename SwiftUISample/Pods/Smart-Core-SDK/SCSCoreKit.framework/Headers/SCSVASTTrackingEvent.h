@@ -7,7 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "SCSVideoTrackingEvent.h"
+#if TARGET_OS_IOS || (TARGET_OS_IPHONE && !TARGET_OS_TV)
+#import <SCSCoreKit/SCSVideoTrackingEvent.h>
+#elif TARGET_OS_TV
+#import <SCSCoreKitTV/SCSVideoTrackingEvent.h>
+#endif
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -33,6 +37,7 @@ NS_ASSUME_NONNULL_BEGIN
  
  @param name The name of the tracking event.
  @param offset The offset value when it should be triggered.
+ @param url The url that will be called when the event is triggered.
  */
 - (instancetype)initWithName:(NSString *)name offset:(nullable NSString *)offset url:(NSURL *)url;
 

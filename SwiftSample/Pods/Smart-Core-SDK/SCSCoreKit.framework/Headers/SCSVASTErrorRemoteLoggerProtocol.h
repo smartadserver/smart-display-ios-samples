@@ -6,9 +6,11 @@
 //  Copyright © 2019 Smart AdServer. All rights reserved.
 //
 
-#import "SCSVASTError.h"
+#import <Foundation/Foundation.h>
 
 NS_ASSUME_NONNULL_BEGIN
+
+@class SCSVASTError;
 
 /**
  Public interface handling the VAST Error logging.

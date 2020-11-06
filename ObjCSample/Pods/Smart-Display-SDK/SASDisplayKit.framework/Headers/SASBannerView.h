@@ -7,11 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "SASAdView.h"
-#import "SASLoader.h"
-#import "SASBannerViewDelegate.h"
-#import "SASBannerViewInternalDelegate.h"
-#import "SASBiddingAdResponse.h"
+#import <SASDisplayKit/SASAdView.h>
+#import <SASDisplayKit/SASLoader.h>
+#import <SASDisplayKit/SASBannerViewDelegate.h>
+#import <SASDisplayKit/SASBannerViewInternalDelegate.h>
+#import <SASDisplayKit/SASBiddingAdResponse.h>
 
 #define SASRefreshIntervalOff        (-1)
 #define SASRefreshIntervalMinimum    20
