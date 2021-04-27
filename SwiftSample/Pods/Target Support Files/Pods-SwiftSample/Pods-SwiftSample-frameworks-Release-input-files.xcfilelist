@@ -1,3 +1,4 @@
 ${PODS_ROOT}/Target Support Files/Pods-SwiftSample/Pods-SwiftSample-frameworks.sh
-${PODS_ROOT}/Smart-Core-SDK/SCSCoreKit.framework
-${PODS_ROOT}/Smart-Display-SDK/SASDisplayKit.framework
+${PODS_XCFRAMEWORKS_BUILD_DIR}/SCSCoreKit/SCSCoreKit.framework/SCSCoreKit
+${PODS_XCFRAMEWORKS_BUILD_DIR}/OMSDK_Smartadserver1/OMSDK_Smartadserver1.framework/OMSDK_Smartadserver1
+${PODS_XCFRAMEWORKS_BUILD_DIR}/SASDisplayKit/SASDisplayKit.framework/SASDisplayKit

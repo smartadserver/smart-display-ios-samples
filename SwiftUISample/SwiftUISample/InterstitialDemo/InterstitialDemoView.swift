@@ -25,7 +25,7 @@ struct InterstitialDemoView: View {
     //
     // You can also find more info in Apple's official documentation:
     // https://developer.apple.com/documentation/combine/observableobject
-    @ObservedObject var interstitialManager = InterstitialManagerObservableObject(placement: SASAdPlacement(testAd: .interstitialMRAID))
+    @ObservedObject var interstitialManager = InterstitialManagerObservableObject(placement: SASAdPlacement(siteId: Constants.siteID, pageId: Constants.interstitialPageID, formatId: Constants.interstitialFormatID))
     
     var body: some View {
         VStack {

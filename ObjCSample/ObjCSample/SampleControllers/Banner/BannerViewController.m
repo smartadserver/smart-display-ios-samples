@@ -76,6 +76,13 @@
 //    self.banner.frame = frame;
 // }
 
+// If you prefer to work with ratio you can directly rely on ratio property
+// - (void)bannerView:(SASBannerView *)bannerView didDownloadAd:(SASAd *)ad {
+//    CGFloat width = CGRectGetWidth(self.view.frame);
+//    CGRect frame = CGRectMake(bannerView.frame.origin.x, bannerView.frame.origin.y, bannerView.frame.size.width, width / bannerView.ratio);
+//    self.banner.frame = frame;
+// }
+
 - (void)bannerViewDidLoad:(SASBannerView *)bannerView {
     NSLog(@"Banner has been loaded");
 }

@@ -1,0 +1,4 @@
+module OMSDK_Smartadserver1 {
+    header "Headers/OMIDImports.h"
+    export *
+}

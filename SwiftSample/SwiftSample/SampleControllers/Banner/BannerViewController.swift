@@ -90,6 +90,17 @@ class BannerViewController: UIViewController, SASBannerViewDelegate {
 	
     func bannerViewDidLoad(_ bannerView: SASBannerView) {
 		NSLog("Banner has been loaded")
+        // Uncomment this code if you want to adapt the height of the banner to keep the best ratio for the ad
+        // For example, if you get a 16/9 video instead of 320x50 classic banner you just need to call optimalAdViewHeightForContainer
+        // to get the optimal height of your banner frame
+        
+        // let height = bannerView.optimalAdViewHeight(forContainer: self.view)
+        
+        // If you prefer to work with ratio you can directly rely on ratio property
+        // let height = self.view.frame.width / bannerView.ratio
+        
+        // Change banner view frame size
+        // bannerView.frame = CGRect(x: bannerView.frame.origin.x, y: bannerView.frame.origin.y, width: bannerView.frame.size.width, height: height)
 	}
 	
     func bannerView(_ bannerView: SASBannerView, didFailToLoadWithError error: Error) {

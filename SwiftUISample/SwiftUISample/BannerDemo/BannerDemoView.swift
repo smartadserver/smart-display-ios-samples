@@ -21,7 +21,8 @@ struct BannerDemoView: View {
     //
     // You can also find more info in Apple's official documentation:
     // https://developer.apple.com/tutorials/swiftui/interfacing-with-uikit
-    let bannerView = BannerViewRepresentable(placement: SASAdPlacement(testAd: .bannerMRAID))
+    
+    let bannerView = BannerViewRepresentable(placement: SASAdPlacement(siteId: Constants.siteID, pageId: Constants.bannerPageID, formatId: Constants.bannerFormatID))
     
     var body: some View {
         VStack {
