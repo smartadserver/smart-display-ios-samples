@@ -28,18 +28,6 @@
 		<data>
 		YI4bFJge51qOFZTliGxayzLOqsI=
 		</data>
-		<key>Frameworks/OMSDK_Smartadserver1.framework/Info.plist</key>
-		<data>
-		ZnGc9+lAamH7jCDjveVC6IRy0ts=
-		</data>
-		<key>Frameworks/OMSDK_Smartadserver1.framework/OMSDK_Smartadserver1</key>
-		<data>
-		Sibjp+fuinWF+pUW1t0as3yNUbw=
-		</data>
-		<key>Frameworks/OMSDK_Smartadserver1.framework/_CodeSignature/CodeResources</key>
-		<data>
-		k8TNCGVTwi5ErKo8NFEn2HIh+jA=
-		</data>
 		<key>Headers/SCSAdRequestErrors.h</key>
 		<data>
 		dOF2fmvnEz4gGVUgtx3oX63eJm4=
@@ -518,7 +506,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		gyUYNg0L+Ce0Otbgz6xnC7AXyAc=
+		GAtdnkUtLZcki7ac8xkIrorkYVY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -526,11 +514,11 @@
 		</data>
 		<key>Smart-Core-SDK.podspec</key>
 		<data>
-		O+PmLV2tAvmQJ/PlvDMw8jcKpSg=
+		qIcK9aMqHW7ZrYps4k7rpgnIs9I=
 		</data>
 		<key>Smart-Core-SDK.podspec-trunk</key>
 		<data>
-		X3wlXHtOCEKSSkAi5c2ylJ5FO6c=
+		g6ibuGiYfUncJAxebocCB2ItmBs=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -599,39 +587,6 @@
 			<key>hash2</key>
 			<data>
 			8+PTKMRemtrp73VyF2Hwna8mLVST+QatpnB/0kbtgaA=
-			</data>
-		</dict>
-		<key>Frameworks/OMSDK_Smartadserver1.framework/Info.plist</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			ZnGc9+lAamH7jCDjveVC6IRy0ts=
-			</data>
-			<key>hash2</key>
-			<data>
-			Q8XeYCtDM29TiPiM5xjo/SoSXWeIyj74oBXYQnwSAaY=
-			</data>
-		</dict>
-		<key>Frameworks/OMSDK_Smartadserver1.framework/OMSDK_Smartadserver1</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			Sibjp+fuinWF+pUW1t0as3yNUbw=
-			</data>
-			<key>hash2</key>
-			<data>
-			THH5XbX7I7nzriVYiMJW86IHLn4ulw2Zw/n1RQ2ybRU=
-			</data>
-		</dict>
-		<key>Frameworks/OMSDK_Smartadserver1.framework/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			k8TNCGVTwi5ErKo8NFEn2HIh+jA=
-			</data>
-			<key>hash2</key>
-			<data>
-			DSl0MGe9/RwG7kwFOh99rNjUtIHN9MW05kDf7tfmTaw=
 			</data>
 		</dict>
 		<key>Headers/SCSAdRequestErrors.h</key>
@@ -1958,22 +1913,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			O+PmLV2tAvmQJ/PlvDMw8jcKpSg=
+			qIcK9aMqHW7ZrYps4k7rpgnIs9I=
 			</data>
 			<key>hash2</key>
 			<data>
-			bc8hNcCoKeg63SQkb3kk22MLsX35RD53/e3gMSF7v4g=
+			rmG/YXOxQ+50LXH9C85awMlvUV45K2MFZBM4jAmEg7w=
 			</data>
 		</dict>
 		<key>Smart-Core-SDK.podspec-trunk</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			X3wlXHtOCEKSSkAi5c2ylJ5FO6c=
+			g6ibuGiYfUncJAxebocCB2ItmBs=
 			</data>
 			<key>hash2</key>
 			<data>
-			9dpSOT1tCOVOg8RGMR6ndKNE3iqS9QID9yaolWcRBM4=
+			GQqHjv68/Ox1Lxca1hMzIbnAXcF6FkCpLfe9pzrMPhA=
 			</data>
 		</dict>
 	</dict>

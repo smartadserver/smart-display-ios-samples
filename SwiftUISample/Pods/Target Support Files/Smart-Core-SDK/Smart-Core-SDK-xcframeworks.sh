@@ -150,5 +150,4 @@ install_xcframework() {
 }
 
 install_xcframework "${PODS_ROOT}/Smart-Core-SDK/SCSCoreKit.xcframework" "SCSCoreKit" "framework" "ios-arm64_i386_x86_64-simulator" "ios-arm64_armv7"
-install_xcframework "${PODS_ROOT}/Smart-Core-SDK/OMSDK_Smartadserver1.xcframework" "OMSDK_Smartadserver1" "framework" "ios-arm64_i386_x86_64-simulator" "ios-arm64_armv7"
 

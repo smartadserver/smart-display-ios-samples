@@ -1,4 +1,3 @@
 ${PODS_ROOT}/Target Support Files/Pods-ObjCSample/Pods-ObjCSample-frameworks.sh
 ${PODS_XCFRAMEWORKS_BUILD_DIR}/SCSCoreKit/SCSCoreKit.framework/SCSCoreKit
-${PODS_XCFRAMEWORKS_BUILD_DIR}/OMSDK_Smartadserver1/OMSDK_Smartadserver1.framework/OMSDK_Smartadserver1
 ${PODS_XCFRAMEWORKS_BUILD_DIR}/SASDisplayKit/SASDisplayKit.framework/SASDisplayKit
