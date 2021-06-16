@@ -22,11 +22,15 @@
 		</data>
 		<key>BuildUtils.sh</key>
 		<data>
-		7FSG9Ku+Hx16J3rhp+n7iZmHE/A=
+		sq0ntp6+NkufLOsJaEUlwcRmvOI=
 		</data>
 		<key>DeployCocoapodsTrunk.sh</key>
 		<data>
 		YI4bFJge51qOFZTliGxayzLOqsI=
+		</data>
+		<key>DeployGitRepository.sh</key>
+		<data>
+		9WJP3Pm607Y/4HJ1YWXtoPgxO8Y=
 		</data>
 		<key>Headers/SCSAdRequestErrors.h</key>
 		<data>
@@ -506,7 +510,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		GAtdnkUtLZcki7ac8xkIrorkYVY=
+		niI2R742HbqsfPZ486aWbGSK+Lc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -571,11 +575,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			7FSG9Ku+Hx16J3rhp+n7iZmHE/A=
+			sq0ntp6+NkufLOsJaEUlwcRmvOI=
 			</data>
 			<key>hash2</key>
 			<data>
-			NHq00sKBKtMqVnY2y1P/1+CoyGByOWDQTNcLBxvQWb4=
+			srnJWxNCTZoFjmtaF77c6TmSfWpOOrSW5dIalZzsDgc=
 			</data>
 		</dict>
 		<key>DeployCocoapodsTrunk.sh</key>
@@ -587,6 +591,17 @@
 			<key>hash2</key>
 			<data>
 			8+PTKMRemtrp73VyF2Hwna8mLVST+QatpnB/0kbtgaA=
+			</data>
+		</dict>
+		<key>DeployGitRepository.sh</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			9WJP3Pm607Y/4HJ1YWXtoPgxO8Y=
+			</data>
+			<key>hash2</key>
+			<data>
+			CrxMzw7uPbipGGuH2A6d7Y+/pzHf6sb5ibjRPwM0G4Q=
 			</data>
 		</dict>
 		<key>Headers/SCSAdRequestErrors.h</key>

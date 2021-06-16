@@ -22,11 +22,15 @@
 		</data>
 		<key>BuildUtils.sh</key>
 		<data>
-		7FSG9Ku+Hx16J3rhp+n7iZmHE/A=
+		sq0ntp6+NkufLOsJaEUlwcRmvOI=
 		</data>
 		<key>DeployCocoapodsTrunk.sh</key>
 		<data>
 		YI4bFJge51qOFZTliGxayzLOqsI=
+		</data>
+		<key>DeployGitRepository.sh</key>
+		<data>
+		9WJP3Pm607Y/4HJ1YWXtoPgxO8Y=
 		</data>
 		<key>Headers/SASAd.h</key>
 		<data>
@@ -214,7 +218,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		NHY2Ie5nlQjgBHz45RlvpZCIRco=
+		Tmq5cXKT1Ay6tQbVBuYsCuiNEt4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -248,7 +252,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			kDNabDOFJmX/a8Ax4rjdMEQ9mWk=
+			spLr1r5FDkvB8A6DALkcXBfuDh8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -373,7 +377,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			NFpK0Gt9KENVma/i1mn051WWIWc=
+			ohCvp046BtwbLdNqRvdRCav7CS4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -693,11 +697,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			7FSG9Ku+Hx16J3rhp+n7iZmHE/A=
+			sq0ntp6+NkufLOsJaEUlwcRmvOI=
 			</data>
 			<key>hash2</key>
 			<data>
-			NHq00sKBKtMqVnY2y1P/1+CoyGByOWDQTNcLBxvQWb4=
+			srnJWxNCTZoFjmtaF77c6TmSfWpOOrSW5dIalZzsDgc=
 			</data>
 		</dict>
 		<key>DeployCocoapodsTrunk.sh</key>
@@ -709,6 +713,17 @@
 			<key>hash2</key>
 			<data>
 			8+PTKMRemtrp73VyF2Hwna8mLVST+QatpnB/0kbtgaA=
+			</data>
+		</dict>
+		<key>DeployGitRepository.sh</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			9WJP3Pm607Y/4HJ1YWXtoPgxO8Y=
+			</data>
+			<key>hash2</key>
+			<data>
+			CrxMzw7uPbipGGuH2A6d7Y+/pzHf6sb5ibjRPwM0G4Q=
 			</data>
 		</dict>
 		<key>Headers/SASAd.h</key>
@@ -1298,11 +1313,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			kDNabDOFJmX/a8Ax4rjdMEQ9mWk=
+			spLr1r5FDkvB8A6DALkcXBfuDh8=
 			</data>
 			<key>hash2</key>
 			<data>
-			SH1KVnLQRWoQhQidIHhRNWY4c6zAqaT/1bnkdLq7W0w=
+			IHuRCU3AOw3jg+obSCOD5tn9FyK3IJY4VkXxrkEFcjE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1630,11 +1645,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			NFpK0Gt9KENVma/i1mn051WWIWc=
+			ohCvp046BtwbLdNqRvdRCav7CS4=
 			</data>
 			<key>hash2</key>
 			<data>
-			ItsUJQYkkiStw3oQWzJw8IEfzh1qYkSdQpkol5FVu1Y=
+			LIK6HmuWVcqSPuW/b6ADayQmkD8aiZUxGl9eFBDVVYU=
 			</data>
 			<key>optional</key>
 			<true/>
