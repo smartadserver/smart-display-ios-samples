@@ -40,9 +40,9 @@
 
 - (void)createBanner {
     // Banner creation and configuration
-	self.banner = [[SASBannerView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.view.frame), 50) loader:SASLoaderActivityIndicatorStyleWhite];
-	self.banner.autoresizingMask = UIViewAutoresizingFlexibleWidth;
+	self.banner = [[SASBannerView alloc] initWithFrame:CGRectZero loader:SASLoaderActivityIndicatorStyleWhite];
 	self.banner.delegate = self;
+    
     // Setting the modal parent view controller.
     self.banner.modalParentViewController = self;
     
@@ -62,6 +62,13 @@
 
     [self.banner loadWithPlacement:placement];	
 	[self.view addSubview:self.banner];
+    
+    // Setting the banner constraints
+    self.banner.translatesAutoresizingMaskIntoConstraints = NO;
+    [[self.banner.leadingAnchor constraintEqualToAnchor:self.view.leadingAnchor] setActive:YES];
+    [[self.banner.trailingAnchor constraintEqualToAnchor:self.view.trailingAnchor] setActive:YES];
+    [[self.banner.heightAnchor constraintEqualToConstant:50.0] setActive:YES];
+    [[self.banner.topAnchor constraintEqualToAnchor:self.view.safeAreaLayoutGuide.topAnchor] setActive:YES];
 }
 
 #pragma mark - SASBannerView delegate

@@ -541,7 +541,6 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -563,7 +562,6 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

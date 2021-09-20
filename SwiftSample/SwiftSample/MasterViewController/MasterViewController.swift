@@ -23,9 +23,17 @@ class MasterViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        requestTrackingAuthorization()
         initializeItems()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        // Note that requesting for ATT authorization must be made when the application is active (otherwise
+        // the ATT popup will not be displayed and the ATT status will stay '.notDetermined').
+        // You can for instance perform this request in the 'viewDidAppear' method or register for the
+        // 'didBecomeActiveNotification' notification.
+        requestTrackingAuthorization()
     }
     
     func requestTrackingAuthorization() {

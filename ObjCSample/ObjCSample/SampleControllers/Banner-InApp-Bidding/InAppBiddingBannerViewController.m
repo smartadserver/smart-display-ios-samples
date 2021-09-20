@@ -54,7 +54,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)configureBanner {
     /// Creating the instance of the banner.
-    self.bannerView = [[SASBannerView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 50) loader:SASLoaderActivityIndicatorStyleWhite];
+    self.bannerView = [[SASBannerView alloc] initWithFrame:CGRectZero loader:SASLoaderActivityIndicatorStyleWhite];
     
     // Setting the delegate.
     self.bannerView.delegate = self;
@@ -66,11 +66,12 @@ NS_ASSUME_NONNULL_BEGIN
     // Adding the ad view to the actual view of the controller.
     [self.view addSubview:self.bannerView];
     
-    // Since this sample is not defining any autolayout constraints but instead use frame and autoresizing masks, this informations must be
-    // translated into constraints.
-    // Please note that if you deactivate autoresizing translation (and you create your constraints yourself) on the ad view, it will prevent
-    // creatives that resize/reposition the view to work (like toaster or resize banners).
-    self.bannerView.translatesAutoresizingMaskIntoConstraints = YES;
+    // Setting the banner constraints
+    self.bannerView.translatesAutoresizingMaskIntoConstraints = NO;
+    [[self.bannerView.leadingAnchor constraintEqualToAnchor:self.view.leadingAnchor] setActive:YES];
+    [[self.bannerView.trailingAnchor constraintEqualToAnchor:self.view.trailingAnchor] setActive:YES];
+    [[self.bannerView.heightAnchor constraintEqualToConstant:50.0] setActive:YES];
+    [[self.bannerView.topAnchor constraintEqualToAnchor:self.view.safeAreaLayoutGuide.topAnchor] setActive:YES];
 }
 
 #pragma mark - Bidding manager

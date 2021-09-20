@@ -44,7 +44,7 @@ class BannerViewController: UIViewController, SASBannerViewDelegate {
 	
 	func createBanner() {
 		// The instance of the banner is created with a default frame and an appropriate loader.
-		self.banner = SASBannerView(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: 50), loader: .activityIndicatorStyleWhite)
+        self.banner = SASBannerView(frame: .zero, loader: .activityIndicatorStyleWhite)
 		
 		if let banner = self.banner {
 			// Setting the delegate.
@@ -73,11 +73,12 @@ class BannerViewController: UIViewController, SASBannerViewDelegate {
 			// Adding the ad view to the actual view of the controller.
 			view.addSubview(banner)
 			
-			// Since this sample is not defining any autolayout constraints but instead use frame and autoresizing masks, this informations must be
-			// translated into constraints.
-			// Please note that if you deactivate autoresizing translation (and you create your constraints yourself) on the ad view, it will prevent
-			// creatives that resize/reposition the view to work (like toaster or resize banners).
-			banner.translatesAutoresizingMaskIntoConstraints = true
+            // Setting the banner constraints
+            banner.translatesAutoresizingMaskIntoConstraints = false
+            banner.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
+            banner.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
+            banner.heightAnchor.constraint(equalToConstant: 50.0).isActive = true
+            banner.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor).isActive = true
 		}
 	}
 	

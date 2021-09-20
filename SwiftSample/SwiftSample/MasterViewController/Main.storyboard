@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="pKk-jv-qX6">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19158" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="pKk-jv-qX6">
     <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19141"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -12,19 +13,19 @@
             <objects>
                 <tableViewController id="5ds-gW-ebO" customClass="MasterViewController" customModule="SwiftSample" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="tUZ-Rw-Y3B">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="692"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="sampleCell" textLabel="7TV-Kt-7SS" style="IBUITableViewCellStyleDefault" id="Qaa-c7-GiT">
-                                <rect key="frame" x="0.0" y="55.333332061767578" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="49" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Qaa-c7-GiT" id="IHp-fd-Mi4">
-                                    <rect key="frame" x="0.0" y="0.0" width="383" height="44"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="384.33333333333331" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7TV-Kt-7SS">
-                                            <rect key="frame" x="20" y="0.0" width="355" height="44"/>
+                                            <rect key="frame" x="20" y="0.0" width="356.33333333333331" height="44"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <nil key="textColor"/>
@@ -64,17 +65,17 @@
                         <viewControllerLayoutGuide type="bottom" id="4u4-8P-yJf"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="jIq-YF-mmk">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="692"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Banner (click on 'Reload' to refresh the banner content)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="tBi-EF-RUj">
-                                <rect key="frame" x="51" y="216" width="312" height="260"/>
+                                <rect key="frame" x="51" y="260" width="312" height="216"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="See implementation in BannerViewController class" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="ES0-sQ-aIC">
-                                <rect key="frame" x="51" y="644" width="312" height="28"/>
+                                <rect key="frame" x="51" y="688" width="312" height="28"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="28" id="M6f-sZ-FgU"/>
                                 </constraints>
@@ -83,7 +84,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="tBi-EF-RUj" firstAttribute="centerX" secondItem="jIq-YF-mmk" secondAttribute="centerX" id="44L-ay-t0l"/>
                             <constraint firstAttribute="bottom" secondItem="ES0-sQ-aIC" secondAttribute="bottom" constant="20" symbolic="YES" id="8QM-yg-dCE"/>
@@ -108,12 +109,12 @@
                         <viewControllerLayoutGuide type="bottom" id="aDa-wA-vw6"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="brc-Ye-V2f">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="692"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t69-2J-f6h" userLabel="Load Interstitial Ad Button">
-                                <rect key="frame" x="137" y="286" width="140" height="40"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <rect key="frame" x="137" y="308" width="140" height="40"/>
+                                <color key="backgroundColor" systemColor="groupTableViewBackgroundColor"/>
                                 <accessibility key="accessibilityConfiguration" label="loadAd"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="5zO-uB-uiM"/>
@@ -127,7 +128,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="5A1-dm-49s">
-                                <rect key="frame" x="20" y="80" width="374" height="61"/>
+                                <rect key="frame" x="20" y="124" width="374" height="61"/>
                                 <string key="text">Interstitial, click on 'Load Ad' to load an interstitial and 'Show Ad' to show it
 
 </string>
@@ -136,8 +137,8 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="956-dZ-aMT">
-                                <rect key="frame" x="137" y="366" width="140" height="40"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <rect key="frame" x="137" y="388" width="140" height="40"/>
+                                <color key="backgroundColor" systemColor="groupTableViewBackgroundColor"/>
                                 <accessibility key="accessibilityConfiguration" label="showRewarded">
                                     <bool key="isElement" value="YES"/>
                                 </accessibility>
@@ -157,7 +158,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="See implementation in InterstitialViewController class" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="Gef-Yy-nCJ">
-                                <rect key="frame" x="67" y="644" width="280" height="28"/>
+                                <rect key="frame" x="67" y="688" width="280" height="28"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="28" id="TUe-jX-dIY"/>
                                     <constraint firstAttribute="width" constant="280" id="hW8-fg-DUL"/>
@@ -167,7 +168,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="5A1-dm-49s" secondAttribute="trailing" constant="20" id="46f-hb-ZqF"/>
                             <constraint firstItem="aDa-wA-vw6" firstAttribute="top" secondItem="Gef-Yy-nCJ" secondAttribute="bottom" constant="20" id="Say-yw-yB6"/>
@@ -194,12 +195,12 @@
             <objects>
                 <tableViewController id="kMJ-oe-fXd" customClass="NativeAdWithMediaInTableViewController" customModule="SwiftSample" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="28" id="O53-tm-CnY">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="692"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DescriptionCell" id="fpu-Fj-dy4" userLabel="DescriptionCell">
-                                <rect key="frame" x="0.0" y="28" width="414" height="80"/>
+                                <rect key="frame" x="0.0" y="44.666666030883789" width="414" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fpu-Fj-dy4" id="Xkb-WH-uCb">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
@@ -217,7 +218,7 @@
                                         <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="See implementation in NativeAdViewController. Please scroll down to see the ad." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="av3-sm-Ifp">
                                             <rect key="frame" x="20" y="40" width="374" height="30.666666666666671"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="textColor" systemColor="secondaryLabelColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -233,7 +234,7 @@
                                 </tableViewCellContentView>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ContentCell" id="gRb-7U-YcO">
-                                <rect key="frame" x="0.0" y="108" width="414" height="80"/>
+                                <rect key="frame" x="0.0" y="124.66666603088379" width="414" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gRb-7U-YcO" id="cvp-dZ-VCP">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
@@ -241,7 +242,7 @@
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F1N-ni-Jv5">
                                             <rect key="frame" x="20" y="27" width="30" height="26"/>
-                                            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                            <color key="backgroundColor" systemColor="groupTableViewBackgroundColor"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="30" id="8u7-Qd-7tb"/>
                                             </constraints>
@@ -259,7 +260,7 @@
                                             <rect key="frame" x="58" y="25" width="336" height="44"/>
                                             <string key="text">Phasellus in tellus eget arcu volutpat bibendum vulputate ac sapien. Vivamus enim elit, gravida vel consequat sit amet, scelerisque vitae ex.</string>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="textColor" systemColor="secondaryLabelColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -293,12 +294,12 @@
             <objects>
                 <tableViewController title="Multiple banners in news feed" id="wtv-6u-XM9" customClass="BannerInTableViewController" customModule="SwiftSample" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="22" sectionFooterHeight="22" id="Rw4-NA-I5N">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="692"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DescriptionCell" id="xme-Np-fYO" userLabel="DescriptionCell">
-                                <rect key="frame" x="0.0" y="28" width="414" height="80"/>
+                                <rect key="frame" x="0.0" y="44.666666030883789" width="414" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xme-Np-fYO" id="ZJW-50-Nm8">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
@@ -316,7 +317,7 @@
                                         <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="See implementation in BannerInTableViewController. Please scroll down to see ads." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Aj-D7-OXL">
                                             <rect key="frame" x="20" y="40" width="374" height="30.666666666666671"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="textColor" systemColor="secondaryLabelColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -332,7 +333,7 @@
                                 </tableViewCellContentView>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ContentCell" id="bLl-L2-00d">
-                                <rect key="frame" x="0.0" y="108" width="414" height="80"/>
+                                <rect key="frame" x="0.0" y="124.66666603088379" width="414" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bLl-L2-00d" id="qVw-yp-bir">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
@@ -340,7 +341,7 @@
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z28-6r-ILf">
                                             <rect key="frame" x="20" y="27" width="30" height="26"/>
-                                            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                            <color key="backgroundColor" systemColor="groupTableViewBackgroundColor"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="30" id="S5i-GF-ebK"/>
                                             </constraints>
@@ -358,7 +359,7 @@
                                             <rect key="frame" x="58" y="25" width="336" height="44"/>
                                             <string key="text">Phasellus in tellus eget arcu volutpat bibendum vulputate ac sapien. Vivamus enim elit, gravida vel consequat sit amet, scelerisque vitae ex.</string>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="textColor" systemColor="secondaryLabelColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -392,7 +393,7 @@
         <scene sceneID="Ppe-Rq-Ecr">
             <objects>
                 <navigationController id="pKk-jv-qX6" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="roJ-ho-SlZ">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="roJ-ho-SlZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -409,12 +410,12 @@
             <objects>
                 <tableViewController title="Native Ad in news feed" id="mCy-tq-Oao" customClass="NativeAdInTableViewController" customModule="SwiftSample" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="28" id="XFl-7K-U2L">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="692"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DescriptionCell" id="D2d-Z5-jrb" userLabel="DescriptionCell">
-                                <rect key="frame" x="0.0" y="28" width="414" height="80"/>
+                                <rect key="frame" x="0.0" y="44.666666030883789" width="414" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="D2d-Z5-jrb" id="Gip-WV-w4P">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
@@ -432,7 +433,7 @@
                                         <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="See implementation in NativeAdViewController. Please scroll down to see the ad." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8eO-yU-3LE">
                                             <rect key="frame" x="20" y="40" width="374" height="30.666666666666671"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="textColor" systemColor="secondaryLabelColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -448,7 +449,7 @@
                                 </tableViewCellContentView>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ContentCell" id="ft5-Pk-SXn">
-                                <rect key="frame" x="0.0" y="108" width="414" height="80"/>
+                                <rect key="frame" x="0.0" y="124.66666603088379" width="414" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ft5-Pk-SXn" id="mxv-fu-01Q">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
@@ -456,7 +457,7 @@
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UVR-vX-L9C">
                                             <rect key="frame" x="20" y="27" width="30" height="26"/>
-                                            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                            <color key="backgroundColor" systemColor="groupTableViewBackgroundColor"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="30" id="TC5-3I-7SR"/>
                                             </constraints>
@@ -474,7 +475,7 @@
                                             <rect key="frame" x="58" y="25" width="336" height="44"/>
                                             <string key="text">Phasellus in tellus eget arcu volutpat bibendum vulputate ac sapien. Vivamus enim elit, gravida vel consequat sit amet, scelerisque vitae ex.</string>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="textColor" systemColor="secondaryLabelColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -512,12 +513,12 @@
                         <viewControllerLayoutGuide type="bottom" id="mXo-CF-RLG"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="gCi-dg-pHe">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="692"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B3f-td-HqO" userLabel="Load Rewarded Video Button">
-                                <rect key="frame" x="137" y="286" width="140" height="40"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <rect key="frame" x="137" y="308" width="140" height="40"/>
+                                <color key="backgroundColor" systemColor="groupTableViewBackgroundColor"/>
                                 <accessibility key="accessibilityConfiguration" label="loadRewarded"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="140" id="AYU-e9-jnm"/>
@@ -531,7 +532,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="PUL-tr-GTA">
-                                <rect key="frame" x="20" y="80" width="374" height="61"/>
+                                <rect key="frame" x="20" y="124" width="374" height="61"/>
                                 <string key="text">Rewarded Video, click on 'Load Ad' to load a video and 'Show Ad' to show it
 
 </string>
@@ -540,8 +541,8 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b2O-l0-1CV">
-                                <rect key="frame" x="137" y="366" width="140" height="40"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <rect key="frame" x="137" y="388" width="140" height="40"/>
+                                <color key="backgroundColor" systemColor="groupTableViewBackgroundColor"/>
                                 <accessibility key="accessibilityConfiguration" label="showRewarded">
                                     <bool key="isElement" value="YES"/>
                                 </accessibility>
@@ -561,7 +562,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="See implementation in RewardedVideoViewController class" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="Vge-5H-xU8">
-                                <rect key="frame" x="67" y="644" width="280" height="28"/>
+                                <rect key="frame" x="67" y="688" width="280" height="28"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="28" id="I2V-L7-Pst"/>
                                     <constraint firstAttribute="width" constant="280" id="tQq-oS-jez"/>
@@ -571,7 +572,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="PUL-tr-GTA" firstAttribute="centerX" secondItem="gCi-dg-pHe" secondAttribute="centerX" id="AzZ-nR-ZbF"/>
                             <constraint firstItem="PUL-tr-GTA" firstAttribute="leading" secondItem="gCi-dg-pHe" secondAttribute="leading" constant="20" id="FmS-X9-9of"/>
@@ -602,17 +603,17 @@
                         <viewControllerLayoutGuide type="bottom" id="z5Q-yl-TrE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kwc-W5-czI">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="692"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Banner (click on 'Load' to get a bidding ad, click on 'Show' to load it into the banner view)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="m81-aB-HFH">
-                                <rect key="frame" x="51" y="65" width="312" height="61"/>
+                                <rect key="frame" x="51" y="109" width="312" height="61"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="See implementation in InAppBiddingBannerViewController class" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="0hA-WM-sBc">
-                                <rect key="frame" x="51" y="644" width="312" height="28"/>
+                                <rect key="frame" x="51" y="688" width="312" height="28"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="28" id="HNV-Uh-zX3"/>
                                 </constraints>
@@ -621,17 +622,17 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="(no bidding ad response loaded)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="Q5G-7E-YYW">
-                                <rect key="frame" x="51" y="182" width="312" height="40.666666666666657"/>
+                                <rect key="frame" x="51" y="226" width="312" height="40.666666666666686"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40.666666666666657" id="sjN-0d-fca"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" systemColor="secondaryLabelColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n6W-bq-RjM">
-                                <rect key="frame" x="107.66666666666669" y="134" width="199" height="40"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <rect key="frame" x="107.66666666666669" y="178" width="199" height="40"/>
+                                <color key="backgroundColor" systemColor="groupTableViewBackgroundColor"/>
                                 <accessibility key="accessibilityConfiguration" label="loadAd"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="199" id="AQz-6V-vbr"/>
@@ -649,8 +650,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1yY-Lo-6l9">
-                                <rect key="frame" x="107.66666666666669" y="230" width="199" height="40"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <rect key="frame" x="107.66666666666669" y="274" width="199" height="40"/>
+                                <color key="backgroundColor" systemColor="groupTableViewBackgroundColor"/>
                                 <accessibility key="accessibilityConfiguration" label="showRewarded">
                                     <bool key="isElement" value="YES"/>
                                 </accessibility>
@@ -670,7 +671,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="m81-aB-HFH" firstAttribute="centerX" secondItem="kwc-W5-czI" secondAttribute="centerX" id="0Nn-dB-FWd"/>
                             <constraint firstItem="Q5G-7E-YYW" firstAttribute="top" secondItem="n6W-bq-RjM" secondAttribute="bottom" constant="8" id="0cJ-Ns-xEo"/>
@@ -708,17 +709,17 @@
                         <viewControllerLayoutGuide type="bottom" id="1zP-fo-hmM"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="LJv-RB-6Ja">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="692"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Intersititial (click on 'Load' to get a bidding ad, click on 'Show' to load it into the interstitial view)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="SXG-wt-nb6">
-                                <rect key="frame" x="51" y="65" width="312" height="61"/>
+                                <rect key="frame" x="51" y="109" width="312" height="61"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="See implementation in InAppBiddingInterstitialViewController class" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="5QQ-Dg-Pu1">
-                                <rect key="frame" x="51" y="644" width="312" height="28"/>
+                                <rect key="frame" x="51" y="688" width="312" height="28"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="28" id="IIb-FP-Zms"/>
                                 </constraints>
@@ -727,17 +728,17 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="(no bidding ad response loaded)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="2ey-hC-wXw">
-                                <rect key="frame" x="51" y="182" width="312" height="40.666666666666657"/>
+                                <rect key="frame" x="51" y="226" width="312" height="40.666666666666686"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40.666666666666657" id="n9s-rL-FX1"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" systemColor="secondaryLabelColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5R4-6J-vxf">
-                                <rect key="frame" x="107.66666666666669" y="134" width="199" height="40"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <rect key="frame" x="107.66666666666669" y="178" width="199" height="40"/>
+                                <color key="backgroundColor" systemColor="groupTableViewBackgroundColor"/>
                                 <accessibility key="accessibilityConfiguration" label="loadAd"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="NSy-J6-kX7"/>
@@ -755,8 +756,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IfT-fa-fkM">
-                                <rect key="frame" x="107.66666666666669" y="230" width="199" height="40"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <rect key="frame" x="107.66666666666669" y="274" width="199" height="40"/>
+                                <color key="backgroundColor" systemColor="groupTableViewBackgroundColor"/>
                                 <accessibility key="accessibilityConfiguration" label="showRewarded">
                                     <bool key="isElement" value="YES"/>
                                 </accessibility>
@@ -776,7 +777,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="2ey-hC-wXw" secondAttribute="trailing" constant="51" id="0dY-NH-mf5"/>
                             <constraint firstItem="IfT-fa-fkM" firstAttribute="centerX" secondItem="LJv-RB-6Ja" secondAttribute="centerX" id="5yn-V6-tdD"/>
@@ -806,4 +807,15 @@
             <point key="canvasLocation" x="3397" y="467"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="groupTableViewBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
