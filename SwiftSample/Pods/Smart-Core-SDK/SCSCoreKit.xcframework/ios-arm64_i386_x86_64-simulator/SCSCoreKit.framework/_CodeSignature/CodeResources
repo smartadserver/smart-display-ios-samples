@@ -22,7 +22,7 @@
 		</data>
 		<key>BuildUtils.sh</key>
 		<data>
-		sq0ntp6+NkufLOsJaEUlwcRmvOI=
+		hjB1YzGYp12hiPF1PI0XxNVGCfk=
 		</data>
 		<key>DeployCocoapodsTrunk.sh</key>
 		<data>
@@ -30,7 +30,11 @@
 		</data>
 		<key>DeployGitRepository.sh</key>
 		<data>
-		9WJP3Pm607Y/4HJ1YWXtoPgxO8Y=
+		vvqFYl83j8mjSjA7d0w02EDKIt8=
+		</data>
+		<key>DeploySDKSnapshotInSamples.sh</key>
+		<data>
+		//E3K8L5gpHigtiuAbvsmagGbQY=
 		</data>
 		<key>Headers/SCSAdRequestErrors.h</key>
 		<data>
@@ -182,7 +186,7 @@
 		</data>
 		<key>Headers/SCSOpenMeasurementManagerDefaultProvider.h</key>
 		<data>
-		f7yL9ZMygP1MhR+PtcfK9rLRetI=
+		3BJEIZca7Qs9dvuKgLpiWDdEzvU=
 		</data>
 		<key>Headers/SCSOpenMeasurementManagerProvider.h</key>
 		<data>
@@ -510,7 +514,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		niI2R742HbqsfPZ486aWbGSK+Lc=
+		UC35mPhSIaaZ0xW60jcCDVwQO34=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -575,11 +579,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			sq0ntp6+NkufLOsJaEUlwcRmvOI=
+			hjB1YzGYp12hiPF1PI0XxNVGCfk=
 			</data>
 			<key>hash2</key>
 			<data>
-			srnJWxNCTZoFjmtaF77c6TmSfWpOOrSW5dIalZzsDgc=
+			KWB0ZKkeaL+6BgHswxrzoN/xIUznRBeFx9yY+leXFHU=
 			</data>
 		</dict>
 		<key>DeployCocoapodsTrunk.sh</key>
@@ -597,11 +601,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			9WJP3Pm607Y/4HJ1YWXtoPgxO8Y=
+			vvqFYl83j8mjSjA7d0w02EDKIt8=
 			</data>
 			<key>hash2</key>
 			<data>
-			CrxMzw7uPbipGGuH2A6d7Y+/pzHf6sb5ibjRPwM0G4Q=
+			qKMTa6bMdfS6BaAM/VDDWAzPgW46SqiVikB3jHEP5xQ=
+			</data>
+		</dict>
+		<key>DeploySDKSnapshotInSamples.sh</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			//E3K8L5gpHigtiuAbvsmagGbQY=
+			</data>
+			<key>hash2</key>
+			<data>
+			8EPGV0Swx8wRCOg/XLjUjtlaoEh5fVu6vL9dt183/c0=
 			</data>
 		</dict>
 		<key>Headers/SCSAdRequestErrors.h</key>
@@ -1015,11 +1030,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			f7yL9ZMygP1MhR+PtcfK9rLRetI=
+			3BJEIZca7Qs9dvuKgLpiWDdEzvU=
 			</data>
 			<key>hash2</key>
 			<data>
-			CvgjebU6jC2I6WzEUf13+Zk/uwZhbEoYRXQw1jKGIQ4=
+			EJGZySfENQ9HLr0kimYZerzI8edNRHMyM5qnGEP649o=
 			</data>
 		</dict>
 		<key>Headers/SCSOpenMeasurementManagerProvider.h</key>

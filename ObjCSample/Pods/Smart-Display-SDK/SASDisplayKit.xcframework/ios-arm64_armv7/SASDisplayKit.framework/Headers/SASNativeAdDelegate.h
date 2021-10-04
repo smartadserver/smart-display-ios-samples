@@ -31,9 +31,17 @@ NS_ASSUME_NONNULL_BEGIN
  @param URL The URL that will be called.
  @return YES if the Smart Display SDK should handle the URL, NO if the app should do it by itself.
  
- @note This method is deprecated and will be removed in future releases. Publishers should not interfere client-side with clicks to avoid counting issues.
+ @note This method is deprecated and will be removed in future releases. Publishers should not interfere client-side with clicks to avoid counting issues. However, if you still want to be warned in case of click, implement the nativeAd:didClickWithUrl: method.
  */
-- (BOOL)nativeAd:(SASNativeAd *)nativeAd shouldHandleClickURL:(NSURL *)URL __deprecated;
+- (BOOL)nativeAd:(SASNativeAd *)nativeAd shouldHandleClickURL:(NSURL *)URL __deprecated_msg("Use 'nativeAd:didClickWithURL:' instead");
+
+/**
+ Notifies the delegate when a click is performed on the native ad.
+ 
+ @param nativeAd The instance of SASAdNativeAd.
+ @param URL The URL that is called.
+ */
+- (void)nativeAd:(SASNativeAd *)nativeAd didClickWithURL:(NSURL *)URL;
 
 /**
  Notifies the delegate that a modal view will appear to display the ad's landing page.

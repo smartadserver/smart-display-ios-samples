@@ -87,9 +87,17 @@ NS_ASSUME_NONNULL_BEGIN
  @param URL The URL that must be handled.
  @return YES if the URL must be handled by the SDK, NO if your application will handle the URL itself.
  
- @note This method is deprecated and will be removed in future releases. Publishers should not interfere client-side with clicks to avoid counting issues.
+ @note This method is deprecated and will be removed in future releases. Publishers should not interfere client-side with clicks to avoid counting issues. However, if you still want to be warned is case of click, please implement rewardedVideoManager:didClickWithURL: delegate method.
  */
-- (BOOL)rewardedVideoManager:(SASRewardedVideoManager *)manager shouldHandleURL:(NSURL *)URL __deprecated;
+- (BOOL)rewardedVideoManager:(SASRewardedVideoManager *)manager shouldHandleURL:(NSURL *)URL __deprecated_msg("Use 'rewardedVideoManager:didClickWithURL:' instead");
+
+/**
+ Notifies the delegate when a click is performed on the rewarded video ad.
+ 
+ @param manager The instance of SASRewardedVideoManager.
+ @param URL The URL that is called.
+ */
+- (void)rewardedVideoManager:(SASRewardedVideoManager *)manager didClickWithURL:(NSURL *)URL;
 
 /**
  Notifies the delegate that a click modal view controller will be open.

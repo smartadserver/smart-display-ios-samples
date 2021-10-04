@@ -85,16 +85,6 @@
 
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url {
     
-    // Activating Live Preview:
-    // -> Add the corresponding URL Type in your Info.plist
-    // -> Check the documentation for more information about this feature
-    
-    NSString *sasSchemeWithSiteID = [NSString stringWithFormat:@"sas%i", kSiteID];
-    
-    if ([[url scheme] isEqualToString:sasSchemeWithSiteID]) {
-        return [[SASConfiguration sharedInstance] handleLivePreviewURL:url];
-    }
-    
     //Add your own logic here…
     
     return NO;

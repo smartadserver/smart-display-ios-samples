@@ -22,7 +22,7 @@
 		</data>
 		<key>BuildUtils.sh</key>
 		<data>
-		sq0ntp6+NkufLOsJaEUlwcRmvOI=
+		hjB1YzGYp12hiPF1PI0XxNVGCfk=
 		</data>
 		<key>DeployCocoapodsTrunk.sh</key>
 		<data>
@@ -30,7 +30,11 @@
 		</data>
 		<key>DeployGitRepository.sh</key>
 		<data>
-		9WJP3Pm607Y/4HJ1YWXtoPgxO8Y=
+		vvqFYl83j8mjSjA7d0w02EDKIt8=
+		</data>
+		<key>DeploySDKSnapshotInSamples.sh</key>
+		<data>
+		//E3K8L5gpHigtiuAbvsmagGbQY=
 		</data>
 		<key>Headers/SASAd.h</key>
 		<data>
@@ -66,7 +70,7 @@
 		</data>
 		<key>Headers/SASBannerViewDelegate.h</key>
 		<data>
-		SUDZmHQ9Lu5isy3VpPYHt0NoWGo=
+		T+D+zKRKK9ItjfWD7nvcX51Wbdo=
 		</data>
 		<key>Headers/SASBannerViewInternalDelegate.h</key>
 		<data>
@@ -110,7 +114,7 @@
 		</data>
 		<key>Headers/SASConfiguration.h</key>
 		<data>
-		zQMCV9G4xffjj2+9i57Kzwa9Vnc=
+		NUBeexldGSkIUyTj5B3/x2WM5wI=
 		</data>
 		<key>Headers/SASDisplayKit.h</key>
 		<data>
@@ -126,7 +130,7 @@
 		</data>
 		<key>Headers/SASInterstitialManagerDelegate.h</key>
 		<data>
-		WtbS4U04gOL8uBf97pI5bR/mPYY=
+		khrQOXGsIjYscoY5x9pJlI/MaAQ=
 		</data>
 		<key>Headers/SASLoader.h</key>
 		<data>
@@ -178,7 +182,7 @@
 		</data>
 		<key>Headers/SASNativeAdDelegate.h</key>
 		<data>
-		kEnnwTnyg/0tIdUxlFSzawmadNg=
+		QY1XsS7kTkNY9SLJ9/XQfNll00g=
 		</data>
 		<key>Headers/SASNativeAdImage.h</key>
 		<data>
@@ -210,7 +214,7 @@
 		</data>
 		<key>Headers/SASRewardedVideoManagerDelegate.h</key>
 		<data>
-		hY8uvRifN9muWSVtqgE+wZaOsu4=
+		NqcQyg34m5Vapdk+RShGlD7ZtXI=
 		</data>
 		<key>Headers/SASVideoEvent.h</key>
 		<data>
@@ -218,7 +222,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Tmq5cXKT1Ay6tQbVBuYsCuiNEt4=
+		gARNvnEPAm2tNc89LDsTb8+YVYc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -252,7 +256,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			spLr1r5FDkvB8A6DALkcXBfuDh8=
+			cFtJLv6PBsRa/xAFopSMIrmjL/E=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -377,83 +381,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ohCvp046BtwbLdNqRvdRCav7CS4=
+			393Jy6zyOFMJc17yc0J50n08pwM=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>livepreview-close.png</key>
-		<data>
-		1CJXGwKem7K5PM/j33LtABD4UfQ=
-		</data>
-		<key>livepreview-close@2x.png</key>
-		<data>
-		KrE6BzgRXB3PUnvmPIoStOA98Ik=
-		</data>
-		<key>livepreview-close@3x.png</key>
-		<data>
-		droId8xQubOat9GLpEPoZ6TMaVo=
-		</data>
-		<key>livepreview-down.png</key>
-		<data>
-		wniSBp7TeR1E37Q51PAij65MvP4=
-		</data>
-		<key>livepreview-down@2x.png</key>
-		<data>
-		1MzWjkTeAYNPl5Nc76WlBMt5EuA=
-		</data>
-		<key>livepreview-down@3x.png</key>
-		<data>
-		uCYbCyOFqBPwElZJZpkSzhdtows=
-		</data>
-		<key>livepreview-icon.png</key>
-		<data>
-		EdPvzDJTBLFb+/ZtOi178BWJKZQ=
-		</data>
-		<key>livepreview-icon@2x.png</key>
-		<data>
-		MK98T8pGK6RDFiqwfaoHHu0pAMA=
-		</data>
-		<key>livepreview-icon@3x.png</key>
-		<data>
-		Sr9V5LTBIKzlV9qPMrKmzZk31G8=
-		</data>
-		<key>livepreview-refresh.png</key>
-		<data>
-		GU4DX/Fb5SRcYjmEj1qqPbAgsEw=
-		</data>
-		<key>livepreview-refresh@2x.png</key>
-		<data>
-		o2SITjdKvVAyaCVoJw22sLil/B8=
-		</data>
-		<key>livepreview-refresh@3x.png</key>
-		<data>
-		VbDfKkzF851djAWfKh5uUdmAxqQ=
-		</data>
-		<key>livepreview-stop.png</key>
-		<data>
-		zafEEg109iDT7z7pM91ukZR8cQ8=
-		</data>
-		<key>livepreview-stop@2x.png</key>
-		<data>
-		5xQ5dy3GNNBfjHW05A1KugbIFhY=
-		</data>
-		<key>livepreview-stop@3x.png</key>
-		<data>
-		M2QkDoPKPYkovFBU8s2LaZLmy5Y=
-		</data>
-		<key>livepreview-up.png</key>
-		<data>
-		I6Zuub0SWFYwcpLdeKEJMmZMfp8=
-		</data>
-		<key>livepreview-up@2x.png</key>
-		<data>
-		m39fs5fT2RPCCVTlBcZ17A+ey4k=
-		</data>
-		<key>livepreview-up@3x.png</key>
-		<data>
-		YdmEJOhE4DlzeXWuvweVALTmhXU=
-		</data>
 		<key>loader.png</key>
 		<data>
 		ZQwf+mjgFIjLY0d/ih+qpbSRVqI=
@@ -697,11 +629,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			sq0ntp6+NkufLOsJaEUlwcRmvOI=
+			hjB1YzGYp12hiPF1PI0XxNVGCfk=
 			</data>
 			<key>hash2</key>
 			<data>
-			srnJWxNCTZoFjmtaF77c6TmSfWpOOrSW5dIalZzsDgc=
+			KWB0ZKkeaL+6BgHswxrzoN/xIUznRBeFx9yY+leXFHU=
 			</data>
 		</dict>
 		<key>DeployCocoapodsTrunk.sh</key>
@@ -719,11 +651,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			9WJP3Pm607Y/4HJ1YWXtoPgxO8Y=
+			vvqFYl83j8mjSjA7d0w02EDKIt8=
 			</data>
 			<key>hash2</key>
 			<data>
-			CrxMzw7uPbipGGuH2A6d7Y+/pzHf6sb5ibjRPwM0G4Q=
+			qKMTa6bMdfS6BaAM/VDDWAzPgW46SqiVikB3jHEP5xQ=
+			</data>
+		</dict>
+		<key>DeploySDKSnapshotInSamples.sh</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			//E3K8L5gpHigtiuAbvsmagGbQY=
+			</data>
+			<key>hash2</key>
+			<data>
+			8EPGV0Swx8wRCOg/XLjUjtlaoEh5fVu6vL9dt183/c0=
 			</data>
 		</dict>
 		<key>Headers/SASAd.h</key>
@@ -818,11 +761,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			SUDZmHQ9Lu5isy3VpPYHt0NoWGo=
+			T+D+zKRKK9ItjfWD7nvcX51Wbdo=
 			</data>
 			<key>hash2</key>
 			<data>
-			ABhDezvtbsTl3y/Lmp2OqOc8iuu/HwElID3BmXHe2OQ=
+			sQL/TpV9+QtY0EtlKBIQBTr19FKgQ887rgJ14Fucecw=
 			</data>
 		</dict>
 		<key>Headers/SASBannerViewInternalDelegate.h</key>
@@ -939,11 +882,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			zQMCV9G4xffjj2+9i57Kzwa9Vnc=
+			NUBeexldGSkIUyTj5B3/x2WM5wI=
 			</data>
 			<key>hash2</key>
 			<data>
-			OVSmOwiTxXQ9Tf9En7GQgXWQEs0aZondeSTZuA+aHIU=
+			9HQPeESqzB7NGUPF4XCPWHi5TN/FsXw/0Fkxm8P9R5E=
 			</data>
 		</dict>
 		<key>Headers/SASDisplayKit.h</key>
@@ -983,11 +926,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			WtbS4U04gOL8uBf97pI5bR/mPYY=
+			khrQOXGsIjYscoY5x9pJlI/MaAQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			CSKFrhcgmKx/qMLWgZtnaqOcfeXdLVLSoDRU74e5KVY=
+			mQimcjip7OTeplkcdX8NbXH6hjgtbwMAWcdeJlXDgNg=
 			</data>
 		</dict>
 		<key>Headers/SASLoader.h</key>
@@ -1126,11 +1069,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			kEnnwTnyg/0tIdUxlFSzawmadNg=
+			QY1XsS7kTkNY9SLJ9/XQfNll00g=
 			</data>
 			<key>hash2</key>
 			<data>
-			j27SxsNXnz2hw2mn8OGK6S8RgBI1iy3aRR8DP8nN2ak=
+			I1gfjIQYg+qbANgS/SP+1V3w94Kf4Lxdg2hsnGo0DUQ=
 			</data>
 		</dict>
 		<key>Headers/SASNativeAdImage.h</key>
@@ -1214,11 +1157,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			hY8uvRifN9muWSVtqgE+wZaOsu4=
+			NqcQyg34m5Vapdk+RShGlD7ZtXI=
 			</data>
 			<key>hash2</key>
 			<data>
-			6NT6BCDvGVrfxGQM4KO0KuoSpOZbj18r8NNHU5EAp3U=
+			ra4w3qVtf/UZW0pRH61nfO2NjOcbO13+g8GgkLyAZu8=
 			</data>
 		</dict>
 		<key>Headers/SASVideoEvent.h</key>
@@ -1313,11 +1256,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			spLr1r5FDkvB8A6DALkcXBfuDh8=
+			cFtJLv6PBsRa/xAFopSMIrmjL/E=
 			</data>
 			<key>hash2</key>
 			<data>
-			IHuRCU3AOw3jg+obSCOD5tn9FyK3IJY4VkXxrkEFcjE=
+			vyIt6GiCE14iMMqNrh87p6egC8yT7vesbN17V4zu9pQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1645,212 +1588,14 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ohCvp046BtwbLdNqRvdRCav7CS4=
+			393Jy6zyOFMJc17yc0J50n08pwM=
 			</data>
 			<key>hash2</key>
 			<data>
-			LIK6HmuWVcqSPuW/b6ADayQmkD8aiZUxGl9eFBDVVYU=
+			RBd/KmNk/GA2mCFAcjKUSe/Df3kp3WY5nshRdxlc19A=
 			</data>
 			<key>optional</key>
 			<true/>
-		</dict>
-		<key>livepreview-close.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			1CJXGwKem7K5PM/j33LtABD4UfQ=
-			</data>
-			<key>hash2</key>
-			<data>
-			gwc5pOcli9StuhV31czDM5V8gMq0F2In2ZxEln5SKIM=
-			</data>
-		</dict>
-		<key>livepreview-close@2x.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			KrE6BzgRXB3PUnvmPIoStOA98Ik=
-			</data>
-			<key>hash2</key>
-			<data>
-			VBwpEpeOKwv/cbwWKtm7jCrvmhhTDTLnyU+hZYCGkCQ=
-			</data>
-		</dict>
-		<key>livepreview-close@3x.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			droId8xQubOat9GLpEPoZ6TMaVo=
-			</data>
-			<key>hash2</key>
-			<data>
-			e0fAR4xqjeYGEOnZCABMJjw8UG83H08MG6cwO53XJ3Y=
-			</data>
-		</dict>
-		<key>livepreview-down.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			wniSBp7TeR1E37Q51PAij65MvP4=
-			</data>
-			<key>hash2</key>
-			<data>
-			en8ini4sIYNfx1hAeA0tDy6UzRKsN0PXdd8OxArFcZE=
-			</data>
-		</dict>
-		<key>livepreview-down@2x.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			1MzWjkTeAYNPl5Nc76WlBMt5EuA=
-			</data>
-			<key>hash2</key>
-			<data>
-			7jG71UlYK+4T1+krvWUbNUPF3iwgcqoXeNTK8DelpEM=
-			</data>
-		</dict>
-		<key>livepreview-down@3x.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			uCYbCyOFqBPwElZJZpkSzhdtows=
-			</data>
-			<key>hash2</key>
-			<data>
-			wbE4zSwl8vY10MMycIStBXX21DCjWuEX/pKKYtHVM1w=
-			</data>
-		</dict>
-		<key>livepreview-icon.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			EdPvzDJTBLFb+/ZtOi178BWJKZQ=
-			</data>
-			<key>hash2</key>
-			<data>
-			6XcdWj7t6MrcPW2h/m1vw3aHacKTpV8yArOJ1x3bzg4=
-			</data>
-		</dict>
-		<key>livepreview-icon@2x.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			MK98T8pGK6RDFiqwfaoHHu0pAMA=
-			</data>
-			<key>hash2</key>
-			<data>
-			TvqVXh1RAif95CDgBA3GW5xAH5jTOIAxJqA7vzCoeuw=
-			</data>
-		</dict>
-		<key>livepreview-icon@3x.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			Sr9V5LTBIKzlV9qPMrKmzZk31G8=
-			</data>
-			<key>hash2</key>
-			<data>
-			kY5Je5n6022hDaXJ1npbOQpb+vpqpQFl3qrN2bAEfv0=
-			</data>
-		</dict>
-		<key>livepreview-refresh.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			GU4DX/Fb5SRcYjmEj1qqPbAgsEw=
-			</data>
-			<key>hash2</key>
-			<data>
-			HbnrtrX1dNfK9CtDd8q9Hcr9i4Rq9xZN5UXFuSvAvb4=
-			</data>
-		</dict>
-		<key>livepreview-refresh@2x.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			o2SITjdKvVAyaCVoJw22sLil/B8=
-			</data>
-			<key>hash2</key>
-			<data>
-			RRCDhXT1QEnSzQLiVzYrZUNrDCnu1FvzXcUxX3eCJbY=
-			</data>
-		</dict>
-		<key>livepreview-refresh@3x.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			VbDfKkzF851djAWfKh5uUdmAxqQ=
-			</data>
-			<key>hash2</key>
-			<data>
-			cIBeHChq1Pa6gRTaqzgWvY8J8+oD2tkeVTowq9m3Bvk=
-			</data>
-		</dict>
-		<key>livepreview-stop.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			zafEEg109iDT7z7pM91ukZR8cQ8=
-			</data>
-			<key>hash2</key>
-			<data>
-			M9LiWjwv8NJ4cAJ9GSKV/gUop/EA4uYnuqgm14DxzJc=
-			</data>
-		</dict>
-		<key>livepreview-stop@2x.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			5xQ5dy3GNNBfjHW05A1KugbIFhY=
-			</data>
-			<key>hash2</key>
-			<data>
-			XDaVmnkLc6EH1hgIIQGuaSrrTsWT/9QDLBLmEm2+43c=
-			</data>
-		</dict>
-		<key>livepreview-stop@3x.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			M2QkDoPKPYkovFBU8s2LaZLmy5Y=
-			</data>
-			<key>hash2</key>
-			<data>
-			PhRGqliMJdrifV+3k3m6XZT4Wz1UYPLMtZB7ismjOIo=
-			</data>
-		</dict>
-		<key>livepreview-up.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			I6Zuub0SWFYwcpLdeKEJMmZMfp8=
-			</data>
-			<key>hash2</key>
-			<data>
-			GWQtd4wJaFl0gv6384kF0vkBV/qKYz944u/0ICZUzg4=
-			</data>
-		</dict>
-		<key>livepreview-up@2x.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			m39fs5fT2RPCCVTlBcZ17A+ey4k=
-			</data>
-			<key>hash2</key>
-			<data>
-			7jsQrI9tHtYOlLAH7ZKPL/m9QT3TGzHwCwr6g6nMXII=
-			</data>
-		</dict>
-		<key>livepreview-up@3x.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			YdmEJOhE4DlzeXWuvweVALTmhXU=
-			</data>
-			<key>hash2</key>
-			<data>
-			IwcnJfcdBzCNBJJv4h57W61xFqN3g38C0XY9FgS5Q2k=
-			</data>
 		</dict>
 		<key>loader.png</key>
 		<dict>

@@ -90,9 +90,17 @@ NS_ASSUME_NONNULL_BEGIN
  @param URL The URL that will be called.
  @return YES if the Smart Display SDK should handle the URL, NO if the app should do it manually.
  
- @note This method is deprecated and will be removed in future releases. Publishers should not interfere client-side with clicks to avoid counting issues.
+ @note This method is deprecated and will be removed in future releases. Publishers should not interfere client-side with clicks to avoid counting issues. However, if you still want to be warned is case of click, please implement bannerView:didClickWithURL: delegate method.
  */
-- (BOOL)bannerView:(SASBannerView *)bannerView shouldHandleURL:(NSURL *)URL __deprecated;
+- (BOOL)bannerView:(SASBannerView *)bannerView shouldHandleURL:(NSURL *)URL __deprecated_msg("Use 'bannerView:didClickWithURL:' instead");
+
+/**
+ Notifies the delegate when a click is performed on the banner ad.
+ 
+ @param bannerView The instance of SASBannerView.
+ @param URL The URL that is called.
+ */
+- (void)bannerView:(SASBannerView *)bannerView didClickWithURL:(NSURL *)URL;
 
 #pragma mark - MRAID
 
@@ -177,19 +185,6 @@ NS_ASSUME_NONNULL_BEGIN
  @param message The message sent by the creative.
  */
 - (void)bannerView:(SASBannerView *)bannerView didReceiveMessage:(NSString *)message;
-
-/**
- Returns the visibility percentage of the banner view
- 
- @note Visibility is already computed by the Smart Display SDK. Override this only if this computation does not work
- for your particular integration.
- 
- @warning This method is called each 500ms by the Smart Display SDK: do not perform heavy computation in it.
- 
- @param bannerView The instance of SASBannerView that called this delegate method.
- @return Visibility percentage value between 0 and 1.
- */
-- (CGFloat)visibilityPercentageForBannerView:(SASBannerView *)bannerView;
 
 #pragma mark - Sticky ads in scroll views
 

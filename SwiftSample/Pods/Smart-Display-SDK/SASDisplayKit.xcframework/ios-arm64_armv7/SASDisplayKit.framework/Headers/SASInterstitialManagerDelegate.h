@@ -81,9 +81,17 @@ NS_ASSUME_NONNULL_BEGIN
  @param URL The URL that must be handled.
  @return YES if the URL must be handled by the SDK, NO if your application will handle the URL itself.
  
- @note This method is deprecated and will be removed in future releases. Publishers should not interfere client-side with clicks to avoid counting issues.
+ @note This method is deprecated and will be removed in future releases. Publishers should not interfere client-side with clicks to avoid counting issues. However, if you still want to be warned is case of click, please implement interstitialManager:didClickWithURL: delegate method.
  */
 - (BOOL)interstitialManager:(SASInterstitialManager *)manager shouldHandleURL:(NSURL *)URL __deprecated;
+
+/**
+ Notifies the delegate when a click is performed on the interstitial ad.
+ 
+ @param manager The instance of SASInterstitialManager
+ @param URL The URL that is called.
+ */
+- (void)interstitialManager:(SASInterstitialManager *)manager didClickWithURL:(NSURL *)URL;
 
 /**
  Notifies the delegate that a message has been sent by the MRAID creative.

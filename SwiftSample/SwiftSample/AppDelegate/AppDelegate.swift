@@ -77,15 +77,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
         
-        // Activating Live Preview:
-        // -> Add the corresponding URL Type in your Info.plist
-        // -> Check the documentation for more information about this feature
-        
-        let sasSchemeWithSiteID = "sas\(Constants.siteID)"
-        if sasSchemeWithSiteID == url.scheme {
-            return SASConfiguration.shared.handleLivePreviewURL(url)
-        }
-        
         // Add your own logic here…
         
         return false

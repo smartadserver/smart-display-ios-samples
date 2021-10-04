@@ -94,23 +94,6 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)configureWithSiteId:(NSInteger)siteId baseURL:(NSString *)baseURL NS_SWIFT_NAME(configure(siteId:baseURL:)) __attribute((deprecated("use configureWithSiteId: instead")));
 
-#pragma mark - Live Preview
-
-/**
- Automatically handles a Live Preview URL.
- 
- A Live Preview URL is a special URL retrieve at application startup that will reconfigure the SDK to temporary display
- a specific creative for a specific ad placement instead of the creative that should have been fetched from the delivery.
- 
- It can be useful to quickly preview a creative inside your own app instead of using a test app.
- 
- Check the documentation for more info on how to use this method and the live preview feature.
- 
- @param livePreviewURL A valid Live Preview URL.
- @return YES if the Live Preview URL has been handled, NO otherwise.
- */
-- (BOOL)handleLivePreviewURL:(NSURL *)livePreviewURL;
-
 @end
 
 NS_ASSUME_NONNULL_END
