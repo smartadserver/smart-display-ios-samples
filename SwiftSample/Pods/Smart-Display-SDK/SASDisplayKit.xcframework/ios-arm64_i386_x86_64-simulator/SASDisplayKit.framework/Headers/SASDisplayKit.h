@@ -72,6 +72,9 @@ FOUNDATION_EXPORT const unsigned char SASDisplayKitVersionString[];
 #import <SASDisplayKit/SASAdChoicesView.h>
 #import <SASDisplayKit/SASAdViewContainerCell.h>
 
+// System
+#import <SASDisplayKit/SASFrameworkInfo.h>
+
 // Misc
 #import <SASDisplayKit/SASLoader.h>
 #import <SASDisplayKit/SASReward.h>

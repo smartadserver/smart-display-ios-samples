@@ -21,6 +21,9 @@ NS_ASSUME_NONNULL_BEGIN
 /// The framework's name.
 @property (nonatomic, readonly) NSString *frameworkName;
 
+/// The framework's marketing name (the name used in Cocoapods for instance).
+@property (nonatomic, readonly) NSString *frameworkMarketingName;
+
 /// The framework's bundle identifier.
 @property (nonatomic, readonly) NSString *frameworkBundleIdentifier;
 

@@ -86,6 +86,22 @@ NS_ASSUME_NONNULL_BEGIN
                  maximumWrappers:(NSInteger)maximumWrappers
             handleWrappersAdpods:(BOOL)handleWrappersAdpods NS_DESIGNATED_INITIALIZER __deprecated;
 
+/**
+ Generate the default macros that should be replaced in VAST URLs with the relevant values.
+ 
+ @warning some macros might contains some timestamp or random values so the result of this method should never be stored.
+ 
+ @param appBundleIdentifier The bundle identifier of the current application.
+ @param OMPartnerName The Open Measurement SDK partner name.
+ @param OMFrameworkVersion The framework version provided to the Open Measurement SDK.
+ @param apiFrameworks An array of supported IAB API frameworks.
+ @return A dictionary of macros and values that should be replaced in VAST URLs.
+ */
++ (NSDictionary<NSString *, NSString *> *)generateDefaultVASTMacrosWithAppBundleIdentifier:(NSString *)appBundleIdentifier
+                                                                             OMPartnerName:(NSString *)OMPartnerName
+                                                                        OMFrameworkVersion:(NSString *)OMFrameworkVersion
+                                                                             apiFrameworks:(nullable NSArray<NSNumber *> *)apiFrameworks;
+
 @end
 
 NS_ASSUME_NONNULL_END

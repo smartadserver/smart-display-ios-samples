@@ -61,6 +61,9 @@ NS_ASSUME_NONNULL_BEGIN
 /// YES if the SDK using this SCSConfiguration instance is deprecated and should be upgraded, NO otherwise.
 @property (nonatomic, readonly) BOOL isDeprecated;
 
+/// A list of supported IAB frameworks if any, nil otherwise.
+@property (nonatomic, readonly, nullable) NSArray<NSNumber *> *iabFrameworks;
+
 /**
 Public Initializer
 

@@ -27,4 +27,11 @@
  */
 + (uint32_t)randomUnsignedIntWithMin:(uint32_t)min max:(uint32_t)max;
 
+/**
+ Generate a random 8 digits int suited for cache busting in VAST URLs.
+ 
+ @return A random 8 digits int
+ */
++ (uint32_t)randomVastCacheBustingInt;
+
 @end

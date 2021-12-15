@@ -66,6 +66,12 @@ typedef NS_ENUM(NSInteger, SCSIdentityType) {
 /// The CCPAString instance representing the CCPA Consent String stored on the device NSUserDefaults under IAB specifications key.
 @property (nullable, nonatomic, readonly) SCSCCPAString *CCPAString;
 
+/// YES if we can send the device identifiers, NO otherwise.
+///
+/// Sending the device identifiers can be prevented by any privacy law applicable where the app is running
+/// and will be determined using data set by the app CMP.
+@property (nonatomic, readonly) BOOL canSendIDs;
+
 /**
  Retrieve an identity for the device using the identity provider given in parameter.
  

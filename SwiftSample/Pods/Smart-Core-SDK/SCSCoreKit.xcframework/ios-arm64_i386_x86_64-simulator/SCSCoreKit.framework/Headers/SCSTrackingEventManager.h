@@ -67,6 +67,28 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (BOOL)trackEvent:(NSString *)eventName variables:(NSDictionary<NSString *, NSString *> *)variables additionalMacros:(NSDictionary<NSString *, NSString *> *)additionalMacros;
 
+/**
+ This method is used to retrieve the variables dictionary for a given event URL.
+ 
+ This method is used internally by the manager for event tracking and is intended to be overriden. The default
+ implementation returns an empty dictionary.
+ 
+ @param URL The URL of the event that is being called.
+ @return A dictionary of variables for this event.
+ */
+- (NSDictionary <NSString *, NSString *> *)variablesForURL:(NSURL *)URL;
+
+/**
+ This method is used to retrieve the macros dictionary for a given event.
+ 
+ This method is used internally by the manager for event tracking and is intended to be overriden. The default
+ implementation returns an empty dictionary.
+ 
+ @param URL The URL of the event that is being called.
+ @return A dictionary of additional macros for this event.
+ */
+- (NSDictionary <NSString *, NSString *> *)macrosForURL:(NSURL *)URL;
+
 - (instancetype)init NS_UNAVAILABLE;
 
 @end

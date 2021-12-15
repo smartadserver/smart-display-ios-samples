@@ -154,6 +154,22 @@ typedef NS_ENUM(NSUInteger, SCSTimeUtilsOffsetType) {
  */
 + (SCSTimeUtilsOffsetType)offsetTypeFromString:(NSString *)offsetString;
 
+/**
+ Generate a valid timestamp for VAST macros from the current date & timezone.
+ 
+ @return A valid timestamp for VAST macros.
+ */
++ (NSString *)timestampForVASTMacro;
+
+/**
+ Generate a valid timestamp for VAST macros.
+ 
+ @param date The date of the timestamp.
+ @param timeZone The timezone of the timestamp.
+ @return A valid timestamp for VAST macros.
+ */
++ (NSString *)timestampForVASTMacroWithDate:(NSDate *)date timeZone:(NSTimeZone *)timeZone;
+
 @end
 
 NS_ASSUME_NONNULL_END

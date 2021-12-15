@@ -118,7 +118,11 @@
 		</data>
 		<key>Headers/SASDisplayKit.h</key>
 		<data>
-		I+Y/o5YdyOSF1SkJ7s8kgC+3bdM=
+		92i3VmVyHbjnrxPx3ZKDel6nCFE=
+		</data>
+		<key>Headers/SASFrameworkInfo.h</key>
+		<data>
+		Pg//kFrLDv4jEDOG9kGq/n9KEhw=
 		</data>
 		<key>Headers/SASInterstitialBidderAdapterDelegate.h</key>
 		<data>
@@ -222,7 +226,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		gARNvnEPAm2tNc89LDsTb8+YVYc=
+		bAreok91rxG8koSYRbqPA45uiDQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -893,11 +897,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			I+Y/o5YdyOSF1SkJ7s8kgC+3bdM=
+			92i3VmVyHbjnrxPx3ZKDel6nCFE=
 			</data>
 			<key>hash2</key>
 			<data>
-			LSiFb9JMAJny8DwZlQPvc5gDPbzYyuyx4/EznugYOvc=
+			QvoJlBBCcIWcgmHTf82yU30XiVGQDaG2eaKZOHaNV8A=
+			</data>
+		</dict>
+		<key>Headers/SASFrameworkInfo.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Pg//kFrLDv4jEDOG9kGq/n9KEhw=
+			</data>
+			<key>hash2</key>
+			<data>
+			44gB9mZZWw2u4WnSUcScBFbHbzkHGsWGRaGCqY9WBZM=
 			</data>
 		</dict>
 		<key>Headers/SASInterstitialBidderAdapterDelegate.h</key>

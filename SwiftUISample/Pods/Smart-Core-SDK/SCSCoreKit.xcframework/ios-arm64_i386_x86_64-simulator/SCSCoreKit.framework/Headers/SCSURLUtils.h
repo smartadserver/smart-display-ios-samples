@@ -96,7 +96,21 @@ typedef NS_ENUM(NSInteger, SCSAppStoreURLType) {
 + (nullable NSURL *)buildURLWithBaseURLString:(NSString *)baseURLString path:(nullable NSString *)path parameters:(nullable NSDictionary *)parameters;
 
 /**
+ Replace the given macros in the given url.
+ 
+ @note This method will always add brackets to macro names.
+ 
+ @param macros A dictionary with all the macros and the values.
+ @param url The URL where the macro should be replaced.
+ @return An URL with the macros replaced.
+ */
++ (NSURL *)replaceMacros:(NSDictionary<NSString *, NSString *> *)macros inURL:(NSURL *)url;
+
+/**
  Replace the given macro in the given url by the given value.
+ 
+ @warning This method replaces the macro without adding any brackets, use replaceMacro:inURL:byString:addBrackets: if
+ the macro parameter does not contain any bracket.
  
  @param macro The macro to be replaced
  @param url The URL where the macro should be replaced
@@ -104,6 +118,17 @@ typedef NS_ENUM(NSInteger, SCSAppStoreURLType) {
  @return An URL with the macro replaced.
  */
 + (NSURL *)replaceMacro:(NSString *)macro inURL:(NSURL *)url byString:(NSString *)string;
+
+/**
+ Replace the given macro in the given url by the given value.
+ 
+ @param macro The macro to be replaced
+ @param url The URL where the macro should be replaced
+ @param string The string to replace the macro with.
+ @param addBrackets YES if brackets must be added by the method around the macro, NO if the macro should be replaced as is.
+ @return An URL with the macro replaced.
+ */
++ (NSURL *)replaceMacro:(NSString *)macro inURL:(NSURL *)url byString:(NSString *)string addBrackets:(BOOL)addBrackets;
 
 /**
  Explode a string into an array of URLs using the "," separator.

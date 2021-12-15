@@ -12,7 +12,7 @@
 #define kSCSOMIDSDKAPIVersionString     @"{\"v\":\"1.2.0\",\"a\":\"1\"}"
 
 #define kSCSOMIDPartnerName             @"Smartadserver"
-#define kSCSOMIDJSLibraryURL            @"https://apps.sascdn.com/sdk/omsdk/1.3.23/omsdk-v1.min.js"
+#define kSCSOMIDJSLibraryURL            @"https://apps.sascdn.com/sdk/omsdk/1.3.25/omsdk-v1.min.js"
 
 NS_ASSUME_NONNULL_BEGIN
 

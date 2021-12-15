@@ -59,6 +59,18 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)vastManager:(id <SCSVASTManagerProtocol>)manager didFailToResolveWrapperAd:(SCSVASTAd *)ad;
 
+@optional
+
+/**
+ Called when the manager is about to call an URL where some macro should be replaced.
+ 
+ This method will return a dictionary of macro/value that should be replaced in this URL.
+ 
+ @param manager An object conforming to the SCSVASTManagerProtocol.
+ @return A dictionary of macro/value that should be replaced in the URLs called by the VAST Manager.
+ */
+- (NSDictionary<NSString *, NSString *> *)vastManagerRequestsVASTMacros:(id <SCSVASTManagerProtocol>)manager;
+
 @end
 
 NS_ASSUME_NONNULL_END

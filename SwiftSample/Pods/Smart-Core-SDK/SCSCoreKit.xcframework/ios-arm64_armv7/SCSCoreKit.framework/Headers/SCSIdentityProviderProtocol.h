@@ -64,6 +64,27 @@ NS_ASSUME_NONNULL_BEGIN
 - (nullable SCSTCFString *)TCFString;
 
 /**
+ Returns the value of 'GDPR applies' as stored in NSUserDefaults by any IAB certified CMP if any, -1 otherwise.
+ 
+ @return The value of 'GDPR applies' if any, -1 otherwise.
+ */
+- (NSInteger)TCFGDPRApplies;
+
+/**
+ Returns the value of 'Purpose Consents' as stored in NSUserDefaults by any IAB certified CMP.
+ 
+ @return The value of 'Purpose Consents'.
+ */
+- (nullable NSString *)TCFPurposeConsents;
+
+/**
+ Returns the value of 'Vendor Consents' as stored in NSUserDefaults by any IAB certified CMP.
+ 
+ @return The value of 'Vendor Consents'.
+ */
+- (nullable NSString *)TCFVendorConsents;
+
+/**
 Returns a SCSCCPAString instance representing the CCPA consent string stored in NSUserDefaults by any IAB certified CMP.
 
 @return The SCSCCPAString instance representing the CCPA string.
