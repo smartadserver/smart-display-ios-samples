@@ -1,6 +1,16 @@
 framework module SCSCoreKit {
-  umbrella header "SCSCoreKit.h"
+    umbrella header "SCSCoreKit.h"
 
-  export *
-  module * { export * }
+    export *
+    module * { export * }
+
+    explicit module Private {
+      header "SCSPrivateUtils.h"
+      export *
+    }
+}
+
+module SCSCoreKit.Swift {
+    header "SCSCoreKit-Swift.h"
+    requires objc
 }

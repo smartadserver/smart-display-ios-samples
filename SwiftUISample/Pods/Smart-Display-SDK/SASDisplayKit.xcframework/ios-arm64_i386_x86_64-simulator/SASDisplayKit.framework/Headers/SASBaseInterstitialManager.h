@@ -13,7 +13,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @class SASAdPlacement;
-@protocol SASBidderAdapterProtocol, SASBaseInterstitialManagerInternalDelegate;
+@protocol SASBidderAdapterProtocol;
 
 /**
  Base interstitial manager class.
@@ -30,17 +30,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// The status of the ad handled by the interstitial manager.
 @property (nonatomic, readonly) SASAdStatus adStatus;
-
-/// Internal SASBaseInterstitialManager delegate.
-///
-/// This delegate can be used to retrieve internal views and events of the SDK. It should only
-/// be implemented to if you are using a third party SDK responsible to measure some stats on
-/// your ads SDKs.
-///
-/// @warning Views and objects retrieved from these methods should never be used for anything else
-/// than viewability and performance measurement. These internal objects might change without warning
-/// in future SDK version.
-@property (nonatomic, weak, nullable) id<SASBaseInterstitialManagerInternalDelegate> internalDelegate;
 
 /**
  Loads an interstitial ad.

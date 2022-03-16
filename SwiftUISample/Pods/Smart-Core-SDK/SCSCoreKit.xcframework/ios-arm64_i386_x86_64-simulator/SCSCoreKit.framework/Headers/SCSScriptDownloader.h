@@ -10,6 +10,11 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+#define SCSScriptDownloader_Error_Domain                    @"SCSScriptDownloaderErrorDomain"
+
+#define SCSScriptDownloader_Error_InvalidScript_Code        100
+#define SCSScriptDownloader_Error_InvalidScript_Message     @"The downloaded script is empty or invalid!"
+
 @protocol SCSScriptDownloaderDelegate;
 @class SCSURLSession;
 

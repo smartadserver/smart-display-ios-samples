@@ -27,11 +27,9 @@ FOUNDATION_EXPORT const unsigned char SASDisplayKitVersionString[];
 #import <SASDisplayKit/SASAdView.h>
 #import <SASDisplayKit/SASBannerView.h>
 #import <SASDisplayKit/SASBannerViewDelegate.h>
-#import <SASDisplayKit/SASBannerViewInternalDelegate.h>
 
 // Interstitial & rewarded video
 #import <SASDisplayKit/SASBaseInterstitialManager.h>
-#import <SASDisplayKit/SASBaseInterstitialManagerInternalDelegate.h>
 #import <SASDisplayKit/SASInterstitialManager.h>
 #import <SASDisplayKit/SASInterstitialManagerDelegate.h>
 #import <SASDisplayKit/SASRewardedVideoManager.h>

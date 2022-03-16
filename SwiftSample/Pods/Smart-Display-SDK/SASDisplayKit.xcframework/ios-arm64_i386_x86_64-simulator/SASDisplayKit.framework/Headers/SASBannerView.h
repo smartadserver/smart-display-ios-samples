@@ -10,7 +10,6 @@
 #import <SASDisplayKit/SASAdView.h>
 #import <SASDisplayKit/SASLoader.h>
 #import <SASDisplayKit/SASBannerViewDelegate.h>
-#import <SASDisplayKit/SASBannerViewInternalDelegate.h>
 #import <SASDisplayKit/SASBiddingAdResponse.h>
 
 #define SASRefreshIntervalOff        (-1)
@@ -54,17 +53,6 @@ NS_ASSUME_NONNULL_BEGIN
 ///
 /// The delegate must adopt the SASBannerViewDelegate protocol.
 @property (nonatomic, weak, nullable) id <SASBannerViewDelegate> delegate;
-
-/// Internal SASBannerView delegate.
-///
-/// This delegate can be used to retrieve internal views and events of the SDK. It should only
-/// be implemented to if you are using a third party SDK responsible to measure some stats on
-/// your ads SDKs.
-///
-/// @warning Views and objects retrieved from these methods should never be used for anything else
-/// than viewability and performance measurement. These internal objects might change without warning
-/// in future SDK version.
-@property (nonatomic, weak, nullable) id<SASBannerViewInternalDelegate> internalDelegate;
 
 /// YES if the ad banner should expand from the top, NO if it should expand from the bottom.
 ///

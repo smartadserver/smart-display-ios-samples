@@ -14,15 +14,15 @@
 		</data>
 		<key>BuildSonar.sh</key>
 		<data>
-		Wb5vzlsUEwPNyPID/NjCjdRiVS4=
+		8ZPotKUZr0C4DkUYb1iMkex9gLE=
 		</data>
 		<key>BuildUniversal.sh</key>
 		<data>
-		oIYlOKQ9Evsg3+yovL4iIEr3qdQ=
+		zwoEuvuSx6E0eCxqHFuGmOcLmEA=
 		</data>
 		<key>BuildUtils.sh</key>
 		<data>
-		hjB1YzGYp12hiPF1PI0XxNVGCfk=
+		fj5d/5PIem8Q7YNzec9uM0muobk=
 		</data>
 		<key>DeployCocoapodsTrunk.sh</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>DeploySDKSnapshotInSamples.sh</key>
 		<data>
-		//E3K8L5gpHigtiuAbvsmagGbQY=
+		GRzwDHkEy+K5GAKWmcllknBdZo4=
 		</data>
 		<key>Headers/SASAd.h</key>
 		<data>
@@ -66,23 +66,15 @@
 		</data>
 		<key>Headers/SASBannerView.h</key>
 		<data>
-		howmH2E1s+tXh7vDgVSJDtX0tc4=
+		gnWGU9yUH4gTZJ1xiC4AJVAR1W8=
 		</data>
 		<key>Headers/SASBannerViewDelegate.h</key>
 		<data>
 		T+D+zKRKK9ItjfWD7nvcX51Wbdo=
 		</data>
-		<key>Headers/SASBannerViewInternalDelegate.h</key>
-		<data>
-		R5iSAh8Cs0rmPrVL0SFc3l9bulE=
-		</data>
 		<key>Headers/SASBaseInterstitialManager.h</key>
 		<data>
-		a7F9MRf1HU3B89R+BKFBkcGIsaY=
-		</data>
-		<key>Headers/SASBaseInterstitialManagerInternalDelegate.h</key>
-		<data>
-		vTqA5LvM9/6V70hWbnFO49KVy6A=
+		ELM1xEDy2eo4sNJEfNVZclMkSOE=
 		</data>
 		<key>Headers/SASBidderAdapter.h</key>
 		<data>
@@ -118,7 +110,7 @@
 		</data>
 		<key>Headers/SASDisplayKit.h</key>
 		<data>
-		92i3VmVyHbjnrxPx3ZKDel6nCFE=
+		BROhn5XUNHHSbW9KS7qvga2U+hQ=
 		</data>
 		<key>Headers/SASFrameworkInfo.h</key>
 		<data>
@@ -226,7 +218,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		bAreok91rxG8koSYRbqPA45uiDQ=
+		bBZ7MhYPp3ECPUK9thxJtgqa3+4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -611,33 +603,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Wb5vzlsUEwPNyPID/NjCjdRiVS4=
+			8ZPotKUZr0C4DkUYb1iMkex9gLE=
 			</data>
 			<key>hash2</key>
 			<data>
-			0iEWFTHO9qKepStaQmSUP8OKxoDQPswYahCSrvTuqco=
+			E/JSfiyKDvnlAjtd9i3HV5cIos5X4zhzFrCye7SfJzw=
 			</data>
 		</dict>
 		<key>BuildUniversal.sh</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			oIYlOKQ9Evsg3+yovL4iIEr3qdQ=
+			zwoEuvuSx6E0eCxqHFuGmOcLmEA=
 			</data>
 			<key>hash2</key>
 			<data>
-			CKQLByKDkg1w4AWj4pooJIAFKLQqu9+UlSdV3nFm3sM=
+			zc53PwAJn0NvXxHKvkR+ZV9v2U8M4521+QfKL4P2uZk=
 			</data>
 		</dict>
 		<key>BuildUtils.sh</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			hjB1YzGYp12hiPF1PI0XxNVGCfk=
+			fj5d/5PIem8Q7YNzec9uM0muobk=
 			</data>
 			<key>hash2</key>
 			<data>
-			KWB0ZKkeaL+6BgHswxrzoN/xIUznRBeFx9yY+leXFHU=
+			Vie+F8Gre7PxgPw49Zkqm0KNrLXtOygjlquakGMZrxk=
 			</data>
 		</dict>
 		<key>DeployCocoapodsTrunk.sh</key>
@@ -666,11 +658,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			//E3K8L5gpHigtiuAbvsmagGbQY=
+			GRzwDHkEy+K5GAKWmcllknBdZo4=
 			</data>
 			<key>hash2</key>
 			<data>
-			8EPGV0Swx8wRCOg/XLjUjtlaoEh5fVu6vL9dt183/c0=
+			9U0NXODIWGj3bQbj2YmYbrIqcoNwi/19r371h7IH0rg=
 			</data>
 		</dict>
 		<key>Headers/SASAd.h</key>
@@ -754,11 +746,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			howmH2E1s+tXh7vDgVSJDtX0tc4=
+			gnWGU9yUH4gTZJ1xiC4AJVAR1W8=
 			</data>
 			<key>hash2</key>
 			<data>
-			MBnCUHL3bjTYyRh6z0SK2JAR+qOUJo7L+elieQp4Yz4=
+			b1NEEZoUSwANeqc7V0/3Hj0Xpari8F6flWdXXUUEhjE=
 			</data>
 		</dict>
 		<key>Headers/SASBannerViewDelegate.h</key>
@@ -772,37 +764,15 @@
 			sQL/TpV9+QtY0EtlKBIQBTr19FKgQ887rgJ14Fucecw=
 			</data>
 		</dict>
-		<key>Headers/SASBannerViewInternalDelegate.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			R5iSAh8Cs0rmPrVL0SFc3l9bulE=
-			</data>
-			<key>hash2</key>
-			<data>
-			kn1vuslNNdY1DtrwxViqwck9OjcBxlvF7TZILbgxHac=
-			</data>
-		</dict>
 		<key>Headers/SASBaseInterstitialManager.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			a7F9MRf1HU3B89R+BKFBkcGIsaY=
+			ELM1xEDy2eo4sNJEfNVZclMkSOE=
 			</data>
 			<key>hash2</key>
 			<data>
-			duvl02Yq5DwRes4atAvMcZ9074JyNPmiWW1F8Cs1kNc=
-			</data>
-		</dict>
-		<key>Headers/SASBaseInterstitialManagerInternalDelegate.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			vTqA5LvM9/6V70hWbnFO49KVy6A=
-			</data>
-			<key>hash2</key>
-			<data>
-			7WoJi4E4Gd7iBtVRbog9hfdfJ4OCIXs+0bQlcxJQa5Y=
+			XeY1c7qE/2A7veCEqW7+5N0lUx64yQ7QiHAPxxKce/A=
 			</data>
 		</dict>
 		<key>Headers/SASBidderAdapter.h</key>
@@ -897,11 +867,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			92i3VmVyHbjnrxPx3ZKDel6nCFE=
+			BROhn5XUNHHSbW9KS7qvga2U+hQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			QvoJlBBCcIWcgmHTf82yU30XiVGQDaG2eaKZOHaNV8A=
+			pJ78im1oIZxrznwb3dTeznbY3QGIkgWRu9UCLTjeS10=
 			</data>
 		</dict>
 		<key>Headers/SASFrameworkInfo.h</key>
