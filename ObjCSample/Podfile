@@ -5,6 +5,6 @@ target 'ObjCSample' do
   use_frameworks!
   platform :ios, '9.0'
 
-  pod 'Smart-Display-SDK', '~> 7.17.0'
+  pod 'Smart-Display-SDK', '~> 7.17.1'
 
 end  

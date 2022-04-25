@@ -1,10 +1,10 @@
 PODS:
-  - Smart-Core-SDK (7.17.0)
-  - Smart-Display-SDK (7.17.0):
+  - Smart-Core-SDK (7.17.1)
+  - Smart-Display-SDK (7.17.1):
     - Smart-Core-SDK (~> 7.17)
 
 DEPENDENCIES:
-  - Smart-Display-SDK (~> 7.17.0)
+  - Smart-Display-SDK (~> 7.17.1)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
@@ -12,9 +12,9 @@ SPEC REPOS:
     - Smart-Display-SDK
 
 SPEC CHECKSUMS:
-  Smart-Core-SDK: 2f7ace8d71315cb2d864ada9c756f2d1d36d5c11
-  Smart-Display-SDK: bdd450cda22cbcd0e3552c43ee6eeaf82c5df19d
+  Smart-Core-SDK: f9a7590d1019bec2e971bd5f4a85461d19130a69
+  Smart-Display-SDK: 00bcac3ab2120401bf1756ad7d3ed553090a5623
 
-PODFILE CHECKSUM: 81cf9c1913a1be692aadcf5d7f005925d7609f82
+PODFILE CHECKSUM: 88af50ead20f15305b75ee3af1b817ab46aceec3
 
-COCOAPODS: 1.11.2
+COCOAPODS: 1.11.3
