@@ -7,21 +7,20 @@
 //
 
 #import <Foundation/Foundation.h>
+#if TARGET_OS_IOS || (TARGET_OS_IPHONE && !TARGET_OS_TV)
+#import <SCSCoreKit/SCSPixelManagerProtocol.h>
+#elif TARGET_OS_TV
+#import <SCSCoreKitTV/SCSPixelManagerProtocol.h>
+#endif
 
 NS_ASSUME_NONNULL_BEGIN
 
 @class SCSPixel, SCSPixelStore, SCSURLSession;
 
 /**
- The pixel manager is used to call all pixel of the SDK and to handle failures. It can store unsuccessful pixels in a
- pixel store until expiration and retry them later.
- 
- There should be only one instance of pixel manager (and only one pixel store) per app: the shared singleton should
- be used in most cases.
+ Default SCSPixelManager protocol implementation.
  */
-@interface SCSPixelManager : NSObject
-
-- (instancetype)init NS_UNAVAILABLE;
+@interface SCSPixelManager : NSObject <SCSPixelManager>
 
 /// The shared instance of the SCSPixelManager object.
 @property (class, nonatomic, readonly) SCSPixelManager *sharedInstance NS_SWIFT_NAME(shared);
@@ -38,35 +37,6 @@ NS_ASSUME_NONNULL_BEGIN
 - (instancetype)initWithPixelStore:(SCSPixelStore *)pixelStore urlSession:(SCSURLSession *)urlSession NS_DESIGNATED_INITIALIZER;
 
 /**
- Add a single pixel to the pixel manager and save it. The pixel will not be added if it already exists in the
- pixel store (same ID).
- 
- Note: adding a pixel to the manager does not trigger any call, use callPixels if needed.
- 
- @param pixel The pixel that needs to be added.
- */
-- (void)addPixel:(SCSPixel *)pixel NS_SWIFT_NAME(add(pixel:));
-
-/**
- Add an array of pixels to the pixel manager and save them. Any pixel that already exists in the pixel store
- will be ignored (same ID).
- 
- Note: adding pixels to the manager does not trigger any call, use callPixels if needed.
- 
- @param pixels The array of pixels that needs to be added.
- */
-- (void)addPixels:(NSArray<SCSPixel *> *)pixels NS_SWIFT_NAME(add(pixels:));
-
-/**
- Call all non expired pixels that are stored in the pixel store.
- 
- Note: call to the callPixels method on the same pixel manager instance (the shared instance for example) are
- serialized, every call will be sent to a queue and will be executed in order, to prevent some pixels from being
- called multiple time and ensure thread safety.
- */
-- (void)callPixels;
-
-/**
  Call all non expired pixels that are stored in the pixel store and call a completion handler when finished (this
  handler should only be used for testing purpose).
  
@@ -78,12 +48,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)callPixelsWithCompletionHandler:(nullable void(^)(void))completionHandler NS_SWIFT_NAME(callPixels(completionHandler:));
 
-/**
- Returns all pixels contained in the underlying pixel store.
- 
- @return an array of all pixels contained in the underlying pixel store.
- */
-- (NSArray<SCSPixel *> *)allPixels;
+- (instancetype)init NS_UNAVAILABLE;
 
 @end
 

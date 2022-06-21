@@ -7,25 +7,21 @@
 //
 
 #import <UIKit/UIKit.h>
+#if TARGET_OS_IOS || (TARGET_OS_IPHONE && !TARGET_OS_TV)
+#import <SCSCoreKit/SCSViewabilityManagerProtocol.h>
+#elif TARGET_OS_TV
+#import <SCSCoreKitTV/SCSViewabilityManagerProtocol.h>
+#endif
 
 NS_ASSUME_NONNULL_BEGIN
 
 @protocol SCSViewabilityManagerDelegate;
+@class SCSViewabilityStatus;
 
 /**
- The viewability manager can track manually or automatically the viewability status of a view.
- 
- It can provide information about the viewable status of the view but also on the viewability percentage on screen.
+ Default SCSViewabilityManager protocol implementation.
  */
-@interface SCSViewabilityManager : NSObject
-
-/// The view currently being tracked by the viewability manager.
-@property (nonatomic, weak) UIView *view;
-
-/// The delegate that should be warned if the view status changes
-@property (nullable, nonatomic, weak) id<SCSViewabilityManagerDelegate> delegate;
-
-- (instancetype)init NS_UNAVAILABLE;
+@interface SCSViewabilityManager : NSObject <SCSViewabilityManager>
 
 /**
  Initialize a new instance of SCSViewabilityManager tied with a view.
@@ -35,16 +31,6 @@ NS_ASSUME_NONNULL_BEGIN
  @return An initialized instance of SCSViewabilityManager
  */
 - (instancetype)initWithView:(UIView *)view delegate:(nullable id<SCSViewabilityManagerDelegate>)delegate NS_DESIGNATED_INITIALIZER;
-
-/**
- Starts tracking for viewability status changes.
- */
-- (void)startViewabilityTracking;
-
-/**
- Stops tracking for viewability status changes.
- */
-- (void)stopViewabilityTracking;
 
 /**
  Manually retrieve the viewable status of the view (this will work even if the viewability manager is not started).
@@ -57,14 +43,16 @@ NS_ASSUME_NONNULL_BEGIN
  
  @warning This method will not detect if another view is overlapping.
  */
-- (BOOL)isViewViewable;
+- (BOOL)isViewViewable __deprecated_msg("Use the viewabilityStatus property instead");
 
 /**
  Manually retrieve the viewability percentage of the view (this will work even if the viewability manager is not started).
  
  @warning This method will not detect if another view is overlapping.
  */
-- (CGFloat)viewabilityPercentage;
+- (CGFloat)viewabilityPercentage __deprecated_msg("Use the viewabilityStatus property instead");
+
+- (instancetype)init NS_UNAVAILABLE;
 
 @end
 

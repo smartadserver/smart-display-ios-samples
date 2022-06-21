@@ -49,19 +49,26 @@
 #import <SCSCoreKit/SCSTrackingEvent.h>
 #import <SCSCoreKit/SCSTrackingEventFactory.h>
 #import <SCSCoreKit/SCSTrackingEventDefaultFactory.h>
+#import <SCSCoreKit/SCSTrackingEventManagerProtocol.h>
 #import <SCSCoreKit/SCSTrackingEventManager.h>
 #import <SCSCoreKit/SCSTrackingEventManagerDelegate.h>
 #import <SCSCoreKit/SCSVideoTrackingEvent.h>
+#import <SCSCoreKit/SCSVideoTrackingEventManagerProtocol.h>
 #import <SCSCoreKit/SCSVideoTrackingEventManager.h>
 #import <SCSCoreKit/SCSViewabilityTrackingEvent.h>
+#import <SCSCoreKit/SCSViewabilityTrackingEventManagerProtocol.h>
 #import <SCSCoreKit/SCSViewabilityTrackingEventManager.h>
 
+#import <SCSCoreKit/SCSViewabilityManagerProtocol.h>
 #import <SCSCoreKit/SCSViewabilityManagerDelegate.h>
 #import <SCSCoreKit/SCSViewabilityManager.h>
+#import <SCSCoreKit/SCSViewabilityStatus.h>
 
+#import <SCSCoreKit/SCSPostClickManagerProtocol.h>
 #import <SCSCoreKit/SCSPostClickManagerDelegate.h>
 #import <SCSCoreKit/SCSPostClickManager.h>
 
+#import <SCSCoreKit/SCSOpenMeasurementManagerProtocol.h>
 #import <SCSCoreKit/SCSOpenMeasurementManager.h>
 #import <SCSCoreKit/SCSOpenMeasurementManagerProvider.h>
 #import <SCSCoreKit/SCSOpenMeasurementAdSession.h>
@@ -73,15 +80,18 @@
 
 // System
 #import <SCSCoreKit/SCSAppInfo.h>
+#import <SCSCoreKit/SCSAppInfoProtocol.h>
 
 #import <SCSCoreKit/SCSIdentity.h>
 #import <SCSCoreKit/SCSIdentityProviderProtocol.h>
 #import <SCSCoreKit/SCSTransientID.h>
 
 #import <SCSCoreKit/SCSDeviceInfo.h>
+#import <SCSCoreKit/SCSAppInfoProtocol.h>
 #import <SCSCoreKit/SCSDeviceInfoProviderProtocol.h>
 
 #import <SCSCoreKit/SCSFrameworkInfo.h>
+#import <SCSCoreKit/SCSFrameworkInfoProtocol.h>
 
 #import <SCSCoreKit/SCSLocation.h>
 #import <SCSCoreKit/SCSLocationManager.h>
@@ -120,11 +130,13 @@
 #import <SCSCoreKit/SCSAdRequestErrors.h>
 
 #import <SCSCoreKit/SCSNetworkInfo.h>
+#import <SCSCoreKit/SCSNetworkInfoProtocol.h>
 
 #import <SCSCoreKit/SCSScriptDownloader.h>
 #import <SCSCoreKit/SCSScriptDownloaderDelegate.h>
 
 #import <SCSCoreKit/SCSPixel.h>
+#import <SCSCoreKit/SCSPixelManagerProtocol.h>
 #import <SCSCoreKit/SCSPixelManager.h>
 #import <SCSCoreKit/SCSPixelStore.h>
 #import <SCSCoreKit/SCSPixelStoreProviderProtocol.h>

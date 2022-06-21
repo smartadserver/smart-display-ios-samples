@@ -42,7 +42,7 @@
 		</data>
 		<key>Headers/SCSAdRequestManager.h</key>
 		<data>
-		q6a4SCRGWxSNUg/64RV1gjKEbcU=
+		mRilKV64eTeHKCyqBHwPk3XPZOw=
 		</data>
 		<key>Headers/SCSAdRequestValidatorProtocol.h</key>
 		<data>
@@ -54,7 +54,11 @@
 		</data>
 		<key>Headers/SCSAppInfo.h</key>
 		<data>
-		LikOL5I7nEQXxVc/9w+53rxOEGg=
+		v7YvdxJWOvA2qSemOru8yCDJWEQ=
+		</data>
+		<key>Headers/SCSAppInfoProtocol.h</key>
+		<data>
+		MGU2K3hu9YhSrJvXW7uCx2ieKBU=
 		</data>
 		<key>Headers/SCSAxis3.h</key>
 		<data>
@@ -70,15 +74,19 @@
 		</data>
 		<key>Headers/SCSCoreKit-Swift.h</key>
 		<data>
-		tONu1+TlhhznkZ90uF6xOYWzkww=
+		uliFzBR6GTzt/c8DizhiVqdpDmo=
 		</data>
 		<key>Headers/SCSCoreKit.h</key>
 		<data>
-		RKwsuzZfnwr5DWNDMPYefo8r4Qs=
+		W/w5nw3R9ZlzxKhDaOcUhD5GHRk=
 		</data>
 		<key>Headers/SCSDeviceInfo.h</key>
 		<data>
-		e7cdQIOe25Ce3EvG+KeZpp9TWr8=
+		DJnZRtegel0ZccNozZ+Gt+DsSHw=
+		</data>
+		<key>Headers/SCSDeviceInfoProtocol.h</key>
+		<data>
+		Tiln+Ad9MMbldu+2po4ayuIbBPI=
 		</data>
 		<key>Headers/SCSDeviceInfoProviderProtocol.h</key>
 		<data>
@@ -90,7 +98,11 @@
 		</data>
 		<key>Headers/SCSFrameworkInfo.h</key>
 		<data>
-		CSnIM4zoLTBaFX7bmnRZwTPtf94=
+		c2ruzBHszwSX9AscWqrSGwjc0hY=
+		</data>
+		<key>Headers/SCSFrameworkInfoProtocol.h</key>
+		<data>
+		1jDF5ipZI3JzH+2GOcME7js7J0s=
 		</data>
 		<key>Headers/SCSFuture.h</key>
 		<data>
@@ -170,7 +182,11 @@
 		</data>
 		<key>Headers/SCSNetworkInfo.h</key>
 		<data>
-		gefCRvf6MdPASehcCp1hv3Tm7bw=
+		jhyxb/HI21IVfGqZ5yzrT86i+9w=
+		</data>
+		<key>Headers/SCSNetworkInfoProtocol.h</key>
+		<data>
+		mrg/dDSIS27n0jHdD0VWPyPK1Nk=
 		</data>
 		<key>Headers/SCSOpenMeasurementAdSession.h</key>
 		<data>
@@ -186,11 +202,15 @@
 		</data>
 		<key>Headers/SCSOpenMeasurementManager.h</key>
 		<data>
-		h9TbdomzYHRPJ2acKgpTrXu5C3U=
+		3kN9SVclQvAQwXjZ4MgvPuwRbrs=
 		</data>
 		<key>Headers/SCSOpenMeasurementManagerDefaultProvider.h</key>
 		<data>
 		izDTGrcP62aGULphToVJUK0rI/4=
+		</data>
+		<key>Headers/SCSOpenMeasurementManagerProtocol.h</key>
+		<data>
+		rkF1FswLs9bgNPfKkpPvycupxh8=
 		</data>
 		<key>Headers/SCSOpenMeasurementManagerProvider.h</key>
 		<data>
@@ -210,7 +230,11 @@
 		</data>
 		<key>Headers/SCSPixelManager.h</key>
 		<data>
-		GdYej4vFYMO7c7k/nrYfiQiAcg4=
+		P+YIZPDDxcB2aqRcjBspSRRw5Kw=
+		</data>
+		<key>Headers/SCSPixelManagerProtocol.h</key>
+		<data>
+		aoqKnGusf5RrWiCbL8wLiku3sHM=
 		</data>
 		<key>Headers/SCSPixelStore.h</key>
 		<data>
@@ -222,11 +246,15 @@
 		</data>
 		<key>Headers/SCSPostClickManager.h</key>
 		<data>
-		d09OM34fg/bXFFlYzMYs4ypkTzA=
+		EzWtr9HlqWDi4SUIGOTkELLCkeI=
 		</data>
 		<key>Headers/SCSPostClickManagerDelegate.h</key>
 		<data>
 		mKq1146dXTO3YC3kRxYPw83UR8c=
+		</data>
+		<key>Headers/SCSPostClickManagerProtocol.h</key>
+		<data>
+		X5Fh3QduD3/Bgy/9m1X2Mb5+8/8=
 		</data>
 		<key>Headers/SCSProdURL.h</key>
 		<data>
@@ -310,11 +338,15 @@
 		</data>
 		<key>Headers/SCSTrackingEventManager.h</key>
 		<data>
-		PWeGIS4kJjRdSwUn2WAnRK2PU6E=
+		EQrxX3wkPIBCpHUnu51tmBZWAVY=
 		</data>
 		<key>Headers/SCSTrackingEventManagerDelegate.h</key>
 		<data>
 		DOyv/i1xJBqa2cHNERQboa8COTg=
+		</data>
+		<key>Headers/SCSTrackingEventManagerProtocol.h</key>
+		<data>
+		rF9oi2qLtRvOLyJMpYh99chDjK4=
 		</data>
 		<key>Headers/SCSTransientID.h</key>
 		<data>
@@ -426,7 +458,7 @@
 		</data>
 		<key>Headers/SCSVASTManagerConfig.h</key>
 		<data>
-		yyOg4zA+69MxSSK4Uq3091WTjYQ=
+		0++wjVBgXz5RA0Fndp8FRr1KTsk=
 		</data>
 		<key>Headers/SCSVASTManagerDelegate.h</key>
 		<data>
@@ -498,15 +530,27 @@
 		</data>
 		<key>Headers/SCSVideoTrackingEventManager.h</key>
 		<data>
-		Async4HQEzLx9rV4toYE2OIXmJk=
+		ZetKuYGkW1XHEDjTikolgNwPWQA=
+		</data>
+		<key>Headers/SCSVideoTrackingEventManagerProtocol.h</key>
+		<data>
+		BUdEZn66wjWDaw2qk/SW0MzjWuA=
 		</data>
 		<key>Headers/SCSViewabilityManager.h</key>
 		<data>
-		ZJb9CmOEw+YMNq0OGce8MxygfrM=
+		R7DUo99lCzUpbAGMWPpEEEoKcso=
 		</data>
 		<key>Headers/SCSViewabilityManagerDelegate.h</key>
 		<data>
-		4YaZB01dLgxG2Dh3/E0Jr4xB8/I=
+		ZaVS46RHjg6lwDJWrNZg5krw3Wg=
+		</data>
+		<key>Headers/SCSViewabilityManagerProtocol.h</key>
+		<data>
+		BMkEWzhA2br9kXkOg6x8eVG/trA=
+		</data>
+		<key>Headers/SCSViewabilityStatus.h</key>
+		<data>
+		oXkFj/CvA3KOHptqmCPH69X8blc=
 		</data>
 		<key>Headers/SCSViewabilityTrackingEvent.h</key>
 		<data>
@@ -514,107 +558,63 @@
 		</data>
 		<key>Headers/SCSViewabilityTrackingEventManager.h</key>
 		<data>
-		U/5K4Pg+qYz1wr1rLI0Iir0LalQ=
+		IFjyajRhWGdzW5m1kWAVZikmD+4=
+		</data>
+		<key>Headers/SCSViewabilityTrackingEventManagerProtocol.h</key>
+		<data>
+		DyUxAJsTuKvz89qY6XkMyf1+BdI=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		q2qyou0HhjgeQnKclIoWbVzUStA=
+		/D/mzRejz/xr2+rhW0C0v4CcJNc=
 		</data>
 		<key>Modules/SCSCoreKit.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		4R2Gtj2xNOrZUsCOWM+xVYLkhXg=
-		</data>
-		<key>Modules/SCSCoreKit.swiftmodule/Project/arm64.swiftsourceinfo</key>
-		<data>
-		4R2Gtj2xNOrZUsCOWM+xVYLkhXg=
+		5bWgfzMkeQNbwiASgOxfewoz13U=
 		</data>
 		<key>Modules/SCSCoreKit.swiftmodule/Project/i386-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		ofSAgQXVMZc2HtgNlCB5wztdbZA=
-		</data>
-		<key>Modules/SCSCoreKit.swiftmodule/Project/i386.swiftsourceinfo</key>
-		<data>
-		ofSAgQXVMZc2HtgNlCB5wztdbZA=
+		RbpZZW4ql5vQ0t+OH2qeblApI1M=
 		</data>
 		<key>Modules/SCSCoreKit.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		ZiOmjwU6TSRXmnunoWuKzqgWa80=
-		</data>
-		<key>Modules/SCSCoreKit.swiftmodule/Project/x86_64.swiftsourceinfo</key>
-		<data>
-		ZiOmjwU6TSRXmnunoWuKzqgWa80=
+		Fri1QJu1e6c4HIXYZPVkfpb37SM=
 		</data>
 		<key>Modules/SCSCoreKit.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		8cnWcK0VlCh8OAlV3vT6DCe1rU8=
+		Ni9TVPxC+8Xbsuj/vWnbkPBX3iM=
 		</data>
 		<key>Modules/SCSCoreKit.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		PgJxI26lHv1Gf7sKYH76A3h1PPQ=
+		caynzZzoyXuqqq1vUA52CZzu+Ks=
 		</data>
 		<key>Modules/SCSCoreKit.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		6MKn9AdHA55jkxbjZD2Ow2v9WH4=
-		</data>
-		<key>Modules/SCSCoreKit.swiftmodule/arm64.swiftdoc</key>
-		<data>
-		8cnWcK0VlCh8OAlV3vT6DCe1rU8=
-		</data>
-		<key>Modules/SCSCoreKit.swiftmodule/arm64.swiftinterface</key>
-		<data>
-		PgJxI26lHv1Gf7sKYH76A3h1PPQ=
-		</data>
-		<key>Modules/SCSCoreKit.swiftmodule/arm64.swiftmodule</key>
-		<data>
-		6MKn9AdHA55jkxbjZD2Ow2v9WH4=
+		HErCpMw/14gohZAbn10+ReTMNos=
 		</data>
 		<key>Modules/SCSCoreKit.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
 		<data>
-		XGqQBaDTi2swH7Cb3IK8OLUJirI=
+		pI12AtyppWUtFqxw4iHLn+PYsjM=
 		</data>
 		<key>Modules/SCSCoreKit.swiftmodule/i386-apple-ios-simulator.swiftinterface</key>
 		<data>
-		AV4kReNmL+Bhv/grgqRvx2ZYRuc=
+		CMZXnBLLdYXvoP5A7J+Mpkc0tnw=
 		</data>
 		<key>Modules/SCSCoreKit.swiftmodule/i386-apple-ios-simulator.swiftmodule</key>
 		<data>
-		1yi5o43iIlrAv5K1MkhS0AaQMXI=
-		</data>
-		<key>Modules/SCSCoreKit.swiftmodule/i386.swiftdoc</key>
-		<data>
-		XGqQBaDTi2swH7Cb3IK8OLUJirI=
-		</data>
-		<key>Modules/SCSCoreKit.swiftmodule/i386.swiftinterface</key>
-		<data>
-		AV4kReNmL+Bhv/grgqRvx2ZYRuc=
-		</data>
-		<key>Modules/SCSCoreKit.swiftmodule/i386.swiftmodule</key>
-		<data>
-		1yi5o43iIlrAv5K1MkhS0AaQMXI=
+		FTX9cokKBrnxeaKgq1ZyGSzJt1Q=
 		</data>
 		<key>Modules/SCSCoreKit.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		4JplcKlBNoeTtf0KMr0TOTLdxq4=
+		7GqDs0AO5LoQLMTWSsqf9duaWhM=
 		</data>
 		<key>Modules/SCSCoreKit.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		sEbHBJhe52T8LlJ+oWxBSNvabCA=
+		9+IsMjTlMX0cudzyoGicMqEkXR0=
 		</data>
 		<key>Modules/SCSCoreKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		4jPhNEJFg9+H03K1BpiZRF5sF2k=
-		</data>
-		<key>Modules/SCSCoreKit.swiftmodule/x86_64.swiftdoc</key>
-		<data>
-		4JplcKlBNoeTtf0KMr0TOTLdxq4=
-		</data>
-		<key>Modules/SCSCoreKit.swiftmodule/x86_64.swiftinterface</key>
-		<data>
-		sEbHBJhe52T8LlJ+oWxBSNvabCA=
-		</data>
-		<key>Modules/SCSCoreKit.swiftmodule/x86_64.swiftmodule</key>
-		<data>
-		4jPhNEJFg9+H03K1BpiZRF5sF2k=
+		tHa+Rc/5uGUQvNV7rPuYe+TJEss=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -738,11 +738,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			q6a4SCRGWxSNUg/64RV1gjKEbcU=
+			mRilKV64eTeHKCyqBHwPk3XPZOw=
 			</data>
 			<key>hash2</key>
 			<data>
-			RXVTqA/FQGWh3/6kIMjMngEmhF70ayU5tpXn38rxm3w=
+			YtoRVPb2mnuKq9qI3g2h0K6KkW19Opyxq3QoWFBSkDs=
 			</data>
 		</dict>
 		<key>Headers/SCSAdRequestValidatorProtocol.h</key>
@@ -771,11 +771,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			LikOL5I7nEQXxVc/9w+53rxOEGg=
+			v7YvdxJWOvA2qSemOru8yCDJWEQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			k0YOGtJqOCNWo06WT4Z+g5tMNG9tm009dV34nlrPoPc=
+			ufBOOV5aSB/5yHfIUYsJu7WBiZWK33oUr/XWT4eXpAc=
+			</data>
+		</dict>
+		<key>Headers/SCSAppInfoProtocol.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			MGU2K3hu9YhSrJvXW7uCx2ieKBU=
+			</data>
+			<key>hash2</key>
+			<data>
+			7RXHD8YQXWzayAsfoVVVDicbEvYIU+qlPx34AYHqhKM=
 			</data>
 		</dict>
 		<key>Headers/SCSAxis3.h</key>
@@ -815,33 +826,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			tONu1+TlhhznkZ90uF6xOYWzkww=
+			uliFzBR6GTzt/c8DizhiVqdpDmo=
 			</data>
 			<key>hash2</key>
 			<data>
-			NXPi9BzLfPHJ6fqViTa1OyIxsknVgtooimPjhEalAVs=
+			vsFdpuki+blhdaNOUAC/RQmXupq+aqiz/ZQOnO8KyNs=
 			</data>
 		</dict>
 		<key>Headers/SCSCoreKit.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			RKwsuzZfnwr5DWNDMPYefo8r4Qs=
+			W/w5nw3R9ZlzxKhDaOcUhD5GHRk=
 			</data>
 			<key>hash2</key>
 			<data>
-			XKMG80LGg7tiN9ziyfda3DfMF85DktzfbtRI+dOzcJo=
+			6/sZISmtwXkdcdJ9V/Tz69ro9pT/IK4bzrXAbq9Xo5U=
 			</data>
 		</dict>
 		<key>Headers/SCSDeviceInfo.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			e7cdQIOe25Ce3EvG+KeZpp9TWr8=
+			DJnZRtegel0ZccNozZ+Gt+DsSHw=
 			</data>
 			<key>hash2</key>
 			<data>
-			faoSinwsl4br7MBTauQQjlHUF1uVHAlw1vnx38afHh0=
+			kTEinpXaN+1hJaoB6k+wqB4s7C/4lfmKi79aL/PcAW0=
+			</data>
+		</dict>
+		<key>Headers/SCSDeviceInfoProtocol.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Tiln+Ad9MMbldu+2po4ayuIbBPI=
+			</data>
+			<key>hash2</key>
+			<data>
+			XkfzDwfUjb4i2X9ea/CK1PJTdGP8gbtz+/gm1g/dAuM=
 			</data>
 		</dict>
 		<key>Headers/SCSDeviceInfoProviderProtocol.h</key>
@@ -870,11 +892,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			CSnIM4zoLTBaFX7bmnRZwTPtf94=
+			c2ruzBHszwSX9AscWqrSGwjc0hY=
 			</data>
 			<key>hash2</key>
 			<data>
-			EbPOlTSE47uHzTWGZvFEipHqgMvffRRs/CTv/M41Ox4=
+			uC4luOaOAmDf6ModWJ7nKkPrsHGYM5oiTz5tiYaIVdg=
+			</data>
+		</dict>
+		<key>Headers/SCSFrameworkInfoProtocol.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			1jDF5ipZI3JzH+2GOcME7js7J0s=
+			</data>
+			<key>hash2</key>
+			<data>
+			QpefsVNr9+Mj/XlVgt8hSbKK7EL6ptD2FtY9ofwJyBQ=
 			</data>
 		</dict>
 		<key>Headers/SCSFuture.h</key>
@@ -1090,11 +1123,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			gefCRvf6MdPASehcCp1hv3Tm7bw=
+			jhyxb/HI21IVfGqZ5yzrT86i+9w=
 			</data>
 			<key>hash2</key>
 			<data>
-			hjpAb2ZDiiYp0DBGkMquTfHYEQtzSQlObiCrC8+O18E=
+			DTa0PB9pgh1K/fh7h8lmyQuGTUCjBofBoEJQz5nf48o=
+			</data>
+		</dict>
+		<key>Headers/SCSNetworkInfoProtocol.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			mrg/dDSIS27n0jHdD0VWPyPK1Nk=
+			</data>
+			<key>hash2</key>
+			<data>
+			/xnVPoBYSOfvT4vaBEBVNDqhxBnz4x8vNPaliezdbE8=
 			</data>
 		</dict>
 		<key>Headers/SCSOpenMeasurementAdSession.h</key>
@@ -1134,11 +1178,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			h9TbdomzYHRPJ2acKgpTrXu5C3U=
+			3kN9SVclQvAQwXjZ4MgvPuwRbrs=
 			</data>
 			<key>hash2</key>
 			<data>
-			FDS8BhUSY5Ti0QChTrajw5HkeU2fDwir9+Nyy4/+Czc=
+			5Qt9lIdnm56Nfp4tD+NmNAccZhtJ/jKDZKp8vj23+5o=
 			</data>
 		</dict>
 		<key>Headers/SCSOpenMeasurementManagerDefaultProvider.h</key>
@@ -1150,6 +1194,17 @@
 			<key>hash2</key>
 			<data>
 			Q0g5zsC6ijJPzd6UlrlqZxk31kCLlEx9OzMKyGpb6Kk=
+			</data>
+		</dict>
+		<key>Headers/SCSOpenMeasurementManagerProtocol.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			rkF1FswLs9bgNPfKkpPvycupxh8=
+			</data>
+			<key>hash2</key>
+			<data>
+			vc6ggiG7ELTCRSg54P7KpNjWMn6JAr/h88FUYF68Cbc=
 			</data>
 		</dict>
 		<key>Headers/SCSOpenMeasurementManagerProvider.h</key>
@@ -1200,11 +1255,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			GdYej4vFYMO7c7k/nrYfiQiAcg4=
+			P+YIZPDDxcB2aqRcjBspSRRw5Kw=
 			</data>
 			<key>hash2</key>
 			<data>
-			YqO9+5WTr42uZIwBw3r1JEIVRhBNQYMkq6Uig0GuB9k=
+			BPXxr4is94DoUx7P5jUooOl2ryq3+t3+wi6cgYTn4z0=
+			</data>
+		</dict>
+		<key>Headers/SCSPixelManagerProtocol.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			aoqKnGusf5RrWiCbL8wLiku3sHM=
+			</data>
+			<key>hash2</key>
+			<data>
+			zKgNcGzqCUmXDaNVqMzQwV5kjXXhUbGht2Jp1Mb99dw=
 			</data>
 		</dict>
 		<key>Headers/SCSPixelStore.h</key>
@@ -1233,11 +1299,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			d09OM34fg/bXFFlYzMYs4ypkTzA=
+			EzWtr9HlqWDi4SUIGOTkELLCkeI=
 			</data>
 			<key>hash2</key>
 			<data>
-			5QtmobZryrTXGHq4Rxe28Wlh+inzHfCcpAY6ISii/z4=
+			iab04UlzgWCSpnHE6HXj8SZ+eR01/hWJua8zM66dT7I=
 			</data>
 		</dict>
 		<key>Headers/SCSPostClickManagerDelegate.h</key>
@@ -1249,6 +1315,17 @@
 			<key>hash2</key>
 			<data>
 			WjB15icUfCKmzDzuxmRRhxI40fYeDj2oeDRyccdJY9g=
+			</data>
+		</dict>
+		<key>Headers/SCSPostClickManagerProtocol.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			X5Fh3QduD3/Bgy/9m1X2Mb5+8/8=
+			</data>
+			<key>hash2</key>
+			<data>
+			JHW33R2s9CZdmAUnppC4qzgyYoCt343x0vV7+j0++yY=
 			</data>
 		</dict>
 		<key>Headers/SCSProdURL.h</key>
@@ -1475,11 +1552,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			PWeGIS4kJjRdSwUn2WAnRK2PU6E=
+			EQrxX3wkPIBCpHUnu51tmBZWAVY=
 			</data>
 			<key>hash2</key>
 			<data>
-			xGH5lrZKGWF/w3Jc3T3c3oH1a1Pga8q9g08jGlv4iaY=
+			wiXOajeIJYRXw1nr9xJl1EriEn+64rmQ/hgFycGEwKY=
 			</data>
 		</dict>
 		<key>Headers/SCSTrackingEventManagerDelegate.h</key>
@@ -1491,6 +1568,17 @@
 			<key>hash2</key>
 			<data>
 			474HxE/XTxtXIkrhFtN8RV8IyfoPP2m3URsqqIwLL6U=
+			</data>
+		</dict>
+		<key>Headers/SCSTrackingEventManagerProtocol.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			rF9oi2qLtRvOLyJMpYh99chDjK4=
+			</data>
+			<key>hash2</key>
+			<data>
+			dBp59xVErZUNLDiSCHql+CUipRO3NZQzXRMbVsY3TzM=
 			</data>
 		</dict>
 		<key>Headers/SCSTransientID.h</key>
@@ -1794,11 +1882,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			yyOg4zA+69MxSSK4Uq3091WTjYQ=
+			0++wjVBgXz5RA0Fndp8FRr1KTsk=
 			</data>
 			<key>hash2</key>
 			<data>
-			oIgmCztOx1NvrPtwMzfgCZbKgJbpcw5l1CWWBZOeGt0=
+			gun7ItW77dDQgtDGOYqz4SRvtuswqhTljaxD7Bvg+Qs=
 			</data>
 		</dict>
 		<key>Headers/SCSVASTManagerDelegate.h</key>
@@ -1992,33 +2080,66 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Async4HQEzLx9rV4toYE2OIXmJk=
+			ZetKuYGkW1XHEDjTikolgNwPWQA=
 			</data>
 			<key>hash2</key>
 			<data>
-			KNvBGr+PmfkMbxUgK/V8QY+VXwiSJ46fwtsOvo+Xlao=
+			QIVPNMLzFLcu/tyU8VRS8r4YFUNUfI6S1ONDKO30sGo=
+			</data>
+		</dict>
+		<key>Headers/SCSVideoTrackingEventManagerProtocol.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			BUdEZn66wjWDaw2qk/SW0MzjWuA=
+			</data>
+			<key>hash2</key>
+			<data>
+			e8uhp/KU7VmuG+re715g5Z4w6FD0QmCAxR9fQ0yZ4L8=
 			</data>
 		</dict>
 		<key>Headers/SCSViewabilityManager.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ZJb9CmOEw+YMNq0OGce8MxygfrM=
+			R7DUo99lCzUpbAGMWPpEEEoKcso=
 			</data>
 			<key>hash2</key>
 			<data>
-			Ef7/LcRSTETY/2ry5Doq+y6ueN+QYc60b+H1fr2alLk=
+			QomloeV1QpB1z50/WSgosvT0VlBFaEvCfiWYya3HpUA=
 			</data>
 		</dict>
 		<key>Headers/SCSViewabilityManagerDelegate.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			4YaZB01dLgxG2Dh3/E0Jr4xB8/I=
+			ZaVS46RHjg6lwDJWrNZg5krw3Wg=
 			</data>
 			<key>hash2</key>
 			<data>
-			/UinVMsZNLkzUidxfSzQNbBnW9wNhCPGbQYZx0PCmkA=
+			8vpVDqdQLDySUAIxATzKNJnZ4dIdMp1CbPG19aw0n1E=
+			</data>
+		</dict>
+		<key>Headers/SCSViewabilityManagerProtocol.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			BMkEWzhA2br9kXkOg6x8eVG/trA=
+			</data>
+			<key>hash2</key>
+			<data>
+			kHCxmTgAa97eFw2zJJQrlT9EcHit6SeLt+nMP772k9I=
+			</data>
+		</dict>
+		<key>Headers/SCSViewabilityStatus.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			oXkFj/CvA3KOHptqmCPH69X8blc=
+			</data>
+			<key>hash2</key>
+			<data>
+			rC10zyuTRgnwSTlawdHFEESyFDA55VHMRQSOMMoHA9Q=
 			</data>
 		</dict>
 		<key>Headers/SCSViewabilityTrackingEvent.h</key>
@@ -2036,275 +2157,154 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			U/5K4Pg+qYz1wr1rLI0Iir0LalQ=
+			IFjyajRhWGdzW5m1kWAVZikmD+4=
 			</data>
 			<key>hash2</key>
 			<data>
-			DRAx7kMYjGDllRgYRcsWwMI3Uuhk7rSgD+V7Q9eYLxw=
+			eSFJZu+0u6QjzgA1Wyb14kivDJVJsFmUpKcngdl83Uo=
+			</data>
+		</dict>
+		<key>Headers/SCSViewabilityTrackingEventManagerProtocol.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			DyUxAJsTuKvz89qY6XkMyf1+BdI=
+			</data>
+			<key>hash2</key>
+			<data>
+			icYFylqpLxSdmbxdjzt9aFJbTpz3J3638UP8nF7tJbQ=
 			</data>
 		</dict>
 		<key>Modules/SCSCoreKit.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			4R2Gtj2xNOrZUsCOWM+xVYLkhXg=
+			5bWgfzMkeQNbwiASgOxfewoz13U=
 			</data>
 			<key>hash2</key>
 			<data>
-			34vJQ6Pbu+BZDBGIDzF7gvO8dW3DJckwDxWSNshV++M=
-			</data>
-		</dict>
-		<key>Modules/SCSCoreKit.swiftmodule/Project/arm64.swiftsourceinfo</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			4R2Gtj2xNOrZUsCOWM+xVYLkhXg=
-			</data>
-			<key>hash2</key>
-			<data>
-			34vJQ6Pbu+BZDBGIDzF7gvO8dW3DJckwDxWSNshV++M=
+			c/E2vV2DRq6Q0JTQ1wV4I2jz3XwFkASHC2vAL5PFa7o=
 			</data>
 		</dict>
 		<key>Modules/SCSCoreKit.swiftmodule/Project/i386-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ofSAgQXVMZc2HtgNlCB5wztdbZA=
+			RbpZZW4ql5vQ0t+OH2qeblApI1M=
 			</data>
 			<key>hash2</key>
 			<data>
-			eoV0mWhfSjQPcZ6MP+2337GLJZ8RzTgX69GuhIccPMs=
-			</data>
-		</dict>
-		<key>Modules/SCSCoreKit.swiftmodule/Project/i386.swiftsourceinfo</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			ofSAgQXVMZc2HtgNlCB5wztdbZA=
-			</data>
-			<key>hash2</key>
-			<data>
-			eoV0mWhfSjQPcZ6MP+2337GLJZ8RzTgX69GuhIccPMs=
+			P04FtJX+uvBfXQ+2VB41a4XAGtS6S6n6akMAbvltgwc=
 			</data>
 		</dict>
 		<key>Modules/SCSCoreKit.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ZiOmjwU6TSRXmnunoWuKzqgWa80=
+			Fri1QJu1e6c4HIXYZPVkfpb37SM=
 			</data>
 			<key>hash2</key>
 			<data>
-			F3gs7BO8gNMmzLs2uXKxe3NMdooIoNJM5Jk3Ljclz7k=
-			</data>
-		</dict>
-		<key>Modules/SCSCoreKit.swiftmodule/Project/x86_64.swiftsourceinfo</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			ZiOmjwU6TSRXmnunoWuKzqgWa80=
-			</data>
-			<key>hash2</key>
-			<data>
-			F3gs7BO8gNMmzLs2uXKxe3NMdooIoNJM5Jk3Ljclz7k=
+			db3cCeuPlSN1bGdt7SYn5ytSGPcREmy80aADaY5jQWg=
 			</data>
 		</dict>
 		<key>Modules/SCSCoreKit.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			8cnWcK0VlCh8OAlV3vT6DCe1rU8=
+			Ni9TVPxC+8Xbsuj/vWnbkPBX3iM=
 			</data>
 			<key>hash2</key>
 			<data>
-			3dI/qwETIjBwfmVMiIMKE1bqDOElugnbowiIrB5xIbM=
+			88p96o+F/aM9KClMpzZT6iH/1L4KmzNMJ67Td0DBD5I=
 			</data>
 		</dict>
 		<key>Modules/SCSCoreKit.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			PgJxI26lHv1Gf7sKYH76A3h1PPQ=
+			caynzZzoyXuqqq1vUA52CZzu+Ks=
 			</data>
 			<key>hash2</key>
 			<data>
-			VjU65uyj+lqqLZA2tji9qLWd5TTBR3MtbZnvraB5SPQ=
+			33eydZvwJeaYfoD7pVNLxvLOB+3m0vQr/FU7mNgKQMI=
 			</data>
 		</dict>
 		<key>Modules/SCSCoreKit.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			6MKn9AdHA55jkxbjZD2Ow2v9WH4=
+			HErCpMw/14gohZAbn10+ReTMNos=
 			</data>
 			<key>hash2</key>
 			<data>
-			D4TQGlRBEJqeN8GBVT/DiOVCK5MjgbKPKyeX+UnpZB8=
-			</data>
-		</dict>
-		<key>Modules/SCSCoreKit.swiftmodule/arm64.swiftdoc</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			8cnWcK0VlCh8OAlV3vT6DCe1rU8=
-			</data>
-			<key>hash2</key>
-			<data>
-			3dI/qwETIjBwfmVMiIMKE1bqDOElugnbowiIrB5xIbM=
-			</data>
-		</dict>
-		<key>Modules/SCSCoreKit.swiftmodule/arm64.swiftinterface</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			PgJxI26lHv1Gf7sKYH76A3h1PPQ=
-			</data>
-			<key>hash2</key>
-			<data>
-			VjU65uyj+lqqLZA2tji9qLWd5TTBR3MtbZnvraB5SPQ=
-			</data>
-		</dict>
-		<key>Modules/SCSCoreKit.swiftmodule/arm64.swiftmodule</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			6MKn9AdHA55jkxbjZD2Ow2v9WH4=
-			</data>
-			<key>hash2</key>
-			<data>
-			D4TQGlRBEJqeN8GBVT/DiOVCK5MjgbKPKyeX+UnpZB8=
+			dYBO0gWLAdfvGiJTfRXb9kajzp2cDjHSpP7F4du6ekE=
 			</data>
 		</dict>
 		<key>Modules/SCSCoreKit.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			XGqQBaDTi2swH7Cb3IK8OLUJirI=
+			pI12AtyppWUtFqxw4iHLn+PYsjM=
 			</data>
 			<key>hash2</key>
 			<data>
-			1MUcPW5tem4WCMOadcvylHvu4SmoOTjr0oUIDEe4Vys=
+			mB4UYikomRAfzhfycxcMkPXrspjtZOnZ1YvuNU3kTSA=
 			</data>
 		</dict>
 		<key>Modules/SCSCoreKit.swiftmodule/i386-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			AV4kReNmL+Bhv/grgqRvx2ZYRuc=
+			CMZXnBLLdYXvoP5A7J+Mpkc0tnw=
 			</data>
 			<key>hash2</key>
 			<data>
-			qGpnU2A++O4xBDz7AUZou+CNNSBoTV6EbAO0609SgBA=
+			nJUQCH4huiWzW6vjbu5/hgemI8Nh+krIe7MAyVAS1+E=
 			</data>
 		</dict>
 		<key>Modules/SCSCoreKit.swiftmodule/i386-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			1yi5o43iIlrAv5K1MkhS0AaQMXI=
+			FTX9cokKBrnxeaKgq1ZyGSzJt1Q=
 			</data>
 			<key>hash2</key>
 			<data>
-			oHuwRZsqTJsBvMEt2WBMfui4X9edyCG61w4eVqzXhW4=
-			</data>
-		</dict>
-		<key>Modules/SCSCoreKit.swiftmodule/i386.swiftdoc</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			XGqQBaDTi2swH7Cb3IK8OLUJirI=
-			</data>
-			<key>hash2</key>
-			<data>
-			1MUcPW5tem4WCMOadcvylHvu4SmoOTjr0oUIDEe4Vys=
-			</data>
-		</dict>
-		<key>Modules/SCSCoreKit.swiftmodule/i386.swiftinterface</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			AV4kReNmL+Bhv/grgqRvx2ZYRuc=
-			</data>
-			<key>hash2</key>
-			<data>
-			qGpnU2A++O4xBDz7AUZou+CNNSBoTV6EbAO0609SgBA=
-			</data>
-		</dict>
-		<key>Modules/SCSCoreKit.swiftmodule/i386.swiftmodule</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			1yi5o43iIlrAv5K1MkhS0AaQMXI=
-			</data>
-			<key>hash2</key>
-			<data>
-			oHuwRZsqTJsBvMEt2WBMfui4X9edyCG61w4eVqzXhW4=
+			Ux6wco84xbN5M0FW3aHFefg+ypd7EI7oPLJB5OVT0xg=
 			</data>
 		</dict>
 		<key>Modules/SCSCoreKit.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			4JplcKlBNoeTtf0KMr0TOTLdxq4=
+			7GqDs0AO5LoQLMTWSsqf9duaWhM=
 			</data>
 			<key>hash2</key>
 			<data>
-			l5fwJlLkw2w21+QNmiY5ikyxwhlZc6LWsTMQB1XYPBU=
+			0g0ebSZdGmT3Z8pOcEKKrzB+jkF7Ef4rvpvbJKouaew=
 			</data>
 		</dict>
 		<key>Modules/SCSCoreKit.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			sEbHBJhe52T8LlJ+oWxBSNvabCA=
+			9+IsMjTlMX0cudzyoGicMqEkXR0=
 			</data>
 			<key>hash2</key>
 			<data>
-			ADfvHQkiyiJw29SGxBkMgHsr1HxuXsraDcZWhmMDXRY=
+			AzbiRRY6dMcjt9+kJvEs5vxMcrsmgE6UuQhXe+GGbOs=
 			</data>
 		</dict>
 		<key>Modules/SCSCoreKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			4jPhNEJFg9+H03K1BpiZRF5sF2k=
+			tHa+Rc/5uGUQvNV7rPuYe+TJEss=
 			</data>
 			<key>hash2</key>
 			<data>
-			Sqlxxr8gzKqlSMeSGmUhnP7m52aEoEpEZHmDZ0kv9yQ=
-			</data>
-		</dict>
-		<key>Modules/SCSCoreKit.swiftmodule/x86_64.swiftdoc</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			4JplcKlBNoeTtf0KMr0TOTLdxq4=
-			</data>
-			<key>hash2</key>
-			<data>
-			l5fwJlLkw2w21+QNmiY5ikyxwhlZc6LWsTMQB1XYPBU=
-			</data>
-		</dict>
-		<key>Modules/SCSCoreKit.swiftmodule/x86_64.swiftinterface</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			sEbHBJhe52T8LlJ+oWxBSNvabCA=
-			</data>
-			<key>hash2</key>
-			<data>
-			ADfvHQkiyiJw29SGxBkMgHsr1HxuXsraDcZWhmMDXRY=
-			</data>
-		</dict>
-		<key>Modules/SCSCoreKit.swiftmodule/x86_64.swiftmodule</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			4jPhNEJFg9+H03K1BpiZRF5sF2k=
-			</data>
-			<key>hash2</key>
-			<data>
-			Sqlxxr8gzKqlSMeSGmUhnP7m52aEoEpEZHmDZ0kv9yQ=
+			uoMYn2LbeZShGOQcsi7N9V6QxTkG4xasTWeV2wIwhaE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

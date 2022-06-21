@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "SCSFrameworkInfo.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

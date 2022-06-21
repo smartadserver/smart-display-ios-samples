@@ -7,25 +7,21 @@
 //
 
 #import <Foundation/Foundation.h>
+#if TARGET_OS_IOS || (TARGET_OS_IPHONE && !TARGET_OS_TV)
+#import <SCSCoreKit/SCSAppInfoProtocol.h>
+#elif TARGET_OS_TV
+#import <SCSCoreKitTV/SCSAppInfoProtocol.h>
+#endif
 
 NS_ASSUME_NONNULL_BEGIN
 
 /**
- Retrieve some informations about the current application.
+ Default SCSAppInfo protocol implementation.
  */
-@interface SCSAppInfo : NSObject
+@interface SCSAppInfo : NSObject <SCSAppInfo>
 
 /// The shared instance of the SCSAppInfo object.
 @property (class, nonatomic, readonly) SCSAppInfo *sharedInstance NS_SWIFT_NAME(shared);
-
-/// The application name.
-@property (nonatomic, readonly) NSString *appName;
-
-/// The application version.
-@property (nonatomic, readonly) NSString *appVersion;
-
-/// The application bundle identifier.
-@property (nonatomic, readonly) NSString *appBundleIdentifier;
 
 @end
 

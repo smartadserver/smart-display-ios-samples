@@ -35,7 +35,7 @@ typedef NS_ENUM(NSUInteger, SCSAdRequestManagerHTTPMethod) {
  @param validator A class implementing SCSAdRequestValidatorProtocol to validate the request parameters.
  @return An initialized instance of SCSAdRequestManager.
  */
-- (instancetype)initWithValidator:(id<SCSAdRequestValidatorProtocol>)validator;
+- (instancetype)initWithValidator:(nullable id<SCSAdRequestValidatorProtocol>)validator;
 
 /**
  Initialize a new instance of SCSAdRequestManager.
@@ -47,7 +47,7 @@ typedef NS_ENUM(NSUInteger, SCSAdRequestManagerHTTPMethod) {
  @param validator A class implementing SCSAdRequestValidatorProtocol to validate the request parameters.
  @return An initialized instance of SCSAdRequestManager.
  */
-- (instancetype)initWithUrlSession:(SCSURLSession *)urlSession validator:(id<SCSAdRequestValidatorProtocol>)validator NS_DESIGNATED_INITIALIZER;
+- (instancetype)initWithUrlSession:(SCSURLSession *)urlSession validator:(nullable id<SCSAdRequestValidatorProtocol>)validator NS_DESIGNATED_INITIALIZER;
 
 /**
  Performs an ad request.
