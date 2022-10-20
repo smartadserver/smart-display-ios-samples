@@ -306,6 +306,55 @@ NS_ASSUME_NONNULL_BEGIN
                      CCPAString:(NSString *)CCPAString
               isCCPAStringValid:(BOOL)isCCPAStringValid
               CCPAStringVersion:(SCSCCPAStringVersion)CCPAStringVersion
+             reachabilityStatus:(nullable NSString *)reachabilityStatus __deprecated;
+
+/**
+ Initialize the SDK node with all needed information.
+ 
+ @param sdkName                 The name of the SDK.
+ @param sdkVersion              The version of the SDK.
+ @param sdkVersionID            The version ID of the SDK.
+ @param useManualBaseURL        Either the SDK is using manual base URL or not, as NSNumber format (to handle legacy client SDK).
+ @param coreSdkVersion          The version of the Core SDK.
+ @param implementationType      The current implementation type of the SDK.
+ @param appName                 The application name.
+ @param appVersion              The application version.
+ @param appBundleID             The application bundle identifier.
+ @param platform                The current platform name.
+ @param systemVersion           The current system version.
+ @param identityType            The SCSIdentityType of the current SCSIdentity instance.
+ @param isAdTrackingLimited     Either the Advertising Tracking is limited or not.
+ @param ATTAuthorizationStatus  The current  ATT Authorization Status.
+ @param TCFString               The current TCF String.
+ @param isTCFStringValid        YES if the TCF String is valid, NO otherwise.
+ @param TCFStringVersion        The TCF String version.
+ @param CCPAString              The current CCPA String.
+ @param isCCPAStringValid       YES if the CCPA String is valid, NO otherwise.
+ @param CCPAStringVersion       The CCPA String version.
+ @param reachabilityStatus      The current reachability status. Is nullable.
+ 
+ @return an Initialized instance of SCSLogSDKNode.
+ */
+- (instancetype)initWithSDKName:(NSString *)sdkName
+                     sdkVersion:(NSString *)sdkVersion
+                   sdkVersionID:(NSUInteger)sdkVersionID
+               useManualBaseURL:(nullable NSNumber *)useManualBaseURL
+                 coreSdkVersion:(NSString *)coreSdkVersion
+             implementationType:(SCSRemoteLogSDKImplementationType)implementationType
+                        appName:(NSString *)appName
+                     appVersion:(NSString *)appVersion
+                    appBundleID:(NSString *)appBundleID
+                       platform:(NSString *)platform
+                  systemVersion:(NSString *)systemVersion
+                   identityType:(SCSIdentityType)identityType
+            isAdTrackingLimited:(BOOL)isAdTrackingLimited
+         ATTAuthorizationStatus:(NSInteger)ATTAuthorizationStatus
+                      TCFString:(NSString *)TCFString
+               isTCFStringValid:(BOOL)isTCFStringValid
+               TCFStringVersion:(SCSTCFStringTCFVersion)TCFStringVersion
+                     CCPAString:(NSString *)CCPAString
+              isCCPAStringValid:(BOOL)isCCPAStringValid
+              CCPAStringVersion:(SCSCCPAStringVersion)CCPAStringVersion
              reachabilityStatus:(nullable NSString *)reachabilityStatus NS_DESIGNATED_INITIALIZER;
 
 @end

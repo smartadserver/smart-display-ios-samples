@@ -107,6 +107,7 @@
 // Config Manager
 #import <SCSCoreKit/SCSRemoteConfigManager.h>
 #import <SCSCoreKit/SCSRemoteConfigManagerDelegate.h>
+#import <SCSCoreKit/SCSPropertyCacheManager.h>
 
 // Model
 #import <SCSCoreKit/SCSConfiguration.h>

@@ -14,15 +14,15 @@
 		</data>
 		<key>BuildSonar.sh</key>
 		<data>
-		8ZPotKUZr0C4DkUYb1iMkex9gLE=
+		BH6pgJNf3Oi9dm0pf0mT6ikRaqs=
 		</data>
 		<key>BuildUniversal.sh</key>
 		<data>
-		zwoEuvuSx6E0eCxqHFuGmOcLmEA=
+		Mb9zUNQCS2mr3KB9h51upUuUYmI=
 		</data>
 		<key>BuildUtils.sh</key>
 		<data>
-		FVMzJcEmr/5dWlmP+ueRib/pSfE=
+		jsxa1sn0z0xeFXdQE+6O95QFjvY=
 		</data>
 		<key>DeployCocoapodsTrunk.sh</key>
 		<data>
@@ -74,7 +74,7 @@
 		</data>
 		<key>Headers/SCSCoreKit.h</key>
 		<data>
-		u8AHYiz+gKX3d2LHobbhHOX7buA=
+		Hh2e+joKCilyC5svjUXAx9Nmp5M=
 		</data>
 		<key>Headers/SCSDeviceInfo.h</key>
 		<data>
@@ -170,7 +170,7 @@
 		</data>
 		<key>Headers/SCSLogSDKNode.h</key>
 		<data>
-		DSD+ppSNJma1mbYeQo8iKaJRS0A=
+		vqcoF6WTClNE4BZI6Kgfebm/ZNM=
 		</data>
 		<key>Headers/SCSLogVASTErrorNode.h</key>
 		<data>
@@ -256,6 +256,10 @@
 		<data>
 		oTwR8/xwlpK4B3YklOSlLwtUdXo=
 		</data>
+		<key>Headers/SCSPropertyCacheManager.h</key>
+		<data>
+		9dXIgUJ4N0Ogc3FDf4RNJRFPoI8=
+		</data>
 		<key>Headers/SCSQuaternion+CoreMotion.h</key>
 		<data>
 		SS8n2ZfOO1ERRfFwb/jdINQJOqw=
@@ -270,7 +274,7 @@
 		</data>
 		<key>Headers/SCSRemoteConfigManager.h</key>
 		<data>
-		9qcKoB3NJ7KShhMyACkEPbvrdRc=
+		h+J6SExBVNJQIkcpMsvQsHNoOX8=
 		</data>
 		<key>Headers/SCSRemoteConfigManagerDelegate.h</key>
 		<data>
@@ -570,7 +574,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		cm41ba0rDdT+iJqou4BjaCpQEXI=
+		wMEhLLNIFgdvmHxRIIK65EnMUt8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -609,21 +613,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			E/JSfiyKDvnlAjtd9i3HV5cIos5X4zhzFrCye7SfJzw=
+			Rt85/f6LyvJLZy++c+G5uwNVN6ON101mI4IflrKcPCc=
 			</data>
 		</dict>
 		<key>BuildUniversal.sh</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			zc53PwAJn0NvXxHKvkR+ZV9v2U8M4521+QfKL4P2uZk=
+			M61fXl/YhUFMtqd4q7UHvSDQy2XFPOvnEcRm9E+YyAY=
 			</data>
 		</dict>
 		<key>BuildUtils.sh</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7Da3hGgVXSXc6h6Jqw9LS+26LQE3GFBg+q+qcPxeze0=
+			hPeIso8Zn+YJ9DG3c3i6oC24apRQxIohaXcfXcpjimE=
 			</data>
 		</dict>
 		<key>DeployCocoapodsTrunk.sh</key>
@@ -714,7 +718,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ufmQuKe75WvaRcOZSVQ0Pky0WcGBx2J+C+e067N34Kg=
+			KOuhKTxIo0QR+ZY6uAurh0B9cVc4YZfalxWUmoMiIyU=
 			</data>
 		</dict>
 		<key>Headers/SCSDeviceInfo.h</key>
@@ -882,7 +886,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			fRxsKSYKOLN9pIYrwhMmda2SYMFDo9zVBjYMoRZEidI=
+			r9fdjHnuLxzd86CNv0wYkgLb7C4/zJTzTGzQPFjTcSk=
 			</data>
 		</dict>
 		<key>Headers/SCSLogVASTErrorNode.h</key>
@@ -1032,6 +1036,13 @@
 			grVNWTCYzlFOWwtaplBAord3vdjBouO9ygzFaBm4inY=
 			</data>
 		</dict>
+		<key>Headers/SCSPropertyCacheManager.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			EPYp4wO765xZ8aKC9LCvrSD5+8CL8oceA2jVDGv8Weg=
+			</data>
+		</dict>
 		<key>Headers/SCSQuaternion+CoreMotion.h</key>
 		<dict>
 			<key>hash2</key>
@@ -1057,7 +1068,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			BhYKZNOyyy9mjMzdlTSmIvE2CgcjoYOyS64szyBNRCM=
+			TAn4kxO4nCDO24ug/msleoZumcndAcmApdzztp9ekyA=
 			</data>
 		</dict>
 		<key>Headers/SCSRemoteConfigManagerDelegate.h</key>
