@@ -7,15 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#if TARGET_OS_IOS || (TARGET_OS_IPHONE && !TARGET_OS_TV)
 #import <SCSCoreKit/SCSPostClickManagerProtocol.h>
 #import <SCSCoreKit/SCSPostClickManagerDelegate.h>
 #import <SCSCoreKit/SCSPixelManager.h>
-#elif TARGET_OS_TV
-#import <SCSCoreKitTV/SCSPostClickManagerProtocol.h>
-#import <SCSCoreKitTV/SCSPostClickManagerDelegate.h>
-#import <SCSCoreKitTV/SCSPixelManager.h>
-#endif
 
 NS_ASSUME_NONNULL_BEGIN
 

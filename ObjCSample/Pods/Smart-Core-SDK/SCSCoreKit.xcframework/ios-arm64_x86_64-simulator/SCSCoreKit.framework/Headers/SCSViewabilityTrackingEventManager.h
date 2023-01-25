@@ -7,19 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-#if TARGET_OS_IOS || (TARGET_OS_IPHONE && !TARGET_OS_TV)
 #import <SCSCoreKit/SCSTrackingEvent.h>
 #import <SCSCoreKit/SCSViewabilityTrackingEvent.h>
 #import <SCSCoreKit/SCSViewabilityTrackingEventManagerProtocol.h>
 #import <SCSCoreKit/SCSTrackingEventManager.h>
 #import <SCSCoreKit/SCSViewabilityStatus.h>
-#elif TARGET_OS_TV
-#import <SCSCoreKitTV/SCSTrackingEvent.h>
-#import <SCSCoreKitTV/SCSViewabilityTrackingEvent.h>
-#import <SCSCoreKitTV/SCSViewabilityTrackingEventManagerProtocol.h>
-#import <SCSCoreKitTV/SCSTrackingEventManager.h>
-#import <SCSCoreKitTV/SCSViewabilityStatus.h>
-#endif
 
 NS_ASSUME_NONNULL_BEGIN
 

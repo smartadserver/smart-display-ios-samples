@@ -7,13 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#if TARGET_OS_IOS || (TARGET_OS_IPHONE && !TARGET_OS_TV)
 #import <SCSCoreKit/SCSTrackingEventManagerProtocol.h>
 #import <SCSCoreKit/SCSVideoTrackingEvent.h>
-#elif TARGET_OS_TV
-#import <SCSCoreKitTV/SCSTrackingEventManagerProtocol.h>
-#import <SCSCoreKitTV/SCSVideoTrackingEvent.h>
-#endif
 
 NS_ASSUME_NONNULL_BEGIN
 

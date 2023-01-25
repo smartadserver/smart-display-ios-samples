@@ -8,11 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <AppTrackingTransparency/AppTrackingTransparency.h>
-#if TARGET_OS_IOS || (TARGET_OS_IPHONE && !TARGET_OS_TV)
 #import <SCSCoreKit/SCSDeviceInfoProtocol.h>
-#elif TARGET_OS_TV
-#import <SCSCoreKitTV/SCSDeviceInfoProtocol.h>
-#endif
 
 #define SCS_SYSTEM_VERSION_EQUAL_TO(v)                  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedSame)
 #define SCS_SYSTEM_VERSION_GREATER_THAN(v)              ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedDescending)

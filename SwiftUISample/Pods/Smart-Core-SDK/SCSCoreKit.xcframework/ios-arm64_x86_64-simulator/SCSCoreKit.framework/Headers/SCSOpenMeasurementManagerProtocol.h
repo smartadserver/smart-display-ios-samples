@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#if TARGET_OS_IOS || (TARGET_OS_IPHONE && !TARGET_OS_TV)
 #import <WebKit/WebKit.h>
+#endif
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -39,7 +41,16 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (nullable id<SCSOpenMeasurementAdSession>)sessionWithView:(UIView *)view isVideo:(BOOL)isVideo scripts:(NSArray<SCSOpenMeasurementAdVerificationScript *> *)scripts;
 
+/**
+ Signal to the OM SDK that the user has interacted with the app.
+ 
+ The OM SDK will send this information in some events.
+ */
+- (void)updateLastActivity;
+
 #pragma mark - Web implementations
+
+#if TARGET_OS_IOS || (TARGET_OS_IPHONE && !TARGET_OS_TV)
 
 /**
  Return a new session for a given web view.
@@ -49,6 +60,8 @@ NS_ASSUME_NONNULL_BEGIN
  @return A new session for the given web view if successful, nil otherwise.
  */
 - (nullable id<SCSOpenMeasurementAdSession>)sessionWithWebView:(WKWebView *)wkWebView isImpressionPixelInAdMarkup:(BOOL)isImpressionPixelInAdMarkup;
+
+#endif
 
 /**
  Inject the Open Measurement SDK JS library into an HTML script.

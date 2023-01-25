@@ -64,10 +64,6 @@
 #import <SCSCoreKit/SCSViewabilityManager.h>
 #import <SCSCoreKit/SCSViewabilityStatus.h>
 
-#import <SCSCoreKit/SCSPostClickManagerProtocol.h>
-#import <SCSCoreKit/SCSPostClickManagerDelegate.h>
-#import <SCSCoreKit/SCSPostClickManager.h>
-
 #import <SCSCoreKit/SCSOpenMeasurementManagerProtocol.h>
 #import <SCSCoreKit/SCSOpenMeasurementManager.h>
 #import <SCSCoreKit/SCSOpenMeasurementManagerProvider.h>
@@ -171,10 +167,17 @@
 // Platform specific headers
 #if TARGET_OS_IOS || (TARGET_OS_IPHONE && !TARGET_OS_TV)
 
+// Components
+#import <SCSCoreKit/SCSPostClickManagerProtocol.h>
+#import <SCSCoreKit/SCSPostClickManagerDelegate.h>
+#import <SCSCoreKit/SCSPostClickManager.h>
+
 // Maths
 #import <SCSCoreKit/SCSQuaternion+CoreMotion.h>
 
 #elif TARGET_OS_TV
+
+// no tvOS specific headers
 
 #endif
 

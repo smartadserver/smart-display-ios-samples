@@ -7,11 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#if TARGET_OS_IOS || (TARGET_OS_IPHONE && !TARGET_OS_TV)
 #import <SCSCoreKit/SCSViewabilityManagerProtocol.h>
-#elif TARGET_OS_TV
-#import <SCSCoreKitTV/SCSViewabilityManagerProtocol.h>
-#endif
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -39,9 +35,9 @@ NS_ASSUME_NONNULL_BEGIN
  
  - it is not hidden (or with an alpha equal to 0)
  - none of its parents view is hidden (or with an alpha equal to 0)
- - its viewability percentage is greater than 50%
  
- @warning This method will not detect if another view is overlapping.
+ @warning This value can be YES even if the view is completely outside of the screen, always check the percentage in this case. Also
+ not that this method will not detect if another view is overlapping.
  */
 - (BOOL)isViewViewable __deprecated_msg("Use the viewabilityStatus property instead");
 

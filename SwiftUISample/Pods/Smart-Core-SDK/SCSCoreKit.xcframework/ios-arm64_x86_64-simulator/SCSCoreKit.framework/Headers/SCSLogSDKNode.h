@@ -9,7 +9,6 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import <AdSupport/AdSupport.h>
-#if TARGET_OS_IOS || (TARGET_OS_IPHONE && !TARGET_OS_TV)
 #import <SCSCoreKit/SCSLogNode.h>
 #import <SCSCoreKit/SCSIdentity.h>
 #import <SCSCoreKit/SCSDeviceInfo.h>
@@ -18,16 +17,6 @@
 #import <SCSCoreKit/SCSRemoteLogger.h>
 #import <SCSCoreKit/SCSTCFString.h>
 #import <SCSCoreKit/SCSCCPAString.h>
-#elif TARGET_OS_TV
-#import <SCSCoreKitTV/SCSLogNode.h>
-#import <SCSCoreKitTV/SCSIdentity.h>
-#import <SCSCoreKitTV/SCSDeviceInfo.h>
-#import <SCSCoreKitTV/SCSLocation.h>
-#import <SCSCoreKitTV/SCSAppInfo.h>
-#import <SCSCoreKitTV/SCSRemoteLogger.h>
-#import <SCSCoreKitTV/SCSTCFString.h>
-#import <SCSCoreKitTV/SCSCCPAString.h>
-#endif
 
 NS_ASSUME_NONNULL_BEGIN
 

@@ -23,6 +23,12 @@ variant_for_slice()
   "SCSCoreKit.xcframework/ios-arm64")
     echo ""
     ;;
+  "SCSCoreKit.xcframework/tvos-arm64")
+    echo ""
+    ;;
+  "SCSCoreKit.xcframework/tvos-arm64_x86_64-simulator")
+    echo "simulator"
+    ;;
   esac
 }
 
@@ -34,6 +40,12 @@ archs_for_slice()
     ;;
   "SCSCoreKit.xcframework/ios-arm64")
     echo "arm64"
+    ;;
+  "SCSCoreKit.xcframework/tvos-arm64")
+    echo "arm64"
+    ;;
+  "SCSCoreKit.xcframework/tvos-arm64_x86_64-simulator")
+    echo "arm64 x86_64"
     ;;
   esac
 }

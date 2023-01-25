@@ -7,9 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#if TARGET_OS_IOS || (TARGET_OS_IPHONE && !TARGET_OS_TV)
-#import <WebKit/WebKit.h>
-#endif
 #import <SCSCoreKit/SCSOpenMeasurementAdSession.h>
 #import <SCSCoreKit/SCSOpenMeasurementAdVerificationScript.h>
 
@@ -54,6 +51,13 @@ NS_ASSUME_NONNULL_BEGIN
 - (NSString *)partnerName;
 
 /**
+ Signal to the OM SDK that the user has interacted with the app.
+ 
+ The OM SDK will send this information in some events.
+ */
+- (void)updateLastActivity;
+
+/**
  Return a new session for a given native view.
  
  @param view The view that should be used to create the session.
@@ -65,6 +69,8 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (nullable id<SCSOpenMeasurementAdSession>)sessionWithView:(UIView *)view JSLibrary:(NSString *)JSLibrary scripts:(NSArray<SCSOpenMeasurementAdVerificationScript *> *)scripts isVideo:(BOOL)isVideo error:(NSError **)error;
 
+#if TARGET_OS_IOS || (TARGET_OS_IPHONE && !TARGET_OS_TV)
+
 /**
  Return a new session for a given web view.
  
@@ -74,6 +80,8 @@ NS_ASSUME_NONNULL_BEGIN
  @return A new session for the given web view if successful, nil otherwise.
  */
 - (nullable id<SCSOpenMeasurementAdSession>)sessionWithWebView:(WKWebView *)webView isImpressionPixelInAdMarkup:(BOOL)isImpressionPixelInAdMarkup error:(NSError **)error;
+
+#endif
 
 @end
 

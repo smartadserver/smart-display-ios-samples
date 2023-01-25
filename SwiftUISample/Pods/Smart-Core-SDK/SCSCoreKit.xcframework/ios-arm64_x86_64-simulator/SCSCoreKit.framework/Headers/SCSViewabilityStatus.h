@@ -21,7 +21,10 @@ NS_ASSUME_NONNULL_BEGIN
 ///
 /// - it is not hidden (or with an alpha equal to 0)
 /// - none of its parents view is hidden (or with an alpha equal to 0)
-/// - its viewability percentage is greater than 50%
+///
+/// @warning This value can be YES even if the view is completely outside of the
+/// screen, always check the percentage in this case. Also not that this method
+/// will not detect if another view is overlapping.
 @property (readonly, getter=isViewable) BOOL viewable;
 
 /// The percentage of the view visible (between 0.0 and 1.0).
