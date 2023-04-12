@@ -11,11 +11,15 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @class SCSVASTManagerResponse;
+@protocol SCSVASTManagerDelegate;
 
 /**
  Public interface of the SCSCoreKit's VAST Manager.
  */
 @protocol SCSVASTManagerProtocol <NSObject>
+
+/// The delegate of the VASTManager instance
+@property (nullable, nonatomic, weak) id <SCSVASTManagerDelegate> delegate;
 
 /**
  This method will be called by the AdManager to initiate the VAST Parsing process.

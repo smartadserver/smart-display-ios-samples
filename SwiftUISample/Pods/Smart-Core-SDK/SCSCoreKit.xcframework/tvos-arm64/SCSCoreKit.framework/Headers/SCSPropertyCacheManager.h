@@ -17,6 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
  Stores an object in cache.
+ 
  @param object The object to store in cache.
  @param key The key under which the object will be stored.
  */
@@ -24,6 +25,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
  Retrieves an object from cache, if any.
+ 
  @param key The key under which the object hsould be retrieved.
  @return an object, if any.
  */

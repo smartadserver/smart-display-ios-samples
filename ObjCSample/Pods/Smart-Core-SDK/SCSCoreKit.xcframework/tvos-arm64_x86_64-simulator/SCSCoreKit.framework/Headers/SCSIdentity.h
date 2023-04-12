@@ -26,7 +26,7 @@ typedef NS_ENUM(NSInteger, SCSIdentityType) {
 };
 
 @protocol SCSIdentityProviderProtocol;
-@class SCSTCFString, SCSCCPAString;
+@class SCSTCFString, SCSCCPAString, SCSGPPString;
 
 /**
  Helper class to retrieve the identity of a device.
@@ -66,11 +66,20 @@ typedef NS_ENUM(NSInteger, SCSIdentityType) {
 /// The CCPAString instance representing the CCPA Consent String stored on the device NSUserDefaults under IAB specifications key.
 @property (nullable, nonatomic, readonly) SCSCCPAString *CCPAString;
 
+/// The GPPString instance representing the GPP Consent String stored on the device NSUserDefaults under IAB specifications key.
+@property (nullable, nonatomic, readonly) SCSGPPString *GPPString;
+
 /// YES if we can send the device identifiers, NO otherwise.
 ///
 /// Sending the device identifiers can be prevented by any privacy law applicable where the app is running
 /// and will be determined using data set by the app CMP.
 @property (nonatomic, readonly) BOOL canSendIDs;
+
+/// YES if we can send the device's location, NO otherwise.
+///
+/// Sending the device's location can be prevented by any privacy law applicable where the app is running
+/// and will be determined using data set by the app CMP.
+@property (nonatomic, readonly) BOOL canSendLocation;
 
 /**
  Retrieve an identity for the device using the identity provider given in parameter.

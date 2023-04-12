@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@class SCSTransientID, SCSTCFString, SCSCCPAString;
+@class SCSTransientID, SCSTCFString, SCSCCPAString, SCSGPPString;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -75,14 +75,14 @@ NS_ASSUME_NONNULL_BEGIN
  
  @return The value of 'Purpose Consents'.
  */
-- (nullable NSString *)TCFPurposeConsents;
+- (nullable NSString *)TCFPurposeConsents __deprecated_msg("This method is not used anymore. Now consent validation is done within consent's model (such as SCSTCFString or SCSCCPAString)");
 
 /**
  Returns the value of 'Vendor Consents' as stored in NSUserDefaults by any IAB certified CMP.
  
  @return The value of 'Vendor Consents'.
  */
-- (nullable NSString *)TCFVendorConsents;
+- (nullable NSString *)TCFVendorConsents __deprecated_msg("This method is not used anymore. Now consent validation is done within consent's model (such as SCSTCFString or SCSCCPAString)");
 
 /**
 Returns a SCSCCPAString instance representing the CCPA consent string stored in NSUserDefaults by any IAB certified CMP.
@@ -90,6 +90,13 @@ Returns a SCSCCPAString instance representing the CCPA consent string stored in 
 @return The SCSCCPAString instance representing the CCPA string.
 */
 - (nullable SCSCCPAString *)CCPAString;
+
+/**
+Returns a SCSGPPString instance representing the GPP consent string stored in NSUserDefaults by any IAB certified CMP.
+
+@return The SCSGPPString instance representing the GPP string.
+*/
+- (nullable SCSGPPString *)GPPString;
 
 @end
 

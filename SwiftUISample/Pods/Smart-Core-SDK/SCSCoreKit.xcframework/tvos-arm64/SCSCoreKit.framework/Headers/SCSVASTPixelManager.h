@@ -7,15 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <SCSCoreKit/SCSVASTPixelManagerProtocol.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@class SCSPixelManager, SCSVASTURL;
+@class SCSPixelManager;
 
 /**
- Manage VAST related pixels
+ Default implementation of SCSVASTPixelManagerProtocol.
  */
-@interface SCSVASTPixelManager : NSObject
+@interface SCSVASTPixelManager : NSObject <SCSVASTPixelManagerProtocol>
 
 /**
  Initialize a new instance of SCSVASTPixelManager.
@@ -24,17 +25,6 @@ NS_ASSUME_NONNULL_BEGIN
  @return An initialized instance of SCSVASTPixelManager.
  */
 - (instancetype)initWithPixelManager:(SCSPixelManager *)pixelManager;
-
-/**
- Call an array of error pixels corresponding to a given VAST error.
- 
- If pixel URL contain an 'ERRORCODE' macro, this macro will be automatically replaced by
- the VAST error code.
- 
- @param pixels An array of VAST URLs.
- @param errorCode The VAST error code.
- */
-- (void)callVASTErrorPixels:(NSArray<SCSVASTURL *> *)pixels withErrorCode:(NSInteger)errorCode;
 
 @end
 

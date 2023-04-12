@@ -23,7 +23,7 @@ NS_ASSUME_NONNULL_BEGIN
  
  @param log The SCSLog instance that is attempting to log a message.
  @param level The log level of the message.
- @returns true if the message must be logged, false otherwise.
+ @return true if the message must be logged, false otherwise.
  */
 - (BOOL)log:(SCSLog *)log shouldLogMessageWithLevel:(SCSLogLevel)level;
 

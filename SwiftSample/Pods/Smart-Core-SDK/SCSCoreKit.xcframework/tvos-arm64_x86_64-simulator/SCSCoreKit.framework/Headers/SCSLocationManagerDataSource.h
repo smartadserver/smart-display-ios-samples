@@ -23,7 +23,7 @@ NS_ASSUME_NONNULL_BEGIN
  Detect wether the automatic location detection should be enabled or not.
  
  @param locationManager The location manager that wants to enable the automatic location detection.
- @returns true if the automatic location detection can be enabled, false otherwise.
+ @return true if the automatic location detection can be enabled, false otherwise.
  */
 - (BOOL)locationManagerShouldAllowAutomaticLocationDetection:(SCSLocationManager *)locationManager;
 
@@ -31,7 +31,7 @@ NS_ASSUME_NONNULL_BEGIN
  Returns a manual location that must be used instead of the actual device location if necessary.
  
  @param locationManager The location manager that requests a manual location.
- @returns A location object that will override the actual device location if necessary, nil otherwise.
+ @return A location object that will override the actual device location if necessary, nil otherwise.
  */
 - (nullable SCSLocation *)manualLocationForLocationManager:(SCSLocationManager *)locationManager;
 

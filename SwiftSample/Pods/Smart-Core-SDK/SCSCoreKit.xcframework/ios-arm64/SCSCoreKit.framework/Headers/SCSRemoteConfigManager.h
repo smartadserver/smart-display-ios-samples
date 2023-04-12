@@ -7,13 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <SCSCoreKit/SCSRemoteConfigManagerProtocol.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
 @protocol SCSRemoteConfigManagerDelegate;
 @protocol SCSPropertyCacheManager;
+@class SCSRemoteConfig;
 
-@interface SCSRemoteConfigManager : NSObject
+@interface SCSRemoteConfigManager : NSObject <SCSRemoteConfigManagerProtocol>
 
 /**
  Public initializer.
@@ -23,12 +25,15 @@ NS_ASSUME_NONNULL_BEGIN
  @param path The remote config URL's path.
  @param queryStringParameters A dictionary of query string parameters that must be used to call the remote config URL.
  
- returns An initialized instance of SCSRemoteConfigManager
+ @return An initialized instance of SCSRemoteConfigManager
  */
-- (instancetype)initWithDelegate:(id <SCSRemoteConfigManagerDelegate>)delegate baseURL:(NSString *)baseURL path:(NSString *)path queryStringParameters:(nullable NSDictionary *)queryStringParameters __deprecated;
+- (instancetype)initWithDelegate:(nullable id <SCSRemoteConfigManagerDelegate>)delegate baseURL:(NSString *)baseURL path:(NSString *)path queryStringParameters:(nullable NSDictionary *)queryStringParameters __deprecated;
 
 /**
  Public initializer.
+ 
+ @note If the `path` parameter contains the `[SITEID_PLACEHOLDER]` macro, it will be automaticall replaced before each
+ fetch call by the requested site id. If no such macro exists, the path will be used as-is.
  
  @param delegate The delegate to be informed about requests results.
  @param cacheManager The cacheManager instance to use. If nil, a default implementation of SCSCacheManager will be used.
@@ -37,22 +42,38 @@ NS_ASSUME_NONNULL_BEGIN
  @param queryStringParameters A dictionary of query string parameters that must be used to call the remote config URL.
  @param sdkVersionId The current SDKVersionId, used for cache purpose.
  
- returns An initialized instance of SCSRemoteConfigManager
+ @return An initialized instance of SCSRemoteConfigManager
  */
-- (instancetype)initWithDelegate:(id <SCSRemoteConfigManagerDelegate>)delegate
+- (instancetype)initWithDelegate:(nullable id <SCSRemoteConfigManagerDelegate>)delegate
                     cacheManager:(nullable id<SCSPropertyCacheManager>)cacheManager
                          baseURL:(NSString *)baseURL
                             path:(NSString *)path
            queryStringParameters:(nullable NSDictionary *)queryStringParameters
-                    sdkVersionId:(int)sdkVersionId;
+                    sdkVersionId:(int)sdkVersionId __deprecated;
 
 /**
- Ask the SCSRemoteConfigManager to fetch the configuration for the given siteID.
+ Public initializer.
  
- @param forced Whether or not the SCSRemoteConfigManager should take the expiration into account. YES to ignore expiration.
+ @note If the `path` parameter contains the `[SITEID_PLACEHOLDER]` macro, it will be automaticall replaced before each
+ fetch call by the requested site id. If no such macro exists, the path will be used as-is.
+ 
+ @param delegate The delegate to be informed about requests results.
+ @param cacheManager The cacheManager instance to use. If nil, a default implementation of SCSCacheManager will be used.
+ @param baseURL The remote config URL's base URL.
+ @param path The remote config URL's path.
+ @param queryStringParameters A dictionary of query string parameters that must be used to call the remote config URL.
+ @param sdkVersionId The current SDKVersionId, used for cache purpose.
+ @param defaultRemoteConfig The default config that will be returned if the cache is empty for the current site id if any, nil otherwise.
+ 
+ @return An initialized instance of SCSRemoteConfigManager
  */
-- (void)fetchRemoteConfiguration:(BOOL)forced;
-
+- (instancetype)initWithDelegate:(nullable id <SCSRemoteConfigManagerDelegate>)delegate
+                    cacheManager:(nullable id<SCSPropertyCacheManager>)cacheManager
+                         baseURL:(NSString *)baseURL
+                            path:(NSString *)path
+           queryStringParameters:(nullable NSDictionary *)queryStringParameters
+                    sdkVersionId:(int)sdkVersionId
+             defaultRemoteConfig:(nullable SCSRemoteConfig *)defaultRemoteConfig;
 
 - (instancetype)init NS_UNAVAILABLE;
 

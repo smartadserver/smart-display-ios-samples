@@ -17,11 +17,11 @@ RSYNC_PROTECT_TMP_FILES=(--filter "P .*.??????")
 variant_for_slice()
 {
   case "$1" in
-  "SCSCoreKit.xcframework/ios-arm64_x86_64-simulator")
-    echo "simulator"
-    ;;
   "SCSCoreKit.xcframework/ios-arm64")
     echo ""
+    ;;
+  "SCSCoreKit.xcframework/ios-arm64_x86_64-simulator")
+    echo "simulator"
     ;;
   "SCSCoreKit.xcframework/tvos-arm64")
     echo ""
@@ -35,11 +35,11 @@ variant_for_slice()
 archs_for_slice()
 {
   case "$1" in
-  "SCSCoreKit.xcframework/ios-arm64_x86_64-simulator")
-    echo "arm64 x86_64"
-    ;;
   "SCSCoreKit.xcframework/ios-arm64")
     echo "arm64"
+    ;;
+  "SCSCoreKit.xcframework/ios-arm64_x86_64-simulator")
+    echo "arm64 x86_64"
     ;;
   "SCSCoreKit.xcframework/tvos-arm64")
     echo "arm64"
@@ -129,5 +129,5 @@ install_xcframework() {
   echo "Copied $source to $destination"
 }
 
-install_xcframework "${PODS_ROOT}/Smart-Core-SDK/SCSCoreKit.xcframework" "Smart-Core-SDK" "framework" "ios-arm64_x86_64-simulator" "ios-arm64"
+install_xcframework "${PODS_ROOT}/Smart-Core-SDK/SCSCoreKit.xcframework" "Smart-Core-SDK" "framework" "ios-arm64" "ios-arm64_x86_64-simulator"
 

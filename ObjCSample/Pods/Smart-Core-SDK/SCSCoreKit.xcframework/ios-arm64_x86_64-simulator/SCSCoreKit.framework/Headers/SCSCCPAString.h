@@ -41,7 +41,16 @@ typedef NS_ENUM(NSInteger, SCSCCPAStringVersion) {
  @param rawCCPAString The RAW consent string that will be handled by the SCSCCPAString instance.
  @return An initialized instance of the CCPA consent string.
  */
-- (instancetype)initWithCCPAString:(NSString *)rawCCPAString;
+- (instancetype)initWithCCPAString:(NSString *)rawCCPAString NS_DESIGNATED_INITIALIZER;
+
+/**
+ Read from CCPA String if the SDK have the consent for sending IDs.
+ 
+ @return YES if the SDK have consent, NO otherwise.
+ */
+- (BOOL)canSendIDs;
+
+- (instancetype)init NS_UNAVAILABLE;
 
 @end
 

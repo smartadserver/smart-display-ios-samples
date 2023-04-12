@@ -10,9 +10,18 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@class SCSRemoteLog;
+@class SCSRemoteLog, SCSRemoteConfigLoggerConfig;
 
 @protocol SCSRemoteLoggerProtocol <NSObject>
+
+/**
+ Configure the remote logger using a logger config instance retrieved from a remote config.
+ 
+ @note If no logger config is provided, a default config doing nothing will be applied.
+ 
+ @param loggerConfig The logger config that should be used to config the remote logger, or nil to apply default config.
+ */
+- (void)configFromRemoteConfig:(nullable SCSRemoteConfigLoggerConfig *)loggerConfig;
 
 /**
  Convenient method to initialize a SCSRemoteLog object with no type nor metric.

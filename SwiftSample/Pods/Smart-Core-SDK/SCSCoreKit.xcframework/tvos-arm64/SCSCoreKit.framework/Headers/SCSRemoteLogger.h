@@ -94,7 +94,16 @@ typedef NS_ENUM(NSInteger, SCSRemoteLogSDKImplementationType) {
  */
 - (void)log:(SCSRemoteLog *)log enrichedWithDictionaries:(nullable NSArray<NSDictionary *> *)dictionaries __deprecated;
 
-#pragma mark - SCSRemoteLog generation
+#pragma mark - Utils
+
+/**
+ Create a SCSRemoteLogLevel instance from a string.
+ 
+ @note This method will return `none` in case of invalid string.
+ 
+ @return The SCSRemoteLogLevel corresponding to the input string.
+ */
++ (SCSRemoteLogLevel)logLevelFromString:(NSString *)string;
 
 - (instancetype)init NS_UNAVAILABLE;
 

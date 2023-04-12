@@ -34,7 +34,7 @@
 		</data>
 		<key>Headers/SCSCCPAString.h</key>
 		<data>
-		CEhf75TaWpdeoRqRon2issL2jIs=
+		u9QLz71CCpZEuQfhtjFJX90uVqg=
 		</data>
 		<key>Headers/SCSConfiguration.h</key>
 		<data>
@@ -42,7 +42,7 @@
 		</data>
 		<key>Headers/SCSCoreKit.h</key>
 		<data>
-		IgdTbyUAq01QQSeATGGIX5+Qn0M=
+		SB8dU0Yt0VKEAAWVl+u3jdck9Dk=
 		</data>
 		<key>Headers/SCSDeviceInfo.h</key>
 		<data>
@@ -72,6 +72,10 @@
 		<data>
 		5M6HeWsdLbS1PEhKa4mM/FA893I=
 		</data>
+		<key>Headers/SCSGPPString.h</key>
+		<data>
+		iMG4bmckI1HXir0hoj13gXzOAQY=
+		</data>
 		<key>Headers/SCSHTMLUtils.h</key>
 		<data>
 		J59RJHf2w5g10zgeSlp+DZcXeg0=
@@ -80,13 +84,17 @@
 		<data>
 		lhXPOW0w1vDiPDIyVIi7GRuCEFE=
 		</data>
+		<key>Headers/SCSIABConsentStatus.h</key>
+		<data>
+		kaUO99tfv7KWjouR7Ie8aLCQ7f8=
+		</data>
 		<key>Headers/SCSIdentity.h</key>
 		<data>
-		+J2ijS2mLoKuB2JopVmjhQ1BgSg=
+		6Mt3WtHSYj8t9WO6QiuKGid+Wzk=
 		</data>
 		<key>Headers/SCSIdentityProviderProtocol.h</key>
 		<data>
-		AtyTmNtvRNaJz/xVHSyLlmYi6hs=
+		6Y/tQ9wOz9Zxfv+lQXrCmBCV1s8=
 		</data>
 		<key>Headers/SCSLocation.h</key>
 		<data>
@@ -98,7 +106,7 @@
 		</data>
 		<key>Headers/SCSLocationManagerDataSource.h</key>
 		<data>
-		rTDshFd/rJaxl8RdoFoIn/X0zvY=
+		NL0AJYN0p3yZ0vo3DHV8BQenk64=
 		</data>
 		<key>Headers/SCSLocationProviderDelegate.h</key>
 		<data>
@@ -114,7 +122,7 @@
 		</data>
 		<key>Headers/SCSLogDataSource.h</key>
 		<data>
-		icOGNzIoeT2+r3RsFsq8NrvzLEc=
+		haL0OZzQoa7yxafC2h7m8ldvnA8=
 		</data>
 		<key>Headers/SCSLogErrorNode.h</key>
 		<data>
@@ -138,7 +146,7 @@
 		</data>
 		<key>Headers/SCSLogSDKNode.h</key>
 		<data>
-		PJ3wJXKmkGTtvDy1vV7D/+lQe+M=
+		U7CYbS0WUrKY+58xKnBvfPP4h+k=
 		</data>
 		<key>Headers/SCSLogVASTErrorNode.h</key>
 		<data>
@@ -214,7 +222,7 @@
 		</data>
 		<key>Headers/SCSPropertyCacheManager.h</key>
 		<data>
-		9dXIgUJ4N0Ogc3FDf4RNJRFPoI8=
+		qBkE8geza97DZCpNlAZHbFd7/y4=
 		</data>
 		<key>Headers/SCSQuaternion.h</key>
 		<data>
@@ -224,13 +232,33 @@
 		<data>
 		jzZjND02OES9/Wn1FlDyzXKRuAI=
 		</data>
+		<key>Headers/SCSRemoteConfig.h</key>
+		<data>
+		coAwsLzh5qelFNMsfFCia0tXD6U=
+		</data>
+		<key>Headers/SCSRemoteConfigLoggerConfig.h</key>
+		<data>
+		J+yFOVvI70iZmGp8PU/IjwjfvG4=
+		</data>
 		<key>Headers/SCSRemoteConfigManager.h</key>
 		<data>
-		h+J6SExBVNJQIkcpMsvQsHNoOX8=
+		ZDcCZ4UCiKbO8APSSWsGg9BzY5o=
 		</data>
 		<key>Headers/SCSRemoteConfigManagerDelegate.h</key>
 		<data>
-		Da/Kv0zzgGveCghLhDKPjjuRD64=
+		hP42RqNY+bJ8ujU/MKHJ3uJf4jA=
+		</data>
+		<key>Headers/SCSRemoteConfigManagerProtocol.h</key>
+		<data>
+		8qGuXZufRObRwzSE7Sxr1wqGqHk=
+		</data>
+		<key>Headers/SCSRemoteConfigSmartConfig.h</key>
+		<data>
+		crjxBI1k+3fJTW14TGwFAmnReJw=
+		</data>
+		<key>Headers/SCSRemoteConfigSmartConfigAdCallParameters.h</key>
+		<data>
+		arttXc4LJtciqrNk3fpX5xfi9lY=
 		</data>
 		<key>Headers/SCSRemoteConfigurationErrorRemoteLogger.h</key>
 		<data>
@@ -246,11 +274,11 @@
 		</data>
 		<key>Headers/SCSRemoteLogger.h</key>
 		<data>
-		oXvLkcyMYXnJ/uQ+uOQM1Bsy/NA=
+		JSznjBseEC1WHPeXxTpWUkDbROg=
 		</data>
 		<key>Headers/SCSRemoteLoggerProtocol.h</key>
 		<data>
-		exPczgloIiErV+u8xy7XtPdo+vk=
+		dft7rRVmCyj66OOCc6uQwHkCOPE=
 		</data>
 		<key>Headers/SCSScriptDownloader.h</key>
 		<data>
@@ -266,7 +294,7 @@
 		</data>
 		<key>Headers/SCSTCFString.h</key>
 		<data>
-		fNBQybL+EesohRS4Zcu3syFmoaA=
+		xGXheuR2WIBjmJQB9jN/MsvSCjY=
 		</data>
 		<key>Headers/SCSTimeUtils.h</key>
 		<data>
@@ -426,7 +454,7 @@
 		</data>
 		<key>Headers/SCSVASTManagerProtocol.h</key>
 		<data>
-		mqnF2GTD2OwafgDgd69YmV2pvX8=
+		ObDzTVct0q8MSxpzYNXSOzxLcJ4=
 		</data>
 		<key>Headers/SCSVASTManagerResponse.h</key>
 		<data>
@@ -458,7 +486,11 @@
 		</data>
 		<key>Headers/SCSVASTPixelManager.h</key>
 		<data>
-		ASF1rfNgoAx7J6pjW75hIn+4eQU=
+		a4KhNTCMA6+IgClrvYT05AeZx5w=
+		</data>
+		<key>Headers/SCSVASTPixelManagerProtocol.h</key>
+		<data>
+		pg3jrRyXNhaYHLxHYe1NvCIrmNo=
 		</data>
 		<key>Headers/SCSVASTTrackingEvent.h</key>
 		<data>
@@ -526,7 +558,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		jtxYCSLjPws8rD/x5f/Ogc9O3Ek=
+		ZkaA+QukeKZOBPETW3TNumkEtBs=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -588,7 +620,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			LIX22/+vX/gs7OxqrOfjwuEEGAb5axvFIo2rhzOCAaY=
+			BQt2i9JEjnk7W1f6BDxhm89koupZjH/PlXjGrKJB0ZQ=
 			</data>
 		</dict>
 		<key>Headers/SCSConfiguration.h</key>
@@ -602,7 +634,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			gJYlaHZ6AF8Vq88M2xwkiNXt1nVNpV6KcDbVS858Lfk=
+			AUeSITw8ATxkj8ZZI/PxisDMYCM33EHNg/o/D7d2pWQ=
 			</data>
 		</dict>
 		<key>Headers/SCSDeviceInfo.h</key>
@@ -654,6 +686,13 @@
 			U567joT64AF3gbLROTYr+OuHZdees66cXlr53HXH828=
 			</data>
 		</dict>
+		<key>Headers/SCSGPPString.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			9eWmDtFKvSQvrmcMPz75mYKvTrGE8i6o9df1YbE7Pfo=
+			</data>
+		</dict>
 		<key>Headers/SCSHTMLUtils.h</key>
 		<dict>
 			<key>hash2</key>
@@ -668,18 +707,25 @@
 			2gBdv13kt1G7Mpb+0krwW9tI22+uCOIBrTIPRW7g/uM=
 			</data>
 		</dict>
+		<key>Headers/SCSIABConsentStatus.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			W1WEi4slzE7DDjzr8nccFB/i/ExL7e05l9Dm2fazscY=
+			</data>
+		</dict>
 		<key>Headers/SCSIdentity.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			N+dbhxB/zEHoWGAxtk/PgE4aabXil3/RVuiulFePY+0=
+			HKGBclgN3NJQAIQ0zTMYSHkt8V33ggq+QQYh/bhxH5A=
 			</data>
 		</dict>
 		<key>Headers/SCSIdentityProviderProtocol.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			LtJf8dBSq7PV6F3KA1aX8J2FOVcNHAmMGTGtFJM404Y=
+			7N6MvTjmgiZECQ2iMq8b1gHupGwU+BnurpNpTLtFQJU=
 			</data>
 		</dict>
 		<key>Headers/SCSLocation.h</key>
@@ -700,7 +746,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			VLTz1PET624ZUPCNKNQrELeLM8pu/puKojd4kRZLvsA=
+			csYOwAl1/HVOncAMzdaTsf14CoARF7M0EnA8nFlPgk0=
 			</data>
 		</dict>
 		<key>Headers/SCSLocationProviderDelegate.h</key>
@@ -728,7 +774,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			N8k8a22SxTYuthihYpiF/mMGfGj9HmfScp/CPK+5huM=
+			x+4Be2OXNVaDgCENDe04rWufN6ST9R3Eo/3Ue9sK7r4=
 			</data>
 		</dict>
 		<key>Headers/SCSLogErrorNode.h</key>
@@ -770,7 +816,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			q5t+WXbZQK7+Gow+h54UIY5UoHMDP57kdt8tzzsFrCQ=
+			1LSqcZR2zT6QlH/idPc8IKD7438o24RkeSkSDN7o3O4=
 			</data>
 		</dict>
 		<key>Headers/SCSLogVASTErrorNode.h</key>
@@ -903,7 +949,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			EPYp4wO765xZ8aKC9LCvrSD5+8CL8oceA2jVDGv8Weg=
+			t0EECnzuC5Qfwzsj+qLobiicLp+7XPl7Cdt7xi2FVGU=
 			</data>
 		</dict>
 		<key>Headers/SCSQuaternion.h</key>
@@ -920,18 +966,53 @@
 			iTb5r2veALToDigiEl4Rl8e+QOk+EHh0+SRXFOC79xc=
 			</data>
 		</dict>
+		<key>Headers/SCSRemoteConfig.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Szog69Nt7iJ46Ki0+//6f5JKcxFBfX7dnQ5XHJTrbQc=
+			</data>
+		</dict>
+		<key>Headers/SCSRemoteConfigLoggerConfig.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			WKZI8D1j7HWGbJiHhKIrsFy6C5J4NrYheIrEg9F1kVA=
+			</data>
+		</dict>
 		<key>Headers/SCSRemoteConfigManager.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			TAn4kxO4nCDO24ug/msleoZumcndAcmApdzztp9ekyA=
+			ZgewIs1RvwBz2ufQN7xfmD58YDqRnHWy2vTESnd92is=
 			</data>
 		</dict>
 		<key>Headers/SCSRemoteConfigManagerDelegate.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			eN+rxlcsd73Nvorca5t97rjY56OVBDfYCQJBa77A9ZM=
+			RsJ8cES7Uy7D7PU7KnvZYMeNxGtKMT22a8MKS339E6M=
+			</data>
+		</dict>
+		<key>Headers/SCSRemoteConfigManagerProtocol.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			alAII7mZrh3puyjaNatbmpXMZEu70h5VqdKCLG5sj9o=
+			</data>
+		</dict>
+		<key>Headers/SCSRemoteConfigSmartConfig.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			AJGB8ZJD62woAtepu+ROCccIkVOrnlIE9QvYRW6csRM=
+			</data>
+		</dict>
+		<key>Headers/SCSRemoteConfigSmartConfigAdCallParameters.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			JvwjJrDTKXzXAuv0ZpGtDICpj3gvGCY3DnbB8VREzDE=
 			</data>
 		</dict>
 		<key>Headers/SCSRemoteConfigurationErrorRemoteLogger.h</key>
@@ -959,14 +1040,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			8AXsSn/rI/8gR9yHmsQRHOKtKYARnrvH9a78Om0ahLE=
+			9bwNByrU8Mnzywo1Rxlxu6S08rS7JT+j93KD7r8mE/E=
 			</data>
 		</dict>
 		<key>Headers/SCSRemoteLoggerProtocol.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			GInv/u9th7Ef8MLoCxy6qdrTWW/bsmYkFD5tzGWzCh0=
+			+GT1Jp7D2hVKT134yJXc03d+2hC/8Tp7tZCO0P5hIcI=
 			</data>
 		</dict>
 		<key>Headers/SCSScriptDownloader.h</key>
@@ -994,7 +1075,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			CAKhDx36ydvFQJCHCtDSYYJPzBAUr7gIpWUzKZoss1k=
+			RrsGT+4y/n3bDErOgX9rr5pTPx8UmHgkUdRJs7nkU0A=
 			</data>
 		</dict>
 		<key>Headers/SCSTimeUtils.h</key>
@@ -1274,7 +1355,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			bHXMaK8axs0ZVwZjT7jVyrPcWXp8nkis4Ju85CvyGi4=
+			QRjyw4LgZOoqR1RpX+IQ8uwZJxXoBWSNsdNUA/9PwXA=
 			</data>
 		</dict>
 		<key>Headers/SCSVASTManagerResponse.h</key>
@@ -1330,7 +1411,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			adF6mv3pDzqJtgP9+AYsw5zOgfpVaMvcPyLJXHdJ5L0=
+			EYyn9T+qeQ4xx4ktag3K7lzSG4LwV0XKyTQLVog0Fbs=
+			</data>
+		</dict>
+		<key>Headers/SCSVASTPixelManagerProtocol.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			e8BxqszHiQKchwpF9R6bi1bylNljb9RT2t37g6nQ5+g=
 			</data>
 		</dict>
 		<key>Headers/SCSVASTTrackingEvent.h</key>

@@ -26,6 +26,7 @@
 #import <SCSCoreKit/SCSVASTMediaFile.h>
 #import <SCSCoreKit/SCSVASTAdExtension.h>
 #import <SCSCoreKit/SCSVASTMediaFileSelector.h>
+#import <SCSCoreKit/SCSVASTPixelManagerProtocol.h>
 #import <SCSCoreKit/SCSVASTPixelManager.h>
 #import <SCSCoreKit/SCSVASTAdVerification.h>
 #import <SCSCoreKit/SCSVASTAdVerificationResource.h>
@@ -101,6 +102,11 @@
 #import <SCSCoreKit/SCSAngleUtils.h>
 
 // Config Manager
+#import <SCSCoreKit/SCSRemoteConfig.h>
+#import <SCSCoreKit/SCSRemoteConfigLoggerConfig.h>
+#import <SCSCoreKit/SCSRemoteConfigSmartConfig.h>
+#import <SCSCoreKit/SCSRemoteConfigSmartConfigAdCallParameters.h>
+#import <SCSCoreKit/SCSRemoteConfigManagerProtocol.h>
 #import <SCSCoreKit/SCSRemoteConfigManager.h>
 #import <SCSCoreKit/SCSRemoteConfigManagerDelegate.h>
 #import <SCSCoreKit/SCSPropertyCacheManager.h>
@@ -161,8 +167,10 @@
 #import <SCSCoreKit/SCSTimerInterval.h>
 #import <SCSCoreKit/SCSTimerDelegate.h>
 #import <SCSCoreKit/SCSFuture.h>
+#import <SCSCoreKit/SCSIABConsentStatus.h>
 #import <SCSCoreKit/SCSTCFString.h>
 #import <SCSCoreKit/SCSCCPAString.h>
+#import <SCSCoreKit/SCSGPPString.h>
 
 // Platform specific headers
 #if TARGET_OS_IOS || (TARGET_OS_IPHONE && !TARGET_OS_TV)
