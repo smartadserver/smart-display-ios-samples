@@ -17,6 +17,9 @@ FOUNDATION_EXPORT const unsigned char SASDisplayKitVersionString[];
 // Configuration
 #import <SASDisplayKit/SASAdPlacement.h>
 #import <SASDisplayKit/SASConfiguration.h>
+#import <SASDisplayKit/SASSellerDefinedSegment.h>
+#import <SASDisplayKit/SASSellerDefinedAudience.h>
+#import <SASDisplayKit/SASSellerDefinedContent.h>
 
 // Ad objects
 #import <SASDisplayKit/SASAd.h>

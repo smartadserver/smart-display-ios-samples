@@ -7,6 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <SASDisplayKit/SASSellerDefinedAudience.h>
+#import <SASDisplayKit/SASSellerDefinedContent.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -150,6 +152,12 @@ typedef NS_ENUM(NSInteger, SASAdPlacementTest) {
 ///
 /// The URL provided will be sent in the ad call to enabled semantic targeting.
 @property (nonatomic, strong, nullable) NSURL *contentURL;
+
+/// An array of SASSellerDefinedAudience objects related to this SASAdPlacement, if any. Nil otherwise.
+@property (nonatomic, strong, nullable) NSArray<SASSellerDefinedAudience *> *sellerDefinedAudiences;
+
+/// An array of SASSellerDefinedContent objects related to this SASAdPlacement, if any. Nil otherwise.
+@property (nonatomic, strong, nullable) NSArray<SASSellerDefinedContent *> *sellerDefinedContents;
 
 #pragma mark - Initializers
 

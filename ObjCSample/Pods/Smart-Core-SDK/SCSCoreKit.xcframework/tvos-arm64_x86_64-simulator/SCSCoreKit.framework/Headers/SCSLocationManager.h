@@ -23,7 +23,10 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, readonly, nullable) SCSLocation *location;
 
 /// The provider that is being used to retrieve location informations.
-@property (nonatomic, strong, readonly) id <SCSLocationProviderProtocol> locationProvider;
+@property (nonatomic, readonly) id <SCSLocationProviderProtocol> locationProvider;
+
+/// YES if the location manager is started, NO otherwise.
+@property (nonatomic, readonly) BOOL isStarted;
 
 - (instancetype)init NS_UNAVAILABLE;
 

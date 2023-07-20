@@ -46,7 +46,7 @@
 		</data>
 		<key>Headers/SASAdPlacement.h</key>
 		<data>
-		wpXQGHRr/OpwG2LEFJiRVXeIhCY=
+		3ebdWxMwBHL/sQ5qRnPzAwFDrPM=
 		</data>
 		<key>Headers/SASAdStatus.h</key>
 		<data>
@@ -110,7 +110,7 @@
 		</data>
 		<key>Headers/SASDisplayKit.h</key>
 		<data>
-		BROhn5XUNHHSbW9KS7qvga2U+hQ=
+		0Pv3VFh9qiYwxg/xO3yJp4TB3Qc=
 		</data>
 		<key>Headers/SASFrameworkInfo.h</key>
 		<data>
@@ -212,17 +212,33 @@
 		<data>
 		NqcQyg34m5Vapdk+RShGlD7ZtXI=
 		</data>
+		<key>Headers/SASSellerDefinedAudience.h</key>
+		<data>
+		sG8/15x0FgxnHdf6Gx0h1NZr+OU=
+		</data>
+		<key>Headers/SASSellerDefinedContent.h</key>
+		<data>
+		2T5sql+P8p4GcIlWEe1cyoyheLY=
+		</data>
+		<key>Headers/SASSellerDefinedSegment.h</key>
+		<data>
+		bVjvrOVo4k2O6nltpmpxk5Lho98=
+		</data>
 		<key>Headers/SASVideoEvent.h</key>
 		<data>
 		e+aifkClepxp8zhVEZNo0q8ebE4=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Crfs40lujs1Ong9qs5HZt8cZlA4=
+		I/z6yJkx+Z1hF/eYD4T+6Flpxt4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		/FmDeMyn7PN+eJOlUAqNmRssdd4=
+		</data>
+		<key>PrivacyInfo.xcprivacy</key>
+		<data>
+		xosiDw0td1oQu56KeNc4GrDr584=
 		</data>
 		<key>Smart-Display-SDK.podspec</key>
 		<data>
@@ -364,6 +380,10 @@
 		<key>equalizer_9@3x.png</key>
 		<data>
 		2fRTqNsGVNAYB7VsZvYdlYNZRjY=
+		</data>
+		<key>extract_creative_info.js</key>
+		<data>
+		jlO9lkgM61sc9et4YclfnxKivvs=
 		</data>
 		<key>forward-icon.png</key>
 		<data>
@@ -651,7 +671,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			o+fSHlF5ZHRHd0am3YU/nt73M5pn6dcDqwZrPowE4xA=
+			OE1eOcBF0Pn/mNtVcA7RPwmiu0Hm53921paFjBp4M/A=
 			</data>
 		</dict>
 		<key>Headers/SASAdStatus.h</key>
@@ -763,7 +783,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			pJ78im1oIZxrznwb3dTeznbY3QGIkgWRu9UCLTjeS10=
+			H/MtDsgWq6BIICdZhSF7CRKnzQc21LtuS7NJIYwyqM0=
 			</data>
 		</dict>
 		<key>Headers/SASFrameworkInfo.h</key>
@@ -941,6 +961,27 @@
 			ra4w3qVtf/UZW0pRH61nfO2NjOcbO13+g8GgkLyAZu8=
 			</data>
 		</dict>
+		<key>Headers/SASSellerDefinedAudience.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			gYQPeha4sHgzOB1FnjH3sqd28zbvVThL4fVP4u8vHrs=
+			</data>
+		</dict>
+		<key>Headers/SASSellerDefinedContent.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			yllJwmy63L40FJgktXEREyCQIeex0BW1pqbd7yuSCko=
+			</data>
+		</dict>
+		<key>Headers/SASSellerDefinedSegment.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			iu86rKHE5cXkMrfP7nCs6zb3FUUJgt8vXv2t2jJIFWc=
+			</data>
+		</dict>
 		<key>Headers/SASVideoEvent.h</key>
 		<dict>
 			<key>hash2</key>
@@ -953,6 +994,13 @@
 			<key>hash2</key>
 			<data>
 			eYa8iN24KRV4ehWyHVTcqOfeBtZIuQM24x3FvkqizZA=
+			</data>
+		</dict>
+		<key>PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			yRa4arAH0w0fLkdZUon7VGrgDgJqtVZzf/UA+ho6f3g=
 			</data>
 		</dict>
 		<key>Smart-Display-SDK.podspec</key>
@@ -1193,6 +1241,13 @@
 			<key>hash2</key>
 			<data>
 			wRJToPgjVBA2aCc4gQvOpiGh4W6JVYDiMqXIQzvXWio=
+			</data>
+		</dict>
+		<key>extract_creative_info.js</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			1vGTrYHrAKXNdxf6pnYExcQUpZY9bPRO6cUqdHV32KA=
 			</data>
 		</dict>
 		<key>forward-icon.png</key>
