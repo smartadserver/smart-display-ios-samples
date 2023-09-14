@@ -48,9 +48,6 @@ NS_ASSUME_NONNULL_BEGIN
 /// Coordinate that will be used instead of the actual device location (for testing purpose for instance), kCLLocationCoordinate2DInvalid otherwise (default value).
 @property (nonatomic, assign) CLLocationCoordinate2D manualLocation;
 
-/// YES if a temporary transient ID can be used if the advertising ID is not available, NO otherwise.
-@property (nonatomic, assign) BOOL transientIDEnabled;
-
 /// The custom identifier for this device. This property will be sent along with the IDFA of this device, if available, when requesting an ad.
 ///
 /// @note Providing an empty string will be considered as providing nil.

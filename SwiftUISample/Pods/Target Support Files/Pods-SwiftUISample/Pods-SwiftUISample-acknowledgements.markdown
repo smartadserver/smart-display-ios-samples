@@ -1,10 +1,6 @@
 # Acknowledgements
 This application makes use of the following third party libraries:
 
-## Smart-Core-SDK
-
-
-
 ## Smart-Display-SDK
 
 

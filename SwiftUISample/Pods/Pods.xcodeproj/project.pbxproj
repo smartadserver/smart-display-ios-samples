@@ -3,92 +3,63 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXAggregateTarget section */
 		1C8A4AED7560ADF9004DDF8D2D4D0AB7 /* Smart-Display-SDK */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = BCE4FBEDF8B967EF144C342AB2AF6EF9 /* Build configuration list for PBXAggregateTarget "Smart-Display-SDK" */;
+			buildConfigurationList = 0CACA2B138EB28FE9F882A96B1731307 /* Build configuration list for PBXAggregateTarget "Smart-Display-SDK" */;
 			buildPhases = (
-				5DC8547C68D481F9C7B8FCCFD9182F99 /* [CP] Copy XCFrameworks */,
+				033788A6E695514D6783015D17285E32 /* [CP] Copy XCFrameworks */,
 			);
 			dependencies = (
-				AE417DF0A99FF9AF91C636DDA59E880D /* PBXTargetDependency */,
 			);
 			name = "Smart-Display-SDK";
-		};
-		5229D3DCAB881F587206D01F4898841C /* Smart-Core-SDK */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = 916F372EFC24CC6D855112197E571E3A /* Build configuration list for PBXAggregateTarget "Smart-Core-SDK" */;
-			buildPhases = (
-				2D49CA89255896893EF8120A603DAEDC /* [CP] Copy XCFrameworks */,
-			);
-			dependencies = (
-			);
-			name = "Smart-Core-SDK";
 		};
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		50CF0D6F5CC02D6D82CEB957BF560262 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		73ADB9D2596E8372D758E7E481CB2B86 /* Pods-SwiftUISample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EF566831E265F99760DDCCA2CC12A803 /* Pods-SwiftUISample-dummy.m */; };
-		83C267552295D14CE67FABF58B398A14 /* Pods-SwiftUISample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3ED95A56A1957C291D24372B8D4C1FAE /* Pods-SwiftUISample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3E3337215A361839C2E59C308CBA7357 /* Pods-SwiftUISample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3ED95A56A1957C291D24372B8D4C1FAE /* Pods-SwiftUISample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF7A2D591158CBA559BDE59978E39340 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		FB1437894F2BD60BC192B476663042F2 /* Pods-SwiftUISample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EF566831E265F99760DDCCA2CC12A803 /* Pods-SwiftUISample-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		59E3C7A8AC5E1B769778F842CD26EF9C /* PBXContainerItemProxy */ = {
+		40D145140D09FE33411404221773046A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 1C8A4AED7560ADF9004DDF8D2D4D0AB7;
 			remoteInfo = "Smart-Display-SDK";
 		};
-		A361E859F7815C9FC68E20F94FA478B8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5229D3DCAB881F587206D01F4898841C;
-			remoteInfo = "Smart-Core-SDK";
-		};
-		E02D53362C27FE3DC168123AD3220C5C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5229D3DCAB881F587206D01F4898841C;
-			remoteInfo = "Smart-Core-SDK";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		02E371A5AD2D66B8398DB9ABEEACC178 /* Smart-Display-SDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Smart-Display-SDK.debug.xcconfig"; sourceTree = "<group>"; };
+		0E034A0373FC08F8EBD13B93D19EB1A7 /* Smart-Display-SDK-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Smart-Display-SDK-xcframeworks.sh"; sourceTree = "<group>"; };
 		13D6C91773D3539F132DAB268B9124EE /* Pods-SwiftUISample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftUISample.debug.xcconfig"; sourceTree = "<group>"; };
-		184324568376DE48F2B48E836D2EAEE5 /* Smart-Display-SDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Smart-Display-SDK.release.xcconfig"; sourceTree = "<group>"; };
 		254235175B2D2E989E527B8B2C556512 /* Pods-SwiftUISample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftUISample.release.xcconfig"; sourceTree = "<group>"; };
-		2D5D74A5503DF946637EA68A7FFA89ED /* SASDisplayKit.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = SASDisplayKit.xcframework; sourceTree = "<group>"; };
-		2DB482D8BB4CC9B7D864E98ABB684FD2 /* Smart-Display-SDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Smart-Display-SDK.debug.xcconfig"; sourceTree = "<group>"; };
 		376E063FFB52A3915D1B59970AFF5FE3 /* Pods-SwiftUISample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SwiftUISample-acknowledgements.plist"; sourceTree = "<group>"; };
 		3ED95A56A1957C291D24372B8D4C1FAE /* Pods-SwiftUISample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SwiftUISample-umbrella.h"; sourceTree = "<group>"; };
-		5303425DF91BC49D13A342461D5FD39E /* SCSCoreKit.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = SCSCoreKit.xcframework; sourceTree = "<group>"; };
-		672F4B0B084873DCA038C375A8A60718 /* Smart-Core-SDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Smart-Core-SDK.debug.xcconfig"; sourceTree = "<group>"; };
-		6EFAAF807AC4ED1E94FA4E8776DF2E55 /* Smart-Core-SDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Smart-Core-SDK.release.xcconfig"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		76EBDF443016CC3CF66FABDF41B47AA3 /* Smart-Display-SDK-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Smart-Display-SDK-xcframeworks.sh"; sourceTree = "<group>"; };
+		749F9494F476A63B1B2B51DDEAAF9A0E /* SASDisplayKit.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = SASDisplayKit.xcframework; sourceTree = "<group>"; };
 		9AA340524701DD77CC50D361B6D87625 /* Pods-SwiftUISample */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-SwiftUISample"; path = Pods_SwiftUISample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A3FDDA4B2B5486BD88CA13684FC7C276 /* Pods-SwiftUISample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwiftUISample-frameworks.sh"; sourceTree = "<group>"; };
-		AE643B5E62B61DC5B9052DD27A5FFC2D /* Smart-Core-SDK-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Smart-Core-SDK-xcframeworks.sh"; sourceTree = "<group>"; };
 		D7DA993D43AAF1F873B45A287309A682 /* Pods-SwiftUISample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SwiftUISample-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E7211C3D17BF3F9984E494E66A058D96 /* Smart-Display-SDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Smart-Display-SDK.release.xcconfig"; sourceTree = "<group>"; };
 		EF566831E265F99760DDCCA2CC12A803 /* Pods-SwiftUISample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SwiftUISample-dummy.m"; sourceTree = "<group>"; };
 		F83C0F652433EDD83D7E097907F13272 /* Pods-SwiftUISample-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SwiftUISample-Info.plist"; sourceTree = "<group>"; };
 		FC1A52FB7152C7A950F5A8AFCD774F01 /* Pods-SwiftUISample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SwiftUISample.modulemap"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		BD814FA1FEB31526A19EB0A488E7EA6A /* Frameworks */ = {
+		CCF361C9E600F3F742EFC2B4B78172F5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50CF0D6F5CC02D6D82CEB957BF560262 /* Foundation.framework in Frameworks */,
+				BF7A2D591158CBA559BDE59978E39340 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,24 +72,6 @@
 				9AA340524701DD77CC50D361B6D87625 /* Pods-SwiftUISample */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		18D4BD9D3724AA4E1E4CB9168B5AC3DC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				5303425DF91BC49D13A342461D5FD39E /* SCSCoreKit.xcframework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		369671F04DAC024BDB688EB9B124B284 /* Smart-Display-SDK */ = {
-			isa = PBXGroup;
-			children = (
-				4341F8E3368C09C569811B9CB89D94C1 /* Frameworks */,
-				813CCBFC2EF24D53928841F04733C477 /* Support Files */,
-			);
-			name = "Smart-Display-SDK";
-			path = "Smart-Display-SDK";
 			sourceTree = "<group>";
 		};
 		389A8C289484788D2416C95D9FFAABF7 /* Pods-SwiftUISample */ = {
@@ -138,12 +91,15 @@
 			path = "Target Support Files/Pods-SwiftUISample";
 			sourceTree = "<group>";
 		};
-		4341F8E3368C09C569811B9CB89D94C1 /* Frameworks */ = {
+		38DD6AA4FBBF37F4248F858CC6D2EB24 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				2D5D74A5503DF946637EA68A7FFA89ED /* SASDisplayKit.xcframework */,
+				0E034A0373FC08F8EBD13B93D19EB1A7 /* Smart-Display-SDK-xcframeworks.sh */,
+				02E371A5AD2D66B8398DB9ABEEACC178 /* Smart-Display-SDK.debug.xcconfig */,
+				E7211C3D17BF3F9984E494E66A058D96 /* Smart-Display-SDK.release.xcconfig */,
 			);
-			name = Frameworks;
+			name = "Support Files";
+			path = "../Target Support Files/Smart-Display-SDK";
 			sourceTree = "<group>";
 		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
@@ -162,45 +118,30 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		64FB0EC5682D0FE5C2BEA9AD13D3B755 /* Smart-Core-SDK */ = {
+		6161C25A777213BB1717E9A208097FF3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				18D4BD9D3724AA4E1E4CB9168B5AC3DC /* Frameworks */,
-				903868D01DCEE231B0A846A9EA0FD0AE /* Support Files */,
+				749F9494F476A63B1B2B51DDEAAF9A0E /* SASDisplayKit.xcframework */,
 			);
-			name = "Smart-Core-SDK";
-			path = "Smart-Core-SDK";
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		813CCBFC2EF24D53928841F04733C477 /* Support Files */ = {
+		8245EA2ED973C7B3281E0FB38DEDB3C5 /* Smart-Display-SDK */ = {
 			isa = PBXGroup;
 			children = (
-				76EBDF443016CC3CF66FABDF41B47AA3 /* Smart-Display-SDK-xcframeworks.sh */,
-				2DB482D8BB4CC9B7D864E98ABB684FD2 /* Smart-Display-SDK.debug.xcconfig */,
-				184324568376DE48F2B48E836D2EAEE5 /* Smart-Display-SDK.release.xcconfig */,
+				6161C25A777213BB1717E9A208097FF3 /* Frameworks */,
+				38DD6AA4FBBF37F4248F858CC6D2EB24 /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/Smart-Display-SDK";
+			name = "Smart-Display-SDK";
+			path = "Smart-Display-SDK";
 			sourceTree = "<group>";
 		};
-		89E1D52FF698E5281AA7C204BBECA80C /* Pods */ = {
+		CCAC7156E27D488A673F41B48B645476 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				64FB0EC5682D0FE5C2BEA9AD13D3B755 /* Smart-Core-SDK */,
-				369671F04DAC024BDB688EB9B124B284 /* Smart-Display-SDK */,
+				8245EA2ED973C7B3281E0FB38DEDB3C5 /* Smart-Display-SDK */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		903868D01DCEE231B0A846A9EA0FD0AE /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				AE643B5E62B61DC5B9052DD27A5FFC2D /* Smart-Core-SDK-xcframeworks.sh */,
-				672F4B0B084873DCA038C375A8A60718 /* Smart-Core-SDK.debug.xcconfig */,
-				6EFAAF807AC4ED1E94FA4E8776DF2E55 /* Smart-Core-SDK.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Smart-Core-SDK";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -208,7 +149,7 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				89E1D52FF698E5281AA7C204BBECA80C /* Pods */,
+				CCAC7156E27D488A673F41B48B645476 /* Pods */,
 				0793A069E4A5CCD5BD968341562EDA4E /* Products */,
 				58E33165D2552FE8218B75CE52C6E507 /* Targets Support Files */,
 			);
@@ -225,11 +166,11 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		CA6DA14E74E421B16545C736354225D1 /* Headers */ = {
+		7834BFE1EBE0864346928D7C4E52ACE2 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83C267552295D14CE67FABF58B398A14 /* Pods-SwiftUISample-umbrella.h in Headers */,
+				3E3337215A361839C2E59C308CBA7357 /* Pods-SwiftUISample-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,18 +179,17 @@
 /* Begin PBXNativeTarget section */
 		232D92AB986FC974EFA084EF96AAA130 /* Pods-SwiftUISample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 268845371B60018B325FA442E08AD305 /* Build configuration list for PBXNativeTarget "Pods-SwiftUISample" */;
+			buildConfigurationList = 51C01854CBCE9F9511E371CF10F32912 /* Build configuration list for PBXNativeTarget "Pods-SwiftUISample" */;
 			buildPhases = (
-				CA6DA14E74E421B16545C736354225D1 /* Headers */,
-				95CEC0DBEF20AD9E51C02F1524BBC9C5 /* Sources */,
-				BD814FA1FEB31526A19EB0A488E7EA6A /* Frameworks */,
-				6D23D24938D9655BF665406A5AFB69B3 /* Resources */,
+				7834BFE1EBE0864346928D7C4E52ACE2 /* Headers */,
+				CAF6E58A87A28708C84326FA82E56938 /* Sources */,
+				CCF361C9E600F3F742EFC2B4B78172F5 /* Frameworks */,
+				53375221C19A729EFDEE7ABFC6B9E1D7 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				B9165F3F923A0DB933AC437F89E6D554 /* PBXTargetDependency */,
-				A5C0269364CDA35B3B3056CED0DB91D1 /* PBXTargetDependency */,
+				DEE80584847F0BF1254AC4F7E7E18524 /* PBXTargetDependency */,
 			);
 			name = "Pods-SwiftUISample";
 			productName = Pods_SwiftUISample;
@@ -266,7 +206,7 @@
 				LastUpgradeCheck = 1300;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 10.0";
+			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -279,14 +219,13 @@
 			projectRoot = "";
 			targets = (
 				232D92AB986FC974EFA084EF96AAA130 /* Pods-SwiftUISample */,
-				5229D3DCAB881F587206D01F4898841C /* Smart-Core-SDK */,
 				1C8A4AED7560ADF9004DDF8D2D4D0AB7 /* Smart-Display-SDK */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		6D23D24938D9655BF665406A5AFB69B3 /* Resources */ = {
+		53375221C19A729EFDEE7ABFC6B9E1D7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -296,24 +235,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2D49CA89255896893EF8120A603DAEDC /* [CP] Copy XCFrameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Smart-Core-SDK/Smart-Core-SDK-xcframeworks-input-files.xcfilelist",
-			);
-			name = "[CP] Copy XCFrameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Smart-Core-SDK/Smart-Core-SDK-xcframeworks-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Smart-Core-SDK/Smart-Core-SDK-xcframeworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5DC8547C68D481F9C7B8FCCFD9182F99 /* [CP] Copy XCFrameworks */ = {
+		033788A6E695514D6783015D17285E32 /* [CP] Copy XCFrameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -333,173 +255,27 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		95CEC0DBEF20AD9E51C02F1524BBC9C5 /* Sources */ = {
+		CAF6E58A87A28708C84326FA82E56938 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73ADB9D2596E8372D758E7E481CB2B86 /* Pods-SwiftUISample-dummy.m in Sources */,
+				FB1437894F2BD60BC192B476663042F2 /* Pods-SwiftUISample-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		A5C0269364CDA35B3B3056CED0DB91D1 /* PBXTargetDependency */ = {
+		DEE80584847F0BF1254AC4F7E7E18524 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Smart-Display-SDK";
 			target = 1C8A4AED7560ADF9004DDF8D2D4D0AB7 /* Smart-Display-SDK */;
-			targetProxy = 59E3C7A8AC5E1B769778F842CD26EF9C /* PBXContainerItemProxy */;
-		};
-		AE417DF0A99FF9AF91C636DDA59E880D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Smart-Core-SDK";
-			target = 5229D3DCAB881F587206D01F4898841C /* Smart-Core-SDK */;
-			targetProxy = E02D53362C27FE3DC168123AD3220C5C /* PBXContainerItemProxy */;
-		};
-		B9165F3F923A0DB933AC437F89E6D554 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Smart-Core-SDK";
-			target = 5229D3DCAB881F587206D01F4898841C /* Smart-Core-SDK */;
-			targetProxy = A361E859F7815C9FC68E20F94FA478B8 /* PBXContainerItemProxy */;
+			targetProxy = 40D145140D09FE33411404221773046A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		8DC5C46EFBD02D6A2A438819B3F83461 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2DB482D8BB4CC9B7D864E98ABB684FD2 /* Smart-Display-SDK.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		903A0004D3E6651EFD5D2E16214D101B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 5.0;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
-		};
-		A5D2F8D223600F2E68FFCAF8466FA6A7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 184324568376DE48F2B48E836D2EAEE5 /* Smart-Display-SDK.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		B066F5A82CD96AB046D8C75F40624C3B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 13D6C91773D3539F132DAB268B9124EE /* Pods-SwiftUISample.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-SwiftUISample/Pods-SwiftUISample-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-SwiftUISample/Pods-SwiftUISample.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		B4EFE046ACF8F37157F6E322C7FCFC28 /* Debug */ = {
+		2B9E26EAE2CD392AD762421F663075A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -552,7 +328,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -565,7 +341,141 @@
 			};
 			name = Debug;
 		};
-		C030D3B0AD865637573BEFDE217DDDC8 /* Release */ = {
+		32D5709F1514AE609BB8383926458CCB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02E371A5AD2D66B8398DB9ABEEACC178 /* Smart-Display-SDK.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		63FAF33E1C55B71A5F5A8B3CC8749F99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		65D4FDBF62DE837E78B4DBB3C8E45D05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13D6C91773D3539F132DAB268B9124EE /* Pods-SwiftUISample.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SwiftUISample/Pods-SwiftUISample-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SwiftUISample/Pods-SwiftUISample.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		79D9318D002E085DEFE67D80E6822AEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7211C3D17BF3F9984E494E66A058D96 /* Smart-Display-SDK.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F83D60176FE7F4C4EBBEFAC9923CDEE3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 254235175B2D2E989E527B8B2C556512 /* Pods-SwiftUISample.release.xcconfig */;
 			buildSettings = {
@@ -581,7 +491,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-SwiftUISample/Pods-SwiftUISample-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -603,49 +513,14 @@
 			};
 			name = Release;
 		};
-		F9C0D7F5CF5AA3BF80309D6D35A76D49 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6EFAAF807AC4ED1E94FA4E8776DF2E55 /* Smart-Core-SDK.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		FEE058457D68CC978ABC32C11E21E34D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 672F4B0B084873DCA038C375A8A60718 /* Smart-Core-SDK.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		268845371B60018B325FA442E08AD305 /* Build configuration list for PBXNativeTarget "Pods-SwiftUISample" */ = {
+		0CACA2B138EB28FE9F882A96B1731307 /* Build configuration list for PBXAggregateTarget "Smart-Display-SDK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B066F5A82CD96AB046D8C75F40624C3B /* Debug */,
-				C030D3B0AD865637573BEFDE217DDDC8 /* Release */,
+				32D5709F1514AE609BB8383926458CCB /* Debug */,
+				79D9318D002E085DEFE67D80E6822AEA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -653,26 +528,17 @@
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B4EFE046ACF8F37157F6E322C7FCFC28 /* Debug */,
-				903A0004D3E6651EFD5D2E16214D101B /* Release */,
+				2B9E26EAE2CD392AD762421F663075A1 /* Debug */,
+				63FAF33E1C55B71A5F5A8B3CC8749F99 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		916F372EFC24CC6D855112197E571E3A /* Build configuration list for PBXAggregateTarget "Smart-Core-SDK" */ = {
+		51C01854CBCE9F9511E371CF10F32912 /* Build configuration list for PBXNativeTarget "Pods-SwiftUISample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FEE058457D68CC978ABC32C11E21E34D /* Debug */,
-				F9C0D7F5CF5AA3BF80309D6D35A76D49 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		BCE4FBEDF8B967EF144C342AB2AF6EF9 /* Build configuration list for PBXAggregateTarget "Smart-Display-SDK" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				8DC5C46EFBD02D6A2A438819B3F83461 /* Debug */,
-				A5D2F8D223600F2E68FFCAF8466FA6A7 /* Release */,
+				65D4FDBF62DE837E78B4DBB3C8E45D05 /* Debug */,
+				F83D60176FE7F4C4EBBEFAC9923CDEE3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
