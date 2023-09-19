@@ -1,16 +1,16 @@
 PODS:
-  - Smart-Display-SDK (7.23.0)
+  - Smart-Display-SDK (7.23.1)
 
 DEPENDENCIES:
-  - Smart-Display-SDK (~> 7.23.0)
+  - Smart-Display-SDK (~> 7.23.1)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - Smart-Display-SDK
 
 SPEC CHECKSUMS:
-  Smart-Display-SDK: 27680aceb9bb62b1094fa317cb2fc7ab72fd732c
+  Smart-Display-SDK: 2d50b1f5add2d8fbbbeddd450f4d040febd8ad79
 
-PODFILE CHECKSUM: 68295e16ee0c1e9a10b160faf2c97a24c282025b
+PODFILE CHECKSUM: 7eacc68a300075c6ebb01c88a403b21a714f171d
 
 COCOAPODS: 1.12.1
