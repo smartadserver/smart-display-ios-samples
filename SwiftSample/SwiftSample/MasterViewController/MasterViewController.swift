@@ -59,14 +59,7 @@ class MasterViewController: UITableViewController {
                         NSLog("[ATT] The tracking authorization is not granted!")
                         
                         // The tracking authorization has not been granted!
-                        //
-                        // The SDK will only uses a technical randomly generated ID that will not be
-                        // shared cross apps and will be reset every 24 hours.
-                        // This 'transient ID' will only be used for technical purposes (ad fraud
-                        // detection, capping, …).
-                        //
-                        // You can disable it completely by using the following configuration flag:
-                        // SASConfiguration.shared.transientIDEnabled = false
+                        // The SDK will not track the user.
                     }
                 })
                 

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19158" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="pKk-jv-qX6">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="pKk-jv-qX6">
     <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19141"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,14 +18,14 @@
                         <color key="backgroundColor" systemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="sampleCell" textLabel="7TV-Kt-7SS" style="IBUITableViewCellStyleDefault" id="Qaa-c7-GiT">
-                                <rect key="frame" x="0.0" y="49" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="55.333332061767578" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Qaa-c7-GiT" id="IHp-fd-Mi4">
-                                    <rect key="frame" x="0.0" y="0.0" width="384.33333333333331" height="44"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="383.66666666666669" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7TV-Kt-7SS">
-                                            <rect key="frame" x="20" y="0.0" width="356.33333333333331" height="44"/>
+                                            <rect key="frame" x="20" y="0.0" width="355.66666666666669" height="44"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <nil key="textColor"/>
@@ -69,7 +69,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Banner (click on 'Reload' to refresh the banner content)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="tBi-EF-RUj">
-                                <rect key="frame" x="51" y="260" width="312" height="216"/>
+                                <rect key="frame" x="51" y="286" width="312" height="164"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -128,7 +128,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="5A1-dm-49s">
-                                <rect key="frame" x="20" y="124" width="374" height="61"/>
+                                <rect key="frame" x="20" y="150" width="374" height="61"/>
                                 <string key="text">Interstitial, click on 'Load Ad' to load an interstitial and 'Show Ad' to show it
 
 </string>
@@ -200,7 +200,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DescriptionCell" id="fpu-Fj-dy4" userLabel="DescriptionCell">
-                                <rect key="frame" x="0.0" y="44.666666030883789" width="414" height="80"/>
+                                <rect key="frame" x="0.0" y="50" width="414" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fpu-Fj-dy4" id="Xkb-WH-uCb">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
@@ -234,7 +234,7 @@
                                 </tableViewCellContentView>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ContentCell" id="gRb-7U-YcO">
-                                <rect key="frame" x="0.0" y="124.66666603088379" width="414" height="80"/>
+                                <rect key="frame" x="0.0" y="130" width="414" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gRb-7U-YcO" id="cvp-dZ-VCP">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
@@ -299,7 +299,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DescriptionCell" id="xme-Np-fYO" userLabel="DescriptionCell">
-                                <rect key="frame" x="0.0" y="44.666666030883789" width="414" height="80"/>
+                                <rect key="frame" x="0.0" y="50" width="414" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xme-Np-fYO" id="ZJW-50-Nm8">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
@@ -333,7 +333,7 @@
                                 </tableViewCellContentView>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ContentCell" id="bLl-L2-00d">
-                                <rect key="frame" x="0.0" y="124.66666603088379" width="414" height="80"/>
+                                <rect key="frame" x="0.0" y="130" width="414" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bLl-L2-00d" id="qVw-yp-bir">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
@@ -394,7 +394,7 @@
             <objects>
                 <navigationController id="pKk-jv-qX6" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="roJ-ho-SlZ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -415,7 +415,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DescriptionCell" id="D2d-Z5-jrb" userLabel="DescriptionCell">
-                                <rect key="frame" x="0.0" y="44.666666030883789" width="414" height="80"/>
+                                <rect key="frame" x="0.0" y="50" width="414" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="D2d-Z5-jrb" id="Gip-WV-w4P">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
@@ -449,7 +449,7 @@
                                 </tableViewCellContentView>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ContentCell" id="ft5-Pk-SXn">
-                                <rect key="frame" x="0.0" y="124.66666603088379" width="414" height="80"/>
+                                <rect key="frame" x="0.0" y="130" width="414" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ft5-Pk-SXn" id="mxv-fu-01Q">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
@@ -532,7 +532,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="PUL-tr-GTA">
-                                <rect key="frame" x="20" y="124" width="374" height="61"/>
+                                <rect key="frame" x="20" y="144" width="374" height="61"/>
                                 <string key="text">Rewarded Video, click on 'Load Ad' to load a video and 'Show Ad' to show it
 
 </string>
@@ -607,7 +607,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Banner (click on 'Load' to get a bidding ad, click on 'Show' to load it into the banner view)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="m81-aB-HFH">
-                                <rect key="frame" x="51" y="109" width="312" height="61"/>
+                                <rect key="frame" x="51" y="135" width="312" height="61"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -622,7 +622,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="(no bidding ad response loaded)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="Q5G-7E-YYW">
-                                <rect key="frame" x="51" y="226" width="312" height="40.666666666666686"/>
+                                <rect key="frame" x="51" y="251.99999999999997" width="312" height="40.666666666666657"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40.666666666666657" id="sjN-0d-fca"/>
                                 </constraints>
@@ -631,7 +631,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n6W-bq-RjM">
-                                <rect key="frame" x="107.66666666666669" y="178" width="199" height="40"/>
+                                <rect key="frame" x="107.66666666666669" y="204" width="199" height="40"/>
                                 <color key="backgroundColor" systemColor="groupTableViewBackgroundColor"/>
                                 <accessibility key="accessibilityConfiguration" label="loadAd"/>
                                 <constraints>
@@ -650,7 +650,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1yY-Lo-6l9">
-                                <rect key="frame" x="107.66666666666669" y="274" width="199" height="40"/>
+                                <rect key="frame" x="107.66666666666669" y="300" width="199" height="40"/>
                                 <color key="backgroundColor" systemColor="groupTableViewBackgroundColor"/>
                                 <accessibility key="accessibilityConfiguration" label="showRewarded">
                                     <bool key="isElement" value="YES"/>
@@ -713,7 +713,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Intersititial (click on 'Load' to get a bidding ad, click on 'Show' to load it into the interstitial view)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="SXG-wt-nb6">
-                                <rect key="frame" x="51" y="109" width="312" height="61"/>
+                                <rect key="frame" x="51" y="129" width="312" height="61"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -728,7 +728,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="(no bidding ad response loaded)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="2ey-hC-wXw">
-                                <rect key="frame" x="51" y="226" width="312" height="40.666666666666686"/>
+                                <rect key="frame" x="51" y="245.99999999999997" width="312" height="40.666666666666657"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40.666666666666657" id="n9s-rL-FX1"/>
                                 </constraints>
@@ -737,7 +737,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5R4-6J-vxf">
-                                <rect key="frame" x="107.66666666666669" y="178" width="199" height="40"/>
+                                <rect key="frame" x="107.66666666666669" y="198" width="199" height="40"/>
                                 <color key="backgroundColor" systemColor="groupTableViewBackgroundColor"/>
                                 <accessibility key="accessibilityConfiguration" label="loadAd"/>
                                 <constraints>
@@ -756,7 +756,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IfT-fa-fkM">
-                                <rect key="frame" x="107.66666666666669" y="274" width="199" height="40"/>
+                                <rect key="frame" x="107.66666666666669" y="294" width="199" height="40"/>
                                 <color key="backgroundColor" systemColor="groupTableViewBackgroundColor"/>
                                 <accessibility key="accessibilityConfiguration" label="showRewarded">
                                     <bool key="isElement" value="YES"/>
