@@ -5,6 +5,6 @@ target 'SwiftUISample' do
   use_frameworks!
   platform :ios, '13.0'
 
-  pod 'Smart-Display-SDK', '~> 7.23.3'
+  pod 'Smart-Display-SDK', '~> 7.23.4'
 
 end
