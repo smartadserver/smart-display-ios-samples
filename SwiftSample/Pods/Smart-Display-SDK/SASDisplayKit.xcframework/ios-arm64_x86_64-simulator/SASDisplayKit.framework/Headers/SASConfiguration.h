@@ -10,6 +10,8 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@class SASSecondaryImplementationInfo;
+
 /**
  Hold the configuration of the Smart Display SDK.
  
@@ -62,7 +64,10 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, readonly, getter=isConfigured) BOOL configured;
 
 /// YES if the SDK is used as a Primary SDK, NO otherwise.
-@property (nonatomic, assign, getter=isPrimarySDK) BOOL primarySDK NS_SWIFT_NAME(primarySDK);
+@property (nonatomic, assign, getter=isPrimarySDK) BOOL primarySDK NS_SWIFT_NAME(primarySDK) DEPRECATED_MSG_ATTRIBUTE("Use the `secondaryImplementationInfo` property instead");
+
+/// Additional implementation information that can be provided to the SDK when integrated as secondary SDK.
+@property (nonatomic, strong, nullable) SASSecondaryImplementationInfo *secondaryImplementationInfo;
 
 /// The bundle for localized strings - See documentation for keys. By default the strings of the framework bundle will be used.
 @property (nonatomic, strong) NSBundle *stringsBundle;

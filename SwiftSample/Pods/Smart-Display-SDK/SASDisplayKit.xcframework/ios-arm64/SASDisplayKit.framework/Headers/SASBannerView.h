@@ -54,13 +54,6 @@ NS_ASSUME_NONNULL_BEGIN
 /// The delegate must adopt the SASBannerViewDelegate protocol.
 @property (nonatomic, weak, nullable) id <SASBannerViewDelegate> delegate;
 
-/// YES if the ad banner should expand from the top, NO if it should expand from the bottom.
-///
-/// On a banner placement, expanding formats can be loaded. This will cause the view to resize itself in an animated
-/// way. If you place your banner at the top of your view, set this property to YES, if you place it at the bottom,
-/// set it to NO.
-@property (nonatomic, assign) BOOL expandsFromTop;
-
 /// Starts or stops the ad's auto refresh feature on this banner view by setting the refresh interval in seconds. The
 /// refresh interval cannot be less than SASRefreshIntervalMinimum (20 seconds).
 ///
